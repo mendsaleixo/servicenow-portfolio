@@ -106,8 +106,8 @@ Para tornar a simulação mais realista, foram criados previamente:
 
 ## Lista geral de incidentes
 
-Print da lista completa mostrando os 4 incidentes com prioridade, estado
-e atribuição visíveis na Default view.O incidente um foi finalizado e será mostrado em outra lista.
+Print da lista completa mostrando os 5 incidentes com prioridade, estado
+e atribuição visíveis na Default view.
 
 ![Lista de incidentes](prints/incidentes-lista.png)
 
