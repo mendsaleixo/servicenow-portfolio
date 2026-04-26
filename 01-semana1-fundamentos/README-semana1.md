@@ -35,13 +35,13 @@ via Update Sets.
 
 Cada conceito estudado foi documentado em um artigo próprio na pasta `artigos/`:
 
-| #   | Artigo                                                                                         |
-| --- | ---------------------------------------------------------------------------------------------- |
-| 01  | [O que é ServiceNow, instâncias e PDI?](artigos/01-o-que-e-servicenow.md)                      |
-| 02  | [ITIL: Incidente vs Requisição vs Problema](artigos/02-incidente-vs-requisicao-vs-problema.md) |
-| 03  | [Navegação: listas, filtros, formulários](artigos/03-navegacao-listas-filtros-formularios.md)  |
-| 04  | [Ciclo de vida do incidente](artigos/04-ciclo-de-vida-do-incidente.md)                         |
-| 05  | [Update Sets (fundamentos)](artigos/05-update-sets-fundamentos.md)                             |
+| #   | Artigo                                                                                        |
+| --- | --------------------------------------------------------------------------------------------- |
+| 01  | [O que é ServiceNow, instâncias e PDI?](artigos/01-introducao-instancias-pdi.md)              |
+| 02  | [ITIL: Incidente vs Requisição vs Problema](artigos/02-itil-incidente-requisicao-problema.md) |
+| 03  | [Navegação: listas, filtros, formulários](artigos/03-navegacao-listas-filtros-formularios.md) |
+| 04  | [Ciclo de vida do incidente](artigos/04-ciclo-vida-incidente.md)                              |
+| 05  | [Update Sets (fundamentos)](artigos/05-fundamentos-update-sets.md)                            |
 
 ### Flashcards
 
