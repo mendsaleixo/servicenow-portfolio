@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-04-26 00:35:28">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Update set criado no primeiro dia de estudo para aprender o conceito</description>
+<inserted/>
+<name>ESTUDO-S01-Mendelson-Fundamentos_ServiceNow</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>b35e44fa835c8310d19e5630ceaad3ba</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:27</sys_created_on>
+<sys_id>b0b518a883e00350d19e5630ceaad3bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:27</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_bf1d96e3c0a801640190725e63f8ac80</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="bf1d96e3c0a801640190725e63f8ac80" sys_domain="global" table="incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>2e9d2d108320cf10d19e5630ceaad300</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>caller_id</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>e69d2d108320cf10d19e5630ceaad301</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>category</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>a29d2d108320cf10d19e5630ceaad302</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>subcategory</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>6e9d2d108320cf10d19e5630ceaad302</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>business_service</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>2a9d2d108320cf10d19e5630ceaad303</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>service_offering</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>e29d2d108320cf10d19e5630ceaad304</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cmdb_ci</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>ae9d2d108320cf10d19e5630ceaad304</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>universal_request</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>6a9d2d108320cf10d19e5630ceaad305</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>route_reason</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>269d2d108320cf10d19e5630ceaad306</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_setor_afetado</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>ee9d2d108320cf10d19e5630ceaad306</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_impacto_negocio</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>aa9d2d108320cf10d19e5630ceaad307</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>669d2d108320cf10d19e5630ceaad308</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>contact_type</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>229d2d108320cf10d19e5630ceaad309</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>13</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>ea9d2d108320cf10d19e5630ceaad309</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>hold_reason</element><position>14</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>a69d2d108320cf10d19e5630ceaad30a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>impact</element><position>15</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>629d2d108320cf10d19e5630ceaad30b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>urgency</element><position>16</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>2e9d2d108320cf10d19e5630ceaad30b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>priority</element><position>17</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>e69d2d108320cf10d19e5630ceaad30c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assignment_group</element><position>18</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>a29d2d108320cf10d19e5630ceaad30d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>19</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>6e9d2d108320cf10d19e5630ceaad30d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>20</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>2a9d2d108320cf10d19e5630ceaad30e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>21</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>e29d2d108320cf10d19e5630ceaad30f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>description</element><position>22</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>ae9d2d108320cf10d19e5630ceaad30f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cxs_table_search.xml</element><position>23</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:21:01</sys_created_on><sys_id>6a9d2d108320cf10d19e5630ceaad310</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter display_value="Contextual Search Results">11eb1622eb1121003623666cd206fe56</sys_ui_formatter><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:21:01</sys_updated_on><sys_user/><type>formatter</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>fred.luddy</sys_created_by><sys_created_on>2004-07-14 19:25:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>bf1d96e3c0a801640190725e63f8ac80</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_overrides/><sys_package display_value="Incident Updates" source="com.snc.incident.updates">9f4f1820f58803100a22c0b3dfa15173</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_bf1d96e3c0a801640190725e63f8ac80</sys_update_name><sys_updated_by>system_bootstrap</sys_updated_by><sys_updated_on>2004-12-13 18:05:34</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-1093652929</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>01b5982083240350d19e5630ceaad36c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc4960dec0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>229d2d10b120cf109d3b3d88290e3316</update_guid>
+<update_guid_history>229d2d10b120cf109d3b3d88290e3316:-1093652929,d50aa91881ec8f1058a94c43da6c4747:2084178693,6277e5d05aec8f10ab4d1ed07a20430d:1418717875</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_incident_subcategory</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="subcategory" table="incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>subcategory</element><name>incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_id>f22ad4e4f54403100a22c0b3dfa151a7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>subcategory</sys_name><sys_package display_value="Incident" source="com.snc.incident">f62a94e4f54403100a22c0b3dfa151d5</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_choice_incident_subcategory</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value>inquiry</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Antivirus</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>ba2ad4e4f54403100a22c0b3dfa151a5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>antivirus</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>CPU</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>fe2ad4e4f54403100a22c0b3dfa151a5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>cpu</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>database</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>DB2</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>ba2ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>db2</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>DHCP</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>f62ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>dhcp</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Disk</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>722ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>disk</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>DNS</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>7a2ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>dns</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>software</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Email</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>be2ad4e4f54403100a22c0b3dfa151a5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>email</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>inquiry</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Email</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>fa2ad4e4f54403100a22c0b3dfa151a5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>email</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>inquiry</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Internal Application</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>3e2ad4e4f54403100a22c0b3dfa151a5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>internal application</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>IP Address</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>3a2ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>ip address</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Keyboard</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>f22ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>keyboard</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Memory</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>322ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>memory</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Monitor</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>b22ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>monitor</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Mouse</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>362ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>mouse</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>database</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Oracle</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>fa2ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>oracle</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>software</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Operating System</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>7e2ad4e4f54403100a22c0b3dfa151a5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>os</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>database</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>MS SQL Server</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>3e2ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>sql server</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>VPN</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>762ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>vpn</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Wireless</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2026-04-01 04:23:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>b62ad4e4f54403100a22c0b3dfa151a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-04-01 04:23:36</sys_updated_on><value>wireless</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>Software</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Application Error</label><language>en</language><name>incident</name><sequence>1001</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 20:25:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>75729e8883644f10d19e5630ceaad312</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 20:25:15</sys_updated_on><value>application Error</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Laptop / Desktop</label><language>en</language><name>incident</name><sequence>1001</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 20:43:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9aa6dac083a44f10d19e5630ceaad31f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 20:43:42</sys_updated_on><value>laptop_desktop</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Printer</label><language>en</language><name>incident</name><sequence>1001</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 20:15:14</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>86305a4483644f10d19e5630ceaad353</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 20:15:14</sys_updated_on><value>printer</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-704070266</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>05b5982083240350d19e5630ceaad368</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc13bea5e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Subcategory</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>9817d604baa44f10a68391aa4ecac09a</update_guid>
+<update_guid_history>9817d604baa44f10a68391aa4ecac09a:-704070266,86d25ac817644f101f1d952ef7d270f7:-1217963272,db801684df644f10cec7f5af254d1038:78005245,9380168491644f10967e7fdb083c3317:1089218209</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_incident_u_setor_afetado</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_setor_afetado" table="incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Setor Afetado&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_setor_afetado&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-25 11:54:15&lt;/sys_created_on&gt;&lt;sys_id&gt;33e2ad9883ac8f10d19e5630ceaad362&lt;/sys_id&gt;&lt;sys_name&gt;Setor Afetado&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_incident_u_setor_afetado&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-25 11:54:15&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1269304058</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>09b5982083240350d19e5630ceaad369</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc47d90620000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Setor Afetado</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>a277e5d02aec8f10f29484ac02e3ac3c</update_guid>
+<update_guid_history>a277e5d02aec8f10f29484ac02e3ac3c:1269304058</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_filter_7d4b35948320cf10d19e5630ceaad3f6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_filter"><sys_filter action="INSERT_OR_UPDATE"><filter table="incident">assigned_to=6816f79cc0a8016401c5a33be04be441^state=2^ORstate=1^EQ<item display_table="sys_user" display_value="System Administrator" endquery="false" field="assigned_to" goto="false" newquery="false" operator="=" or="false" value="6816f79cc0a8016401c5a33be04be441"/><item display_value="In Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/><item display_value="New" endquery="false" field="state" goto="false" newquery="false" operator="=" or="true" value="1"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><group/><last_used/><mobile>false</mobile><roles/><sys_class_name>sys_filter</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 13:20:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7d4b35948320cf10d19e5630ceaad3f6</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 13:20:46</sys_updated_on><table>incident</table><title>Meus Incidentes Ativos</title><user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user></sys_filter><sys_translated_text action="delete_multiple" query="documentkey=7d4b35948320cf10d19e5630ceaad3f6"/></record_update>]]></payload>
+<payload_hash>-1406662222</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>0db5982083240350d19e5630ceaad36a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc4ccc20d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Meus Incidentes Ativos</target_name>
+<type>Filter</type>
+<update_domain>global</update_domain>
+<update_guid>f14b35942620cf10273a71664eed97f9</update_guid>
+<update_guid_history>f14b35942620cf10273a71664eed97f9:-1406662222</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_d39079948320cf10d19e5630ceaad3b6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>u_setor_afetado</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:35:04</sys_created_on><sys_id>d39079948320cf10d19e5630ceaad3b6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_setor_afetado</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_policy_action_d39079948320cf10d19e5630ceaad3b6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:35:04</sys_updated_on><table>incident</table><ui_policy display_value="Setor Afetado obrigatório quando Crítico">b58fe5148320cf10d19e5630ceaad3a4</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=d39079948320cf10d19e5630ceaad3b6"/></record_update>]]></payload>
+<payload_hash>1130888000</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>41b5982083240350d19e5630ceaad36b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc4a2ec780000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>u_setor_afetado</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_guid>d4d031d42520cf105e03df53abf78708</update_guid>
+<update_guid_history>d4d031d42520cf105e03df53abf78708:1130888000</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_incident_Setor Afetado</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="DELETE" field="Setor Afetado" table="incident" version="3"><sys_choice_set action="DELETE"><element>Setor Afetado</element><name>incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by/><sys_created_on/><sys_id/><sys_mod_count/><sys_name/><sys_package/><sys_policy/><sys_scope/><sys_update_name/><sys_updated_by/><sys_updated_on>2026-04-25 12:20:03</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+<payload_hash>-708427974</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>49b518a883e00350d19e5630ceaad3c0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc4952b120000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Setor Afetado</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>146d25100c20cf10513a051d7cff82e8</update_guid>
+<update_guid_history>146d25100c20cf10513a051d7cff82e8:-708427974,6b68a554e5ec8f10933585ece40e5c26:-708427974</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_incident_u_impacto_negocio</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="u_impacto_negocio" table="incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>u_impacto_negocio</element><name>incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:17:42</sys_created_on><sys_id>35dca1dc83ec8f10d19e5630ceaad338</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_impacto_negocio</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_choice_incident_u_impacto_negocio</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:17:42</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_impacto_negocio</element><hint/><inactive>false</inactive><label>Baixo</label><language>en</language><name>incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:07:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5b3aa15883ec8f10d19e5630ceaad31d</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:17:41</sys_updated_on><value>baixo</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_impacto_negocio</element><hint/><inactive>false</inactive><label>Médio</label><language>en</language><name>incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:07:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>766a295883ec8f10d19e5630ceaad327</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:17:55</sys_updated_on><value>medio</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_impacto_negocio</element><hint/><inactive>false</inactive><label>Alto</label><language>en</language><name>incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:08:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ee8a6d5483ec8f10d19e5630ceaad313</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:18:11</sys_updated_on><value>alto</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_impacto_negocio</element><hint/><inactive>false</inactive><label>Crítico</label><language>en</language><name>incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:08:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a2aaed5883ec8f10d19e5630ceaad3f3</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:18:25</sys_updated_on><value>critico</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>1965650065</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>49b5982083240350d19e5630ceaad368</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc493ab9f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Impacto no Negócio</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>500d29dc7cec8f10e854c803c1d02640</update_guid>
+<update_guid_history>500d29dc7cec8f10e854c803c1d02640:1965650065,89fca5dcbcec8f10923da37d55da218d:651343824,49ece1dc03ec8f109b809369dad273ec:-1544126144,b1dca1dcf9ec8f104a9323ffb1db5d3f:1588601879,b5dca1dc86ec8f10847ba7b9519d8a39:1150943194</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_incident_u_impacto_negocio_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_impacto_negocio" label="Impacto no Negócio" language="en" table="incident"><sys_documentation action="INSERT_OR_UPDATE"><element>u_impacto_negocio</element><help/><hint/><label>Impacto no Negócio</label><language>en</language><name>incident</name><plural>Impacto no Negócios</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:05:22</sys_created_on><sys_id>150aa91883ec8f10d19e5630ceaad34a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Impacto no Negócio</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_incident_u_impacto_negocio_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:05:22</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1492455481</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>4db5982083240350d19e5630ceaad369</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc487bcc90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Impacto no Negócio</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>dd0aa918dfec8f1099ec4a06523b7458</update_guid>
+<update_guid_history>dd0aa918dfec8f1099ec4a06523b7458:-1492455481</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_incident_Impacto no Negócio</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="DELETE" field="Impacto no Negócio" table="incident" version="3"><sys_choice_set action="DELETE"><element>Impacto no Negócio</element><name>incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by/><sys_created_on/><sys_id/><sys_mod_count/><sys_name/><sys_package/><sys_policy/><sys_scope/><sys_update_name/><sys_updated_by/><sys_updated_on>2026-04-25 12:18:25</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+<payload_hash>1857083492</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:27</sys_created_on>
+<sys_id>78b518a883e00350d19e5630ceaad3bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc493abb50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:27</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Impacto no Negócio</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>980d29dc08ec8f10c333d94a105d9242</update_guid>
+<update_guid_history>980d29dc08ec8f10c333d94a105d9242:1857083492,796ae55839ec8f10dcaa7e59f12c6bf4:1857083492</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_incident_u_setor_afetado_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_setor_afetado" label="Setor Afetado" language="en" table="incident"><sys_documentation action="INSERT_OR_UPDATE"><element>u_setor_afetado</element><help/><hint/><label>Setor Afetado</label><language>en</language><name>incident</name><plural>Setor Afetados</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 11:54:16</sys_created_on><sys_id>2a77e5d083ec8f10d19e5630ceaad310</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Setor Afetado</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_incident_u_setor_afetado_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 11:54:16</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1321940695</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>81b5982083240350d19e5630ceaad36a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc47d90860000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Setor Afetado</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>aa77e5d0d6ec8f1032122022825e913f</update_guid>
+<update_guid_history>aa77e5d0d6ec8f1032122022825e913f:-1321940695</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_b58fe5148320cf10d19e5630ceaad3a4</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="incident"&gt;priority=1^EQ&lt;item display_value="1 - Critical" endquery="false" field="priority" goto="false" newquery="false" operator="=" or="false" value="1"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Setor Afetado obrigatório quando Crítico&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-25 12:33:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b58fe5148320cf10d19e5630ceaad3a4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Setor Afetado obrigatório quando Crítico&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_b58fe5148320cf10d19e5630ceaad3a4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-25 12:33:14&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1452966237</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>85b5982083240350d19e5630ceaad36b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc4a13d120000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Setor Afetado obrigatório quando Crítico</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_guid>ed60b1941620cf10721faa5b94ca5f64</update_guid>
+<update_guid_history>ed60b1941620cf10721faa5b94ca5f64:-1452966237</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_incident_u_setor_afetado</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="u_setor_afetado" table="incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>u_setor_afetado</element><name>incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:18:51</sys_created_on><sys_id>ba1da9dc83ec8f10d19e5630ceaad3ed</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_setor_afetado</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_choice_incident_u_setor_afetado</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:18:51</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_setor_afetado</element><hint/><inactive>false</inactive><label>Financeiro</label><language>en</language><name>incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 11:58:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1938ed1483ec8f10d19e5630ceaad32d</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:18:51</sys_updated_on><value>financeiro</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_setor_afetado</element><hint/><inactive>false</inactive><label>RH</label><language>en</language><name>incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 11:59:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2478ed1883ac8f10d19e5630ceaad342</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:19:01</sys_updated_on><value>rh</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_setor_afetado</element><hint/><inactive>false</inactive><label>TI</label><language>en</language><name>incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:00:19</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>39a8691483ec8f10d19e5630ceaad3d7</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:19:12</sys_updated_on><value>ti</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_setor_afetado</element><hint/><inactive>false</inactive><label>Comercial</label><language>en</language><name>incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 12:01:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a8e8e19483ec8f10d19e5630ceaad3f8</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 12:20:03</sys_updated_on><value>comercial</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>-1620339329</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>8db5982083240350d19e5630ceaad368</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc4952af40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Setor Afetado</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>d86d25101f20cf1097ac2efc25fa19e5</update_guid>
+<update_guid_history>d86d25101f20cf1097ac2efc25fa19e5:-1620339329,883daddce4ec8f108ca575e406177e9f:-851688796,112d2ddc3bec8f10810aca5cc435dec7:-490325378,be1da9dcc0ec8f1067fbfda32e9c4dfe:1974547321,f61da9dccdec8f103f1add76e60558ee:-445029542</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_incident_u_impacto_negocio</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_impacto_negocio" table="incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Impacto no Negócio&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_impacto_negocio&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-25 12:05:22&lt;/sys_created_on&gt;&lt;sys_id&gt;c8c9611883ec8f10d19e5630ceaad310&lt;/sys_id&gt;&lt;sys_name&gt;Impacto no Negócio&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_incident_u_impacto_negocio&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-25 12:05:22&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1626191844</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>c1b5982083240350d19e5630ceaad369</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc487bcaf0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Impacto no Negócio</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>110aa918c1ec8f10912b2b87ae2b6556</update_guid>
+<update_guid_history>110aa918c1ec8f10912b2b87ae2b6556:-1626191844</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_filter_0ae66e8083284f10d19e5630ceaad30c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_filter"><sys_filter action="INSERT_OR_UPDATE"><filter table="incident">priority=1^ORpriority=2^state=1^ORstate=2^EQ<item display_value="1 - Critical" endquery="false" field="priority" goto="false" newquery="false" operator="=" or="false" value="1"/><item display_value="2 - High" endquery="false" field="priority" goto="false" newquery="false" operator="=" or="true" value="2"/><item display_value="New" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/><item display_value="In Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="true" value="2"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><group/><last_used/><mobile>false</mobile><roles/><sys_class_name>sys_filter</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 21:52:55</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0ae66e8083284f10d19e5630ceaad30c</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 21:52:55</sys_updated_on><table>incident</table><title>Incidentes Prioritários - Nova Fila</title><user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user></sys_filter><sys_translated_text action="delete_multiple" query="documentkey=0ae66e8083284f10d19e5630ceaad30c"/></record_update>]]></payload>
+<payload_hash>1202066583</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>c5b5982083240350d19e5630ceaad36a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc17b47d60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Incidentes Prioritários - Nova Fila</target_name>
+<type>Filter</type>
+<update_domain>global</update_domain>
+<update_guid>82e66e8045284f101e743f2767964210</update_guid>
+<update_guid_history>82e66e8045284f101e743f2767964210:1202066583</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_4fc4979ec0a8016401e142a5a0c599ce</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="4fc4979ec0a8016401e142a5a0c599ce" sys_domain="global" table="incident" version="3" view="ess"><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>ec87c68083244f10d19e5630ceaad3e9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>caller_id</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>a887c68083244f10d19e5630ceaad3ea</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>category</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>6487c68083244f10d19e5630ceaad3eb</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>subcategory</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>2087c68083244f10d19e5630ceaad3ec</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>watch_list</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>e887c68083244f10d19e5630ceaad3ec</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>a487c68083244f10d19e5630ceaad3ed</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>opened_at</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>6087c68083244f10d19e5630ceaad3ee</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>closed_at</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>2c87c68083244f10d19e5630ceaad3ee</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>urgency</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>e487c68083244f10d19e5630ceaad3ef</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>a087c68083244f10d19e5630ceaad3f0</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>hold_reason</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>6c87c68083244f10d19e5630ceaad3f0</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>2887c68083244f10d19e5630ceaad3f1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>e087c68083244f10d19e5630ceaad3f2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cxs_table_search.xml</element><position>13</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>ac87c68083244f10d19e5630ceaad3f2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter display_value="Contextual Search Results">11eb1622eb1121003623666cd206fe56</sys_ui_formatter><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type>formatter</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>comments</element><position>14</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>e887c68083244f10d19e5630ceaad3f3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>activity.xml</element><position>15</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 19:35:44</sys_created_on><sys_id>a487c68083244f10d19e5630ceaad3f4</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="d8c3d060f50003100a22c0b3dfa15161">4fc4979ec0a8016401e142a5a0c599ce</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 19:35:44</sys_updated_on><sys_user/><type>formatter</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>fred.luddy</sys_created_by><sys_created_on>2004-08-11 21:32:57</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>4fc4979ec0a8016401e142a5a0c599ce</sys_id><sys_mod_count>2</sys_mod_count><sys_name>incident</sys_name><sys_overrides/><sys_package display_value="Contextual Search" source="com.snc.contextual_search">d1bbd8a8f58403100a22c0b3dfa1519b</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_4fc4979ec0a8016401e142a5a0c599ce</sys_update_name><sys_updated_by>glide.maint</sys_updated_by><sys_updated_on>2007-10-05 18:16:32</sys_updated_on><sys_user/><title>true</title><view display_value="Self Service" name="ess">d8c3d060f50003100a22c0b3dfa15161</view><view_name>ess</view_name></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>345433460</payload_hash>
+<remote_update_set display_value="ESTUDO-S01-Mendelson-Fundamentos_ServiceNow">b0b518a883e00350d19e5630ceaad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-26 00:35:28</sys_created_on>
+<sys_id>c9b5982083240350d19e5630ceaad36b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19dc0fdb0080000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-26 00:35:28</sys_updated_on>
+<table>incident</table>
+<target_name>Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>2087c68028244f102fa20849b88c2cf9</update_guid>
+<update_guid_history>2087c68028244f102fa20849b88c2cf9:345433460,ba370e408e244f10bd948cf7979fe9dd:22080637,69074640c5244f10e273c176e3a6e2df:1160987679,25070640a0244f10c3b310ac63f2671c:-1678277329</update_guid_history>
+<update_set display_value=""/>
+<view>ess</view>
+</sys_update_xml>
+</unload>

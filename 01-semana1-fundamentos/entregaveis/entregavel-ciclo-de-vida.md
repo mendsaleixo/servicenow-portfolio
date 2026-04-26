@@ -26,18 +26,18 @@ cálculo de SLA funcionem corretamente desde o início do ciclo de vida.
 
 **Campos preenchidos neste estado:**
 
-| Campo | Valor |
-|---|---|
-| Short description | VPN corporativa inacessível para colaboradores em home office |
-| Category | Network |
-| Subcategory | VPN / Remote Access |
-| Impact | 2 – Medium |
-| Urgency | 1 – High |
-| Priority | 1 – Critical (calculado automaticamente) |
-| Assignment Group | N1 - Suporte Técnico |
-| Assigned to | Bruno Carvalho |
-| Setor Afetado | TI |
-| Impacto no Negócio | Crítico |
+| Campo              | Valor                                                         |
+| ------------------ | ------------------------------------------------------------- |
+| Short description  | VPN corporativa inacessível para colaboradores em home office |
+| Category           | Network                                                       |
+| Subcategory        | VPN / Remote Access                                           |
+| Impact             | 2 – Medium                                                    |
+| Urgency            | 1 – High                                                      |
+| Priority           | 1 – Critical (calculado automaticamente)                      |
+| Assignment Group   | N1 - Suporte Técnico                                          |
+| Assigned to        | Bruno Carvalho                                                |
+| Setor Afetado      | TI                                                            |
+| Impacto no Negócio | Crítico                                                       |
 
 ---
 
@@ -105,12 +105,12 @@ configurável sem resposta do usuário.
 
 ## Linha do tempo
 
-| Estado | Ação | Responsável |
-|---|---|---|
-| New | Incidente criado com triagem completa | Admin (PDI) |
-| In Progress | Analista assumiu e iniciou diagnóstico | Bruno Carvalho |
-| Resolved | Causa raiz identificada e solução aplicada | Bruno Carvalho |
-| Closed | Serviço confirmado como restaurado | Admin (PDI) |
+| Estado      | Ação                                       | Responsável    |
+| ----------- | ------------------------------------------ | -------------- |
+| New         | Incidente criado com triagem completa      | Admin (PDI)    |
+| In Progress | Analista assumiu e iniciou diagnóstico     | Bruno Carvalho |
+| Resolved    | Causa raiz identificada e solução aplicada | Bruno Carvalho |
+| Closed      | Serviço confirmado como restaurado         | Admin (PDI)    |
 
 ---
 
