@@ -1,8 +1,8 @@
 # Client Scripts: O que são, tipos (onLoad, onChange, onSubmit, onCellEdit) e quando usar cada um
 
-**Data:** 04/05/2026
-**Semana:** 2 (UI Scripts)
-**Fonte:** SNAF Módulo 4 + Documentação Oficial + Prática própria
+**Data:** 04/05/2026 \
+**Semana:** 2 (UI Scripts) \
+**Fonte:** SNAF Módulo 4 + Documentação Oficial + Prática própria \
 **Tópico relacionado:** UI Policy, JavaScript, g_form, g_user
 
 ---
