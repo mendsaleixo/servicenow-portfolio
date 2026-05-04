@@ -313,15 +313,15 @@ function onSubmit() {
 
 ## ⚠️ Erros comuns e boas práticas
 
-| Erro                                          | Por que acontece                                             | Correção                                                                                                     |
-| --------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | --- | -------------------- |
-| Usar `alert()` em produção                    | Desenvolvedor usa alerta para testar e esquece de remover    | Use `g_form.addInfoMessage()` ou `g_form.showFieldMsg()` para feedback ao usuário final                      |
-| Esquecer de verificar `isLoading` no onChange | O script executa enquanto o formulário ainda está carregando | Sempre inicie o onChange com `if (isLoading                                                                  |     | isTemplate) return;` |
-| Usar Client Script para lógica de segurança   | Desenvolvedor não conhece ACLs ou quer "facilitar"           | Validação de segurança (quem pode ver/editar) vai no servidor via ACL, não no cliente                        |
-| Não testar com diferentes perfis de usuário   | Desenvolvedor testa apenas como admin                        | Use `Impersonate User` (personificar usuário) para testar como outros perfis                                 |
-| Confundir `setValue` com `setDisplayValue`    | Não conhece a diferença entre valor técnico e label          | Para campos Choice: `getValue()` retorna código (ex: "1"), `getDisplayValue()` retorna texto (ex: "Crítica") |
-| Client Script muito longo e difícil de manter | Tenta colocar toda lógica em um único script                 | Divida em funções menores ou use Script Includes (Semana 3) para lógica complexa                             |
-| Não limpar mensagens antigas                  | Mensagens ficam acumulando no formulário                     | Use `g_form.hideFieldMsg('campo')` antes de mostrar uma nova mensagem para o mesmo campo                     |
+| Erro                                          | Por que acontece                                             | Correção                                                                                     |
+| :-------------------------------------------- | :----------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
+| Usar `alert()` em produção                    | Desenvolvedor usa alerta para testar e esquece de remover    | Use `g_form.addInfoMessage()` ou `g_form.showFieldMsg()` para feedback ao usuário final      |
+| Esquecer de verificar `isLoading` no onChange | O script executa enquanto o formulário ainda está carregando | Sempre inicie o onChange com `if (isLoading \|\| isTemplate) return;`                        |
+| Usar Client Script para lógica de segurança   | Desenvolvedor não conhece ACLs ou quer "facilitar"           | Validação de segurança (quem pode ver/editar) vai no servidor via ACL, não no cliente        |
+| Não testar com diferentes perfis de usuário   | Desenvolvedor testa apenas como admin                        | Use `Impersonate User` para testar como outros perfis                                        |
+| Confundir `setValue` com `setDisplayValue`    | Não conhece a diferença entre valor técnico e label          | Para campos Choice: `getValue()` retorna código (ex: "1"), `getDisplayValue()` retorna texto |
+| Client Script muito longo                     | Tenta colocar toda lógica em um único script                 | Divida em funções menores ou use Script Includes                                             |
+| Não limpar mensagens antigas                  | Mensagens ficam acumulando no formulário                     | Use `g_form.hideFieldMsg('campo')` antes de mostrar uma nova mensagem                        |
 
 ---
 
@@ -351,7 +351,7 @@ Esta é uma das perguntas mais frequentes em entrevistas para desenvolvedor Serv
 
 ---
 
-## 📝 Minhas anotações pessoais
+## Minhas anotações pessoais
 
 _[preencher após a prática]_
 
@@ -364,7 +364,7 @@ _[preencher após a prática]_
 
 ---
 
-## 🃏 Flashcards do Dia 1
+## Flashcards do Dia 1
 
 [FLASHCARD_START]
 Pergunta: O que é um Client Script no ServiceNow?
@@ -415,7 +415,7 @@ Resposta: O script pode executar durante o carregamento do formulário, causando
 
 ---
 
-## 🛠 Prática do Dia 1
+## Prática do Dia 1
 
 ### Atividade 1 (obrigatória)
 
