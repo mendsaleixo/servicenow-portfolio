@@ -19,7 +19,7 @@ Pense no Client Script como o "comportamento inteligente" do formulário. Ele pe
 - Mostrar, esconder ou alterar características de campos
 - Buscar dados de forma assíncrona (sem recarregar a página)
 
-**Diferença fundamental que você deve guardar:** Client Script roda no computador do usuário (navegador). Business Rule (que você verá na Semana 3) roda no servidor. Essa distinção é uma das perguntas mais frequentes em entrevistas para desenvolvedor ServiceNow.
+**Diferença fundamental que você deve guardar:** Client Script roda no computador do usuário (navegador). Business Rule (que será visto na Semana 3) roda no servidor. Essa distinção é uma das perguntas mais frequentes em entrevistas para desenvolvedor ServiceNow.
 
 Client Scripts são sobre **experiência do usuário e validação rápida**. Eles tornam o formulário mais inteligente e responsivo, mas NUNCA devem ser usados para lógica de segurança ou regras críticas de negócio (isso é papel do servidor).
 
@@ -353,7 +353,7 @@ Esta é uma das perguntas mais frequentes em entrevistas para desenvolvedor Serv
 
 ## 📝 Minhas anotações pessoais
 
-_[Você preenche após a prática]_
+_[preencher após a prática]_
 
 - Hoje aprendi que existem 4 tipos de Client Script: onLoad, onChange, onSubmit e onCellEdit
 - O mais importante para mim agora é onLoad (preparar formulário) e onChange (reagir a mudanças)
