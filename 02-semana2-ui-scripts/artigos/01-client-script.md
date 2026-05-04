@@ -11,7 +11,7 @@
 
 Um Client Script é um trecho de código JavaScript que roda no **navegador do usuário** (lado do cliente), não no servidor. Ele é executado em momentos específicos da interação com um formulário: quando a página carrega, quando um campo é alterado, quando o usuário tenta enviar o formulário ou quando uma célula em uma lista é editada.
 
-Pense no Client Script como o "comportamento inteligente" do formulário. Ele permite que você:
+Pense no Client Script como o "comportamento inteligente" do formulário. Ele permite a você:
 
 - Mostrar mensagens de alerta ou informação
 - Validar dados antes do envio ao servidor
@@ -19,7 +19,7 @@ Pense no Client Script como o "comportamento inteligente" do formulário. Ele pe
 - Mostrar, esconder ou alterar características de campos
 - Buscar dados de forma assíncrona (sem recarregar a página)
 
-**Diferença fundamental que você deve guardar:** Client Script roda no computador do usuário (navegador). Business Rule (que será visto na Semana 3) roda no servidor. Essa distinção é uma das perguntas mais frequentes em entrevistas para desenvolvedor ServiceNow.
+**Diferença fundamental que você deve guardar:** Client Script roda no computador do usuário (navegador). Business Rule (que será visto na Semana 3) roda no servidor.
 
 Client Scripts são sobre **experiência do usuário e validação rápida**. Eles tornam o formulário mais inteligente e responsivo, mas NUNCA devem ser usados para lógica de segurança ou regras críticas de negócio (isso é papel do servidor).
 
@@ -345,9 +345,9 @@ Esta é uma das perguntas mais frequentes em entrevistas para desenvolvedor Serv
 ## 🔗 Links úteis
 
 - [Documentação oficial - Client Scripts (ServiceNow)](https://docs.servicenow.com/bundle/tokyo-servicenow-platform/page/configure/client-scripts/concept/c_ClientScripts.html)
-- [Referência da API g_form (Client Side)](https://developer.servicenow.com/dev.do#!/reference/api/tokyo/client/c_ClientSideAPI)
-- [Referência da API g_user (Client Side)](https://developer.servicenow.com/dev.do#!/reference/api/tokyo/client/g_user_ClientSideAPI)
-- [Boas práticas de desenvolvimento em Client Scripts](https://www.servicenow.com/community/developer-blog/best-practices-for-client-scripts/ba-p/2301234)
+- [Referência da API g_form (Client Side)](https://www.servicenow.com/docs/r/api-reference/c_GlideFormAPI.html)
+- [Referência da API g_user (Client Side)](https://www.servicenow.com/docs/r/api-reference/c_GlideUserAPI.html)
+- [Boas práticas de desenvolvimento em Client Scripts](https://www.servicenow.com/community/community-central-forum/complete-guide-to-client-scripts-in-servicenow-beginner-advanced/m-p/3509244)
 
 ---
 
@@ -430,7 +430,7 @@ Criar um Client Script do tipo onLoad que exibe uma mensagem de boas-vindas pers
    - **Table:** `Incident [incident]`
    - **Name:** `Saudacao personalizada e preenchimento automatico`
    - **Type:** `onLoad`
-5. No campo `Script`, cole o código do Exemplo 1 deste artigo
+5. No campo `Script`, siga o código do Exemplo 1 deste artigo
 6. Clique em `Submit`
 7. Teste: abra um incidente existente ou crie um novo. Você deve ver a saudação e o campo "Solicitante" preenchido automaticamente
 
@@ -452,21 +452,20 @@ Use o código do Exemplo 2 como base, adaptando para seus campos personalizados 
 
 Salve tudo em `entregaveis/prints/` com nomes claros:
 
-- `client-script-onload-codigo.png`
+- `client-script-onload-codigo.png`()
 - `client-script-onload-funcionando.png`
-- `client-script-onchange-codigo.png` (se fizer o desafio)
-- `client-script-onchange-funcionando.png` (se fizer o desafio)
+- `client-script-onchange-codigo.png`
+- `client-script-onchange-funcionando.png`
 
 ---
 
 ## Checklist do Dia 1
 
-- [ ] Li e compreendi o artigo sobre Client Scripts
-- [ ] Adicionei os flashcards ao Anki e revisei
-- [ ] Criei o Client Script onLoad no PDI
-- [ ] Testei o script e vi a saudação aparecendo
-- [ ] (Desafio) Criei o Client Script onChange no PDI
-- [ ] (Desafio) Testei o script com diferentes prioridades
-- [ ] Tirei os prints dos códigos
-- [ ] Tirei os prints dos formulários funcionando
-- [ ] Organizei os prints na pasta `entregaveis/prints/`
+- [ X ] Li e compreendi o artigo sobre Client Scripts
+- [ X ] Criei o Client Script onLoad no PDI
+- [ X ] Testei o script e vi a saudação aparecendo
+- [ x ] (Desafio) Criei o Client Script onChange no PDI
+- [ x ] (Desafio) Testei o script com diferentes prioridades
+- [ x ] Tirei os prints dos códigos
+- [ x ] Tirei os prints dos formulários funcionando
+- [ x ] Organizei os prints na pasta `entregaveis/prints/`
