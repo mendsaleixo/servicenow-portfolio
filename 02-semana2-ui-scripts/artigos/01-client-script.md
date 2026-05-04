@@ -353,8 +353,6 @@ Esta é uma das perguntas mais frequentes em entrevistas para desenvolvedor Serv
 
 ## Minhas anotações pessoais
 
-_[preencher após a prática]_
-
 - Hoje aprendi que existem 4 tipos de Client Script: onLoad, onChange, onSubmit e onCellEdit
 - O mais importante para mim agora é onLoad (preparar formulário) e onChange (reagir a mudanças)
 - `onSubmit` com `return false` é o que impede o salvamento – essencial para validações
@@ -452,10 +450,14 @@ Use o código do Exemplo 2 como base, adaptando para seus campos personalizados 
 
 Salve tudo em `entregaveis/prints/` com nomes claros:
 
-- `client-script-onload-codigo.png`()
+- `client-script-onload-codigo.png`
+  ![`client-script-onload-codigo.png`](/02-semana2-ui-scripts/entregaveis/prints/client-script-onload-codigo.png)
 - `client-script-onload-funcionando.png`
+  ![- `client-script-onload-funcionando.png`](/02-semana2-ui-scripts/entregaveis/prints/client-script-onload-funcionando.png)
 - `client-script-onchange-codigo.png`
+  ![- `client-script-onchange-codigo.png`](/02-semana2-ui-scripts/entregaveis/prints/client-script-onchange-codigo.png)
 - `client-script-onchange-funcionando.png`
+  ![- `client-script-onchange-funcionando.png`](/02-semana2-ui-scripts/entregaveis/prints/client-script-onchange-funcionando.png)
 
 ---
 
