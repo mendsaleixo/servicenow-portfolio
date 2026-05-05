@@ -345,23 +345,27 @@ Use `g_user.hasRole('itil')` e `g_form.setVisible()`.
 
 ### Entregável do dia
 
-| Entregável                                        | Arquivo                                                           |
-| ------------------------------------------------- | ----------------------------------------------------------------- |
-| Print do código do Client Script onChange         | `entregaveis/prints/client-script-onchange-codigo.png`            |
-| Print do formulário mostrando a mensagem de aviso | `entregaveis/prints/client-script-onchange-funcionando.png`       |
-| (Desafio) Print do código do Client Script onLoad | `entregaveis/prints/client-script-onload-desafio-codigo.png`      |
-| (Desafio) Print do formulário com campo escondido | `entregaveis/prints/client-script-onload-desafio-funcionando.png` |
+Salve tudo em `entregaveis/prints/` com nomes claros:
+
+- `client-script-onload-codigo.png`
+  ![`client-script-onload-codigo.png`](/02-semana2-ui-scripts/entregaveis/prints/05-client-script-onload-codigo.png)
+- `client-script-onload-funcionando.png`
+  ![- `client-script-onload-funcionando.png`](/02-semana2-ui-scripts/entregaveis/prints/06-client-script-onload-funcionando.png)
+- `client-script-onload-desafio-codigo.png`
+  ![- `client-script-onchange-codigo.png`](/02-semana2-ui-scripts/entregaveis/prints/07-client-script-onload-desafio-codigo.png)
+- `client-script-onload-desafio-funcionando.png`
+  ![- `client-script-onchange-funcionando.png`](/02-semana2-ui-scripts/entregaveis/prints/08-client-script-onload-desafio-funcionando.png)
 
 ---
 
 ## Checklist do Dia 2
 
-- [ ] Li e compreendi o artigo sobre g_form e g_user
-- [ ] Adicionei os flashcards ao Anki e revisei
-- [ ] Criei o Client Script onChange no PDI
-- [ ] Testei o script com diferentes prioridades
-- [ ] (Desafio) Criei o Client Script onLoad com verificação de papel
-- [ ] (Desafio) Testei o script com diferentes perfis de usuário
-- [ ] Tirei os prints dos códigos
-- [ ] Tirei os prints dos formulários funcionando
-- [ ] Organizei os prints na pasta `entregaveis/prints/`
+- [ x ] Li e compreendi o artigo sobre g_form e g_user
+- [ x ] Adicionei os flashcards ao Anki e revisei
+- [ x ] Criei o Client Script onChange no PDI
+- [ x ] Testei o script com diferentes prioridades
+- [ x ] (Desafio) Criei o Client Script onLoad com verificação de papel
+- [ x ] (Desafio) Testei o script com diferentes perfis de usuário
+- [ x ] Tirei os prints dos códigos
+- [ x ] Tirei os prints dos formulários funcionando
+- [ x ] Organizei os prints na pasta `entregaveis/prints/`

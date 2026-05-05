@@ -451,13 +451,13 @@ Use o código do Exemplo 2 como base, adaptando para seus campos personalizados 
 Salve tudo em `entregaveis/prints/` com nomes claros:
 
 - `client-script-onload-codigo.png`
-  ![`client-script-onload-codigo.png`](/02-semana2-ui-scripts/entregaveis/prints/client-script-onload-codigo.png)
+  ![`client-script-onload-codigo.png`](/02-semana2-ui-scripts/entregaveis/prints/01-client-script-onchange-codigo.png)
 - `client-script-onload-funcionando.png`
-  ![- `client-script-onload-funcionando.png`](/02-semana2-ui-scripts/entregaveis/prints/client-script-onload-funcionando.png)
+  ![- `client-script-onload-funcionando.png`](/02-semana2-ui-scripts/entregaveis/prints/02-client-script-onchange-funcionando.png)
 - `client-script-onchange-codigo.png`
-  ![- `client-script-onchange-codigo.png`](/02-semana2-ui-scripts/entregaveis/prints/client-script-onchange-codigo.png)
+  ![- `client-script-onchange-codigo.png`](/02-semana2-ui-scripts/entregaveis/prints/03-client-script-onload-codigo.png)
 - `client-script-onchange-funcionando.png`
-  ![- `client-script-onchange-funcionando.png`](/02-semana2-ui-scripts/entregaveis/prints/client-script-onchange-funcionando.png)
+  ![- `client-script-onchange-funcionando.png`](/02-semana2-ui-scripts/entregaveis/prints/04-client-script-onload-funcionando.png)
 
 ---
 
