@@ -1,8 +1,8 @@
 # JavaScript para ServiceNow: g_form, g_user e alertas
 
-**Data:** 05/05/2026
-**Semana:** 2 (UI Scripts)
-**Fonte:** SNAF Módulo 4 + Documentação Oficial + Prática própria
+**Data:** 05/05/2026\
+**Semana:** 2 (UI Scripts)\
+**Fonte:** SNAF Módulo 4 + Documentação Oficial + Prática própria\
 **Tópico relacionado:** Client Scripts, Validação de Campos, UX na Plataforma
 
 ---
@@ -266,14 +266,16 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 
 ## Minhas anotações pessoais
 
-_[preenche após a prática]_
-
 - Hoje aprendi que `g_form` é o controle remoto do formulário
 - `g_form.getValue()` e `g_form.getDisplayValue()` são diferentes para campos Choice
 - `g_user.hasRole()` é útil para personalizar a interface por perfil
 - Para produção, nunca usar `alert()` – sempre usar `g_form.addInfoMessage()` ou `showFieldMsg()`
 - `isLoading` é obrigatório no onChange para evitar execução durante carregamento do formulário
 - Campos Reference exigem `g_form.getReference()` para acessar propriedades do objeto relacionado
+- O terceiro parâmetro do `showFieldMsg` diz o tipo de aviso que estamos dando, Exemplo:\
+  -- `g_form.showFieldMsg('short_description', 'Atenção aqui!', 'info');` // Mensagem Azul\
+  -- `g_form.showFieldMsg('short_description', 'Atenção aqui!', 'warning');` // Mensagem Amarela\
+  -- `g_form.showFieldMsg('short_description', 'Atenção aqui!', 'error');` // Mensagem Vermelha
 
 ---
 
@@ -319,8 +321,8 @@ Resposta: g_form.getReference('caller_id', function(record) { ... }); O callback
 
 Criar um Client Script do tipo onLoad que:
 
-1. Verifica se o campo "Short Description" (Descrição Curta) está vazio
-2. Se estiver vazio, exibe uma mensagem de aviso em amarelo (warning) abaixo do campo
+1. Verifica se o campo work_notes (Notas de Trabalho) está vazio
+2. Se estiver vazio, exibe uma mensagem de aviso em amarelo (warning) abaixo do campo sugerindo que o atendente documente suas ações
 3. Se estiver preenchido, limpa a mensagem
 4. Também exibe uma mensagem informativa no topo com o nome do usuário logado e a data/hora atual
 
