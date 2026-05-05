@@ -321,8 +321,8 @@ Resposta: g_form.getReference('caller_id', function(record) { ... }); O callback
 
 Criar um Client Script do tipo onLoad que:
 
-1. Verifica se o campo work_notes (Notas de Trabalho) está vazio
-2. Se estiver vazio, exibe uma mensagem de aviso em amarelo (warning) abaixo do campo sugerindo que o atendente documente suas ações
+1. Verifica se o campo `u_setor_afetado` (Setor Afetado) está vazio
+2. Se estiver vazio, exibe uma mensagem de aviso em amarelo (warning) abaixo do campo
 3. Se estiver preenchido, limpa a mensagem
 4. Também exibe uma mensagem informativa no topo com o nome do usuário logado e a data/hora atual
 
