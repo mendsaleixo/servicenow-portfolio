@@ -85,7 +85,7 @@ Cada conceito estudado foi documentado em um artigo próprio na pasta `artigos/`
 
 ## Dificuldades encontradas
 
-- Campo não aparecia → resolvido via Form Layout
+- isLoading com onLoading → não executa o script
 - onChange não disparava → campo precisava estar visível
 - isLoading esquecido → execução duplicada
 - Conflito UI Policy vs Script → separação de responsabilidades
@@ -139,18 +139,6 @@ Use UI Policy para regras simples e Client Script para lógica complexa.
 
 - Uso de `g_form.getReference()`
 - Diferença prática entre `setValue` e `setDisplayValue`
-
----
-
-## Próximos passos
-
-Semana 3:
-
-- Business Rules
-- Script Includes
-- GlideRecord
-
-Foco: backend (server-side)
 
 ---
 
