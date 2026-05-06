@@ -1,7 +1,9 @@
 <<<<<<< HEAD
+
 # servicenow-portfolio
-Meu portfólio de estudos em ServiceNow - Documentação, projetos e aprendizados
-=======
+
+# Meu portfólio de estudos em ServiceNow - Documentação, projetos e aprendizados
+
 # ServiceNow Portfolio - Mendelson Aleixo
 
 **Objetivo:** Transição para Desenvolvedor ServiceNow
@@ -25,14 +27,15 @@ Este repositório documenta minha jornada de aprendizado na plataforma ServiceNo
 
 ## Minhas Qualificações
 
-| Área | Tecnologias |
-|------|-------------|
-| **ServiceNow** | Incident Management, Client Scripts, Business Rules, UI Policies, Update Sets, GlideRecord (em estudo), Flow Designer (em estudo) |
-| **Frontend** | React.js, Next.js, JavaScript, Angular, HTML5, CSS3 |
-| **Backend** | APIs RESTful, Prisma ORM, PostgreSQL, MySQL |
-| **Ferramentas** | Git, GitHub, Jest, Vitest, Metodologias Ágeis |
+| Área            | Tecnologias                                                                                                                       |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **ServiceNow**  | Incident Management, Client Scripts, Business Rules, UI Policies, Update Sets, GlideRecord (em estudo), Flow Designer (em estudo) |
+| **Frontend**    | React.js, Next.js, JavaScript, Angular, HTML5, CSS3                                                                               |
+| **Backend**     | APIs RESTful, Prisma ORM, PostgreSQL, MySQL                                                                                       |
+| **Ferramentas** | Git, GitHub, Jest, Vitest, Metodologias Ágeis                                                                                     |
 
 **Formação em ServiceNow:**
+
 - Scripting in ServiceNow Fundamentals (ServiceNow)
 - Welcome to ServiceNow (Micro-certificação)
 - Bootcamp Virada ServiceNow (4MATT)
@@ -42,29 +45,29 @@ Este repositório documenta minha jornada de aprendizado na plataforma ServiceNo
 ---
 
 ## Estrutura do Portfólio
-servicenow-portfolio/
-├── README.md # Este arquivo
-├── 01-semana1-fundamentos/ # Concluído
-├── 02-semana2-ui-scripts/ # Em andamento
-├── 03-semana3-server-scripts/ # Planejado
-├── 04-semana4-dados-seguranca/ # Planejado
-├── 05-semana5-automacao/ # Planejado
-├── 06-semana6-integracao/ # Planejado
-└── projetos-completos/ # Projetos finais
 
+servicenow-portfolio/\
+├── README.md # Este arquivo\
+├── 01-semana1-fundamentos/ # Concluído\
+├── 02-semana2-ui-scripts/ # Em andamento\
+├── 03-semana3-server-scripts/ # Planejado\
+├── 04-semana4-dados-seguranca/ # Planejado\
+├── 05-semana5-automacao/ # Planejado\
+├── 06-semana6-integracao/ # Planejado\
+└── projetos-completos/ # Projetos finais
 
 ---
 
 ## Progresso Geral
 
-| Semana | Tema | Status | Entregáveis |
-|--------|------|--------|-------------|
-| 01 | Fundamentos + Incidentes | ✅ Concluído | [Ver README](01-semana1-fundamentos/README-semana1.md) |
-| 02 | UI Scripts (Client Scripts) | 🔄 Em andamento | - |
-| 03 | Server Scripts (BR + GlideRecord) | 📅 Planejado | - |
-| 04 | Dados + Segurança | 📅 Planejado | - |
-| 05 | Automação + Catálogo | 📅 Planejado | - |
-| 06 | Integração + Portfólio Final | 📅 Planejado | - |
+| Semana | Tema                              | Status          | Entregáveis                                            |
+| ------ | --------------------------------- | --------------- | ------------------------------------------------------ |
+| 01     | Fundamentos + Incidentes          | ✅ Concluído    | [Ver README](01-semana1-fundamentos/README-semana1.md) |
+| 02     | UI Scripts (Client Scripts)       | 🔄 Em andamento | -                                                      |
+| 03     | Server Scripts (BR + GlideRecord) | 📅 Planejado    | -                                                      |
+| 04     | Dados + Segurança                 | 📅 Planejado    | -                                                      |
+| 05     | Automação + Catálogo              | 📅 Planejado    | -                                                      |
+| 06     | Integração + Portfólio Final      | 📅 Planejado    | -                                                      |
 
 ---
 
@@ -95,7 +98,3 @@ Após a primeira semana de estudos, sou capaz de:
 Este portfólio está em constante evolução. Conforme avanço nos estudos, novos projetos e entregáveis serão adicionados. Feedbacks e sugestões são bem-vindos.
 
 ---
-
-*Última atualização: Abril 2026*
-
->>>>>>> feat: adiciona estrutura inicial do portfolio e conteudo da Semana 1
