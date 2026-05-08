@@ -503,16 +503,16 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 
 ### Checklist do Dia 3
 
-- [ ] Li e compreendi o artigo sobre onChange
-- [ ] Adicionei os flashcards ao Anki e revisei
-- [ ] Criei o Client Script onChange da Atividade 1 no PDI
-- [ ] Testei o script com prioridade Crítica, Alta e outras
-- [ ] (Desafio) Criei os campos `u_sistema_afetado` e `u_processo_rh` na tabela Incident
-- [ ] (Desafio) Criei o Client Script onChange da Atividade 2
-- [ ] (Desafio) Testei o script com setor TI e setor RH
-- [ ] Tirei os prints dos códigos
-- [ ] Tirei os prints dos formulários funcionando
-- [ ] Organizei os prints na pasta `entregaveis/prints/`
+- [x] Li e compreendi o artigo sobre onChange
+- [x] Adicionei os flashcards ao Anki e revisei
+- [x] Criei o Client Script onChange da Atividade 1 no PDI
+- [x] Testei o script com prioridade Crítica, Alta e outras
+- [x] (Desafio) Criei os campos `u_sistema_afetado` e `u_processo_rh` na tabela Incident
+- [x] (Desafio) Criei o Client Script onChange da Atividade 2
+- [x] (Desafio) Testei o script com setor TI e setor RH
+- [x] Tirei os prints dos códigos
+- [x] Tirei os prints dos formulários funcionando
+- [x] Organizei os prints na pasta `entregaveis/prints/`
 
 ---
 
