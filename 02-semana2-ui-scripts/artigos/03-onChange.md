@@ -405,38 +405,6 @@ Criar um Client Script do tipo **onChange** no campo `priority` (Prioridade) que
 2. Se a prioridade for alterada para **Alta** (valor técnico = `2`), exibe uma mensagem informativa em azul (info) abaixo do campo `u_impacto_negocio`
 3. Se a prioridade for alterada para qualquer outro valor, limpa a mensagem
 
-**Código base (pronto para copiar):**
-
-```javascript
-function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-  if (isLoading || isTemplate) {
-    return;
-  }
-
-  // Evita loop infinito
-  if (oldValue == newValue) {
-    return;
-  }
-
-  // Limpa mensagem anterior
-  g_form.hideFieldMsg("u_impacto_negocio");
-
-  if (newValue == "1") {
-    g_form.showFieldMsg(
-      "u_impacto_negocio",
-      "Atenção: Incidentes críticos exigem o preenchimento do Impacto no Negócio.",
-      "warning",
-    );
-  } else if (newValue == "2") {
-    g_form.showFieldMsg(
-      "u_impacto_negocio",
-      "Informe o impacto no negócio para priorizar corretamente.",
-      "info",
-    );
-  }
-}
-```
-
 ---
 
 ### Atividade 2 (desafio)
@@ -448,43 +416,6 @@ Criar um Client Script do tipo **onChange** no campo `u_setor_afetado` (Setor Af
 3. Para qualquer outro setor (ou se o campo for limpo), esconde ambos os campos e remove obrigatoriedade
 
 **Nota:** Os campos `u_sistema_afetado` e `u_processo_rh` você pode criar como campos do tipo String (String) na tabela Incident, usando o prefixo `u_`.
-
-**Código base (prático para copiar e adaptar):**
-
-```javascript
-function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-  if (isLoading || isTemplate) {
-    return;
-  }
-
-  // Esconde e remove obrigatoriedade de ambos os campos
-  g_form.setVisible("u_sistema_afetado", false);
-  g_form.setVisible("u_processo_rh", false);
-  g_form.setMandatory("u_sistema_afetado", false);
-  g_form.setMandatory("u_processo_rh", false);
-
-  // Obtém o label do setor selecionado
-  var setorLabel = g_form.getDisplayValue("u_setor_afetado");
-
-  if (setorLabel == "TI") {
-    g_form.setVisible("u_sistema_afetado", true);
-    g_form.setMandatory("u_sistema_afetado", true);
-    g_form.showFieldMsg(
-      "u_sistema_afetado",
-      "Selecione o sistema afetado.",
-      "info",
-    );
-  } else if (setorLabel == "RH") {
-    g_form.setVisible("u_processo_rh", true);
-    g_form.setMandatory("u_processo_rh", true);
-    g_form.showFieldMsg(
-      "u_processo_rh",
-      "Selecione o processo de RH afetado.",
-      "info",
-    );
-  }
-}
-```
 
 ---
 
