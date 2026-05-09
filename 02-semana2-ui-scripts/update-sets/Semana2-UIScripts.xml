@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-05-09 18:21:22">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Captura de Client Scripts e UI Policies desenvolvidos durante a Semana 2 - Foco em Client-side API (g_form, g_user)</description>
+<inserted/>
+<name>ESTUDO-S02-Mendelson-UIScripts</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date>2026-05-04 19:13:06</release_date>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>16e1a51783208790d19e5630ceaad342</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>99560f74833483d0d19e5630ceaad355</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="">9ddd391083bc4f90d19e5630ceaad375</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_incident_u_sistema_afetado_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_sistema_afetado" label="Sistema Afetado" language="en" table="incident"><sys_documentation action="INSERT_OR_UPDATE"><element>u_sistema_afetado</element><help/><hint/><label>Sistema Afetado</label><language>en</language><name>incident</name><plural>Sistema Afetados</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 17:57:44</sys_created_on><sys_id>6157bd60833ccf90d19e5630ceaad389</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Sistema Afetado</sys_name><sys_package display_value="">9ddd391083bc4f90d19e5630ceaad375</sys_package><sys_policy/><sys_scope display_value="">9ddd391083bc4f90d19e5630ceaad375</sys_scope><sys_update_name>sys_documentation_incident_u_sistema_afetado_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 17:57:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1772236288</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>11560f74833483d0d19e5630ceaad358</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e08bd007d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Sistema Afetado</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>6157bd60ec3ccf90524ebf77ff3ea39a</update_guid>
+<update_guid_history>6157bd60ec3ccf90524ebf77ff3ea39a:1772236288</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="">9ddd391083bc4f90d19e5630ceaad375</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_30824228837ccf90d19e5630ceaad3c6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Oculta campos sistemas e setor de RH afe&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    // Esconde campos e remove obrigatoriedade no carregamento
+    g_form.setVisible('u_sistema_afetado', false);
+    g_form.setVisible('u_processo_rh', false);
+    g_form.setMandatory('u_sistema_afetado', false);
+    g_form.setMandatory('u_processo_rh', false);
+
+    // Limpa valores e mensagens
+    g_form.clearValue('u_sistema_afetado');
+    g_form.clearValue('u_processo_rh');
+    g_form.hideFieldMsg('u_sistema_afetado');
+    g_form.hideFieldMsg('u_processo_rh');
+
+    // Se já houver um setor selecionado (edição de incidente existente)
+    var setorLabel = g_form.getDisplayValue('u_setor_afetado');
+    if (setorLabel == 'TI') {
+        g_form.setVisible('u_sistema_afetado', true);
+        g_form.setMandatory('u_sistema_afetado', true);
+    } else if (setorLabel == 'RH') {
+        g_form.setVisible('u_processo_rh', true);
+        g_form.setMandatory('u_processo_rh', true);
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-08 18:47:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;30824228837ccf90d19e5630ceaad3c6&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Oculta campos sistemas e setor de RH afe&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_30824228837ccf90d19e5630ceaad3c6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-09 13:21:27&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>446765370</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>15560f74833483d0d19e5630ceaad359</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e0ce66aa10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Oculta campos sistemas e setor de RH afe</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>14b10a30933c43d0b8056b29faba69d4</update_guid>
+<update_guid_history>14b10a30933c43d0b8056b29faba69d4:446765370,47a2c660b57ccf9035a28dd33ca64998:1377264685</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="">9ddd391083bc4f90d19e5630ceaad375</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_ac558e34833c43d0d19e5630ceaad3bc</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;O campo `short_description` (Descrição Curta) não pode estar vazio&amp;#13;
+O campo `short_description` deve ter pelo menos 10 caracteres&amp;#13;
+Se a prioridade for **Crítica** (valor técnico `1`), o campo `u_impacto_negocio` (Impacto no Negócio) é obrigatório&lt;/description&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Validação description&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+    var erros = [];
+
+    // Valida Descrição Curta
+    var descricao = g_form.getValue('short_description');
+    if (descricao == '') {
+        erros.push('A descrição curta é obrigatória.');
+        g_form.showFieldMsg('short_description', 'Campo obrigatório', 'error');
+    } else if (descricao.length &lt; 10) {
+        erros.push('A descrição curta deve ter pelo menos 10 caracteres.');
+        g_form.showFieldMsg('short_description', 'Mínimo de 10 caracteres', 'error');
+    }
+
+    // Valida Impacto no Negócio se prioridade for Crítica
+    var prioridade = g_form.getValue('priority');
+    if (prioridade == '1') {
+        var impacto = g_form.getValue('u_impacto_negocio');
+        if (impacto == '') {
+            erros.push('Para incidentes críticos, o campo "Impacto no Negócio" é obrigatório.');
+            g_form.showFieldMsg('u_impacto_negocio', 'Obrigatório para incidentes críticos', 'error');
+        }
+    }
+
+    if (erros.length &gt; 0) {
+        g_form.addErrorMessage('Por favor, corrija os seguintes erros:\n\n - ' + erros.join('\n - '));
+        return false;
+    }
+
+    g_form.addInfoMessage('Incidente validado com sucesso! Salvando...');
+    return true;
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-09 13:39:00&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ac558e34833c43d0d19e5630ceaad3bc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Validação description&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_ac558e34833c43d0d19e5630ceaad3bc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-09 13:39:00&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-636901180</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>19560f74833483d0d19e5630ceaad35a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e0cf67c7a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Validação description</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>15b50638803c43d0060793181b318bb3</update_guid>
+<update_guid_history>15b50638803c43d0060793181b318bb3:-636901180</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_bf1d96e3c0a801640190725e63f8ac80</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="bf1d96e3c0a801640190725e63f8ac80" sys_domain="global" table="incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>e80875e0833ccf90d19e5630ceaad3f0</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>caller_id</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>a40875e0833ccf90d19e5630ceaad3f1</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>category</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>600875e0833ccf90d19e5630ceaad3f2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>subcategory</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>2c0875e0833ccf90d19e5630ceaad3f2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>business_service</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>e40875e0833ccf90d19e5630ceaad3f3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>service_offering</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>a00875e0833ccf90d19e5630ceaad3f4</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cmdb_ci</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>6c0875e0833ccf90d19e5630ceaad3f4</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>universal_request</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>280875e0833ccf90d19e5630ceaad3f5</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>route_reason</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>e00875e0833ccf90d19e5630ceaad3f6</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_setor_afetado</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>ac0875e0833ccf90d19e5630ceaad3f6</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_sistema_afetado</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>680875e0833ccf90d19e5630ceaad3f7</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_processo_rh</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>240875e0833ccf90d19e5630ceaad3f8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_impacto_negocio</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>ec0875e0833ccf90d19e5630ceaad3f8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>13</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>a80875e0833ccf90d19e5630ceaad3f9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>contact_type</element><position>14</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>640875e0833ccf90d19e5630ceaad3fa</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>15</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>200875e0833ccf90d19e5630ceaad3fb</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>hold_reason</element><position>16</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>e80875e0833ccf90d19e5630ceaad3fb</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>impact</element><position>17</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>a40875e0833ccf90d19e5630ceaad3fc</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>urgency</element><position>18</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>600875e0833ccf90d19e5630ceaad3fd</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>priority</element><position>19</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>2c0875e0833ccf90d19e5630ceaad3fd</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assignment_group</element><position>20</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>e40875e0833ccf90d19e5630ceaad3fe</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>21</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>a00875e0833ccf90d19e5630ceaad3ff</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>22</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>6c0875e0833ccf90d19e5630ceaad3ff</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>23</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>2808b5e0833ccf90d19e5630ceaad300</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>description</element><position>24</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>e008b5e0833ccf90d19e5630ceaad301</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cxs_table_search.xml</element><position>25</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 18:00:40</sys_created_on><sys_id>ac08b5e0833ccf90d19e5630ceaad301</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter display_value="Contextual Search Results">11eb1622eb1121003623666cd206fe56</sys_ui_formatter><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 18:00:40</sys_updated_on><sys_user/><type>formatter</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>fred.luddy</sys_created_by><sys_created_on>2004-07-14 19:25:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>bf1d96e3c0a801640190725e63f8ac80</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_overrides/><sys_package display_value="Incident Updates" source="com.snc.incident.updates">9f4f1820f58803100a22c0b3dfa15173</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_bf1d96e3c0a801640190725e63f8ac80</sys_update_name><sys_updated_by>system_bootstrap</sys_updated_by><sys_updated_on>2004-12-13 18:05:34</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-111664540</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>1d560f74833483d0d19e5630ceaad35b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e08bfb0010000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>ac08b5e0473ccf90b4ad0f66dd061b07</update_guid>
+<update_guid_history>ac08b5e0473ccf90b4ad0f66dd061b07:-111664540,d097b5a0893ccf90fee6b56c5b9ffa54:1807243960,e557bd603b3ccf903da9ab1742605b86:-1686064503,229d2d10b120cf109d3b3d88290e3316:-1093652929,d50aa91881ec8f1058a94c43da6c4747:2084178693,6277e5d05aec8f10ab4d1ed07a20430d:1418717875</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="">9ddd391083bc4f90d19e5630ceaad375</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_9ddd391083bc4f90d19e5630ceaad375</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="DELETE"><active>true</active><can_edit_in_studio>true</can_edit_in_studio><enforce_license>none</enforce_license><guided_setup_guid/><hide_on_ui>false</hide_on_ui><ide_created>AES</ide_created><installed_as_dependency>false</installed_as_dependency><js_level>es_latest</js_level><licensable>true</licensable><license/><license_category>none</license_category><license_definition/><license_model>none</license_model><logo/><menu/><name>Gestao de salas de Reuniao</name><package_json/><package_resolver_version>1.0.0</package_resolver_version><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking>permissive</runtime_access_tracking><scope>x_1915295_gestao_0</scope><scoped_administration>false</scoped_administration><short_description/><source>x_1915295_gestao_0</source><store_correlation_id/><store_url/><subscription_entitlement/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-07 23:47:38</sys_created_on><sys_id>9ddd391083bc4f90d19e5630ceaad375</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-07 23:47:38</sys_updated_on><template/><trackable>true</trackable><uninstall_blocked>false</uninstall_blocked><user_role/><vendor/><vendor_prefix/><version>1.0.0</version></sys_app><sys_translated_text action="delete_multiple" query="documentkey=9ddd391083bc4f90d19e5630ceaad375"/></record_update>]]></payload>
+<payload_hash>220141497</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>51560f74833483d0d19e5630ceaad356</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e08ba77e20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table/>
+<target_name>Gestao de salas de Reuniao</target_name>
+<type>Custom Application</type>
+<update_domain>global</update_domain>
+<update_guid>05b679200e3ccf9058601fc07b008e00</update_guid>
+<update_guid_history>05b679200e3ccf9058601fc07b008e00:220141497,91dd3910f3bc4f90adb00e7627cfca91:-906559803</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="">9ddd391083bc4f90d19e5630ceaad375</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_incident_u_processo_rh</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_processo_rh" table="incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Processo RH Afetado&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_processo_rh&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;100&lt;/max_length&gt;&lt;name&gt;incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-08 17:58:44&lt;/sys_created_on&gt;&lt;sys_id&gt;3e57fd60833ccf90d19e5630ceaad37c&lt;/sys_id&gt;&lt;sys_name&gt;Processo RH Afetado&lt;/sys_name&gt;&lt;sys_package display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_incident_u_processo_rh&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-08 17:58:44&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>605760056</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>51560f74833483d0d19e5630ceaad357</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e08bdecdb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Processo RH Afetado</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>2c97b5a0a33ccf90cdb663203314d062</update_guid>
+<update_guid_history>2c97b5a0a33ccf90cdb663203314d062:605760056</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_02e396af83240b90d19e5630ceaad356</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Verifica se o campo u_setor_afetado (Setor Afetado) está vazio&amp;#13;
+Se estiver vazio, exibe uma mensagem de aviso em amarelo (warning) abaixo do campo&amp;#13;
+Se estiver preenchido, limpa a mensagem&amp;#13;
+Também exibe uma mensagem informativa no topo com o nome do usuário logado e a data/hora atual&lt;/description&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Setor afetado obrigatório&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+ 
+    // Lógica do campo Setor Afetado
+    var setorAfetado = g_form.getValue('u_setor_afetado');
+
+    if (setorAfetado == '') {
+        // Limpa mensagens anteriores antes de mostrar a nova para evitar duplicidade
+        g_form.hideFieldMsg('u_setor_afetado');
+        g_form.showFieldMsg('u_setor_afetado', 'Atenção: Selecione o setor afetado para este incidente.', 'warning');
+    } else {
+        g_form.hideFieldMsg('u_setor_afetado');
+    }
+
+    // Lógica da Mensagem de Boas-vindas
+    var nomeUsuario = g_user.getFullName(); // Mais confiável que .firstName
+    var dataHora = new Date();
+    
+    var dataFormatada = dataHora.toLocaleDateString();
+    var horaFormatada = dataHora.toLocaleTimeString();
+    
+    var mensagem = 'Olá, ' + nomeUsuario + '! Hoje é ' + dataFormatada + ' às ' + horaFormatada;
+    
+    // Limpa mensagens de topo antigas para não acumular no onLoad
+    g_form.clearMessages();
+    g_form.addInfoMessage(mensagem);
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-05 17:47:54&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;02e396af83240b90d19e5630ceaad356&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Setor afetado obrigatório&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_02e396af83240b90d19e5630ceaad356&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-09 13:21:44&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1515762196</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>55560f74833483d0d19e5630ceaad358</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e0ce6ae820000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Setor afetado obrigatório</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>acc1ca30453c43d0b8b7bb8d6dd302d6</update_guid>
+<update_guid_history>acc1ca30453c43d0b8b7bb8d6dd302d6:-1515762196,8f51666b33a40b90db852d42cc1b8969:1068908959,cacf52e3f8a40b901c23df6ef73fbec5:-1166703167,ee4f526707a40b90f1edd843f6a0f021:-685241590,9dce12273ca40b901124de88a8470a5e:43046020,f29e16e39aa40b90c885f3e841a6b134:-68252349,933e96235ea40b90ee3ace1169d351d6:195929245,204d522386a40b902906cae12b23241a:-1036850364,fadc9eef1c640b90d5bce68f33d1b58f:-384325618,94581ea7d3640b90b780d05f10c670fb:787671783</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_4b26195f83ac4790d19e5630ceaad3bb</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Saudacao personalizada e preenchimento automatico.&lt;/description&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Saudacao  e preenchimento&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    // Obtém informações do usuário logado
+    var nomeCompleto = g_user.firstName + " " + g_user.lastName;
+    var userName = g_user.userName;
+
+    // Exibe saudação personalizada
+    g_form.addInfoMessage("Olá, " + nomeCompleto + "! (login: " + userName + ")");
+    g_form.addInfoMessage("Lembre-se de preencher todos os campos obrigatórios.");
+
+    // Pré-preenche o campo "Solicitante" com o usuário logado
+    if (g_form.getValue("caller_id") == "") {
+        g_form.setValue("caller_id", g_user.userID);
+        g_form.addInfoMessage(
+            'Campo "Solicitante" preenchido automaticamente com o usuário logado.',
+        );
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-04 18:23:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4b26195f83ac4790d19e5630ceaad3bb&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Saudacao  e preenchimento&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_4b26195f83ac4790d19e5630ceaad3bb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-05 18:24:24&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>793703038</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>59560f74833483d0d19e5630ceaad359</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19df96254580000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Saudacao  e preenchimento</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>72a0aee7dca40b905c4b04bb538057a0</update_guid>
+<update_guid_history>72a0aee7dca40b905c4b04bb538057a0:793703038,9d10e5136a208790d5e1193682f75bc6:1187939499,4ebf99dfa4ec479048f4ffa55c49602c:138332995,2b8f59dfabec47902b3c442073563e48:-1351917848,7debd51b86ec4790cdc94ed4f88c01df:37778084,8ccb151b7aec479015f0ac254757eb63:-2133250568,e66b99d753ec47908f22030b7d9c3161:2056072815,0aca9597e5ec4790d1dca314ad43bb9c:168511429,c8f6119f76ac4790fd70b90d8a4096e3:-1489450029</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_ea63666f83a40b90d19e5630ceaad3e1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Verifica se o usuário logado tem o papel itil&amp;#13;
+Se NÃO tiver, esconde o campo assignment_group (grupo atribuído) e exibe uma mensagem informativa&amp;#13;
+Se tiver, mantém o campo visível&lt;/description&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Verifica se usuário tem a role itil&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    //Type appropriate comment here, and begin script below
+    if (g_user.hasRole("itil")) {
+        g_form.setVisible("assignment_group", true);
+    } else {
+        g_form.setVisible("assignment_group", false);
+        g_form.addInfoMessage("Você não tem o papel Itil e alguns campos ficarão ocultos.");
+
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-05 18:43:15&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ea63666f83a40b90d19e5630ceaad3e1&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Verifica se usuário tem a role itil&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_ea63666f83a40b90d19e5630ceaad3e1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-09 13:21:36&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1584383276</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>5d560f74833483d0d19e5630ceaad35a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e0ce68d860000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Verifica se usuário tem a role itil</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>aab18a30dc3c43d049fed99d63fa0d79</update_guid>
+<update_guid_history>aab18a30dc3c43d049fed99d63fa0d79:-1584383276,07f4666fc4a40b909f3e36df9cde04d5:698461313</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="">9ddd391083bc4f90d19e5630ceaad375</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_9c01c3f883f083d0d19e5630ceaad32c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="incident"&gt;priority=1^EQ&lt;item display_value="1 - Critical" endquery="false" field="priority" goto="false" newquery="false" operator="=" or="false" value="1"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Tornar setor afetado obrigatório para incidentes críticos&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-09 18:01:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9c01c3f883f083d0d19e5630ceaad32c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Tornar setor afetado obrigatório para incidentes críticos&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_9c01c3f883f083d0d19e5630ceaad32c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-09 18:01:52&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1150807246</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>91560f74833483d0d19e5630ceaad35b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e0de724110000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Tornar setor afetado obrigatório para incidentes críticos</target_name>
+<type>UI Policy</type>
+<update_domain>global</update_domain>
+<update_guid>b3d14b3c3ef083d06221587157134472</update_guid>
+<update_guid_history>b3d14b3c3ef083d06221587157134472:1150807246</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="">9ddd391083bc4f90d19e5630ceaad375</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_incident_u_sistema_afetado</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_sistema_afetado" table="incident"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Sistema Afetado&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_sistema_afetado&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;100&lt;/max_length&gt;&lt;name&gt;incident&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-08 17:57:44&lt;/sys_created_on&gt;&lt;sys_id&gt;e117b560833ccf90d19e5630ceaad3b8&lt;/sys_id&gt;&lt;sys_name&gt;Sistema Afetado&lt;/sys_name&gt;&lt;sys_package display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_incident_u_sistema_afetado&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-08 17:57:44&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1574039288</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>95560f74833483d0d19e5630ceaad357</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e08bd00600000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Sistema Afetado</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>e557bd60893ccf90922177d003441896</update_guid>
+<update_guid_history>e557bd60893ccf90922177d003441896:1574039288</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_29f91d1783ec4790d19e5630ceaad319</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;priority&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Confirmação de priopridade crítica&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    // ✅ Verificação obrigatória: ignorar durante carregamento
+    if (isLoading || isTemplate) {
+        return;
+    }
+
+    // Limpa mensagens de topo (Info/Error) anteriores para não acumular
+    g_form.clearMessages();
+
+    // Lógica baseada no novo valor da Prioridade
+    if (newValue == "1") {
+        // Prioridade Crítica
+        g_form.setMandatory("u_setor_afetado", true);
+
+        //Limpa mensagens específicas do campo antes de mostrar a nova
+        g_form.hideFieldMsg("u_setor_afetado");
+
+        g_form.showFieldMsg(
+            "u_setor_afetado",
+            "Para incidentes críticos, informe o setor afetado.",
+            "warning"
+        );
+
+    } else {
+        // Para outras prioridades (2, 3, 4, 5)
+        g_form.setMandatory("u_setor_afetado", false);
+
+        // Limpa a mensagem específica embaixo do campo
+        g_form.hideFieldMsg("u_setor_afetado");
+
+        g_form.addInfoMessage("Prioridade alterada. Incidente não é crítico.");
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-04 18:38:22&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;29f91d1783ec4790d19e5630ceaad319&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Confirmação de priopridade crítica&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_29f91d1783ec4790d19e5630ceaad319&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-05 18:24:36&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-796428719</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>99560f74833483d0d19e5630ceaad358</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19df96283160000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Confirmação de priopridade crítica</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>f5b0eee74fa40b902cab3dc897193017</update_guid>
+<update_guid_history>f5b0eee74fa40b902cab3dc897193017:-796428719,d607a1df96208790343d03a65555bd45:1935676676,a7f4e517a9208790c36c82a2a96ea257:1473714024,2ac3a9d78a208790e15d5a35cb8b3756:-1571477787,f94adddf08ac4790cfd4c60f8a735e96:1943433138</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="">9ddd391083bc4f90d19e5630ceaad375</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_7c1879e0833ccf90d19e5630ceaad32c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Se o setor selecionado for TI, torna o campo u_sistema_afetado visível e obrigatório&amp;#13;
+Se o setor selecionado for RH, torna o campo u_processo_rh visível e obrigatório&amp;#13;
+Para qualquer outro setor (ou se o campo for limpo), esconde ambos os campos e remove obrigatoriedade&lt;/description&gt;&lt;field&gt;u_setor_afetado&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Define setor afetado&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || isTemplate) {
+        return;
+    }
+
+    // Reseta ambos os campos (esconde, limpa, remove obrigatoriedade)
+    g_form.setVisible('u_sistema_afetado', false);
+    g_form.setVisible('u_processo_rh', false);
+    g_form.setMandatory('u_sistema_afetado', false);
+    g_form.setMandatory('u_processo_rh', false);
+    g_form.clearValue('u_sistema_afetado');
+    g_form.clearValue('u_processo_rh');
+    g_form.hideFieldMsg('u_sistema_afetado');
+    g_form.hideFieldMsg('u_processo_rh');
+
+    var setorLabel = g_form.getDisplayValue('u_setor_afetado');
+
+    if (setorLabel == 'TI') {
+        g_form.setVisible('u_sistema_afetado', true);
+        g_form.setMandatory('u_sistema_afetado', true);
+        g_form.showFieldMsg('u_sistema_afetado', 'Selecione o sistema afetado.', 'info');
+        g_form.addInfoMessage('Setor TI selecionado. Informe o sistema afetado.');
+
+    } else if (setorLabel == 'RH') {
+        g_form.setVisible('u_processo_rh', true);
+        g_form.setMandatory('u_processo_rh', true);
+        g_form.showFieldMsg('u_processo_rh', 'Selecione o processo de RH afetado.', 'info');
+        g_form.addInfoMessage('Setor RH selecionado. Informe o processo afetado.');
+
+    } else if (setorLabel != '') {
+        g_form.addInfoMessage('Setor ' + setorLabel + ' selecionado. Nenhum campo adicional necessário.');
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-08 18:01:43&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7c1879e0833ccf90d19e5630ceaad32c&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Define setor afetado&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_7c1879e0833ccf90d19e5630ceaad32c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-09 13:21:17&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1829066720</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>9d560f74833483d0d19e5630ceaad359</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e0ce642ca0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Define setor afetado</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>35a1c630cb3c43d094b2f4b8077c39bc</update_guid>
+<update_guid_history>35a1c630cb3c43d094b2f4b8077c39bc:1829066720,08e40e2c717ccf90d34ad7c57bddf2a1:1864281683,9b2446e8027ccf9026be62b69eb909ce:-472338725,f5d2ca281f7ccf90b00d3a94247f32f2:1864281683,dd7cf9e8013ccf90d02ec6b590eabcfa:1471009786,a70b3d68853ccf90285e31f7b6707053:904828758,ce983d242d3ccf90107f61e0a109e136:219063507,c848bde0423ccf904a3058207d799f80:-832428239</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="">9ddd391083bc4f90d19e5630ceaad375</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_7dda46b0837c43d0d19e5630ceaad367</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;validação de work notes&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+    var erros = [];
+    var estado = g_form.getValue('state');
+    var prioridade = g_form.getValue('priority');
+
+    // Somente valida se o usuário está tentando Resolver ou Fechar o incidente
+    if (estado == '3' || estado == '6') { // Resolved (3) ou Closed (6)
+
+        // VALIDAÇÃO: Resolution Notes (campo de solução final)
+        var resolutionNotes = g_form.getValue('resolution_notes');
+        if (resolutionNotes == '' || resolutionNotes == null) {
+            erros.push('O campo "Resolution Notes" (Notas de Resolução) é obrigatório para resolver ou fechar um incidente.');
+            g_form.showFieldMsg('resolution_notes', 'Descreva a solução aplicada', 'error');
+        } else if (resolutionNotes.length &lt; 20) {
+            erros.push('A solução documentada deve ter pelo menos 20 caracteres para garantir clareza.');
+            g_form.showFieldMsg('resolution_notes', 'Mínimo de 20 caracteres', 'warning');
+        }
+
+        // VALIDAÇÃO: Aprovação para incidentes críticos
+        if (prioridade == '1') {
+            var aprovacao = g_form.getValue('approval');
+            if (aprovacao != 'approved') {
+                erros.push('Este incidente CRÍTICO não pode ser fechado. Aguarde a aprovação do gestor.');
+                g_form.showFieldMsg('approval', 'Aprovação obrigatória', 'error');
+            }
+        }
+    }
+
+    if (erros.length &gt; 0) {
+        g_form.addErrorMessage('❌ Não foi possível fechar o incidente:\n\n - ' + erros.join('\n - '));
+        return false;
+    }
+
+    return true;
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-09 14:03:00&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7dda46b0837c43d0d19e5630ceaad367&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;validação de work notes&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_7dda46b0837c43d0d19e5630ceaad367&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-09 14:35:18&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-722180430</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>d1560f74833483d0d19e5630ceaad35a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e0d2d11370000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>validação de work notes</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>df9cda742cfc43d0bcdbcca2caa8042b</update_guid>
+<update_guid_history>df9cda742cfc43d0bcdbcca2caa8042b:-722180430,72539af09dbc43d092ffbd7801175234:-1312523563,4e92127060bc43d095e938e9ddcbcaee:-722180430,0ac11ebc517c43d08700bf9199dea461:1032706810,89e096bc287c43d0f4458cb9a804689c:67515198,7c3b02f0097c43d074ff7ff230dab532:2010885270</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="">9ddd391083bc4f90d19e5630ceaad375</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_policy_action_32f1437c83f083d0d19e5630ceaad3df</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>u_setor_afetado</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-09 18:02:53</sys_created_on><sys_id>32f1437c83f083d0d19e5630ceaad3df</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_setor_afetado</sys_name><sys_package display_value="">9ddd391083bc4f90d19e5630ceaad375</sys_package><sys_policy/><sys_scope display_value="">9ddd391083bc4f90d19e5630ceaad375</sys_scope><sys_update_name>sys_ui_policy_action_32f1437c83f083d0d19e5630ceaad3df</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-09 18:02:53</sys_updated_on><table>incident</table><ui_policy display_value="Tornar setor afetado obrigatório para incidentes críticos">9c01c3f883f083d0d19e5630ceaad32c</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=32f1437c83f083d0d19e5630ceaad3df"/></record_update>]]></payload>
+<payload_hash>-163328778</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>d5560f74833483d0d19e5630ceaad35b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e0de811530000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>u_setor_afetado</target_name>
+<type>UI Policy Action</type>
+<update_domain>global</update_domain>
+<update_guid>be12c37c89f083d069787083b681a0df</update_guid>
+<update_guid_history>be12c37c89f083d069787083b681a0df:-163328778</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="">9ddd391083bc4f90d19e5630ceaad375</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_incident_u_processo_rh_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_processo_rh" label="Processo RH Afetado" language="en" table="incident"><sys_documentation action="INSERT_OR_UPDATE"><element>u_processo_rh</element><help/><hint/><label>Processo RH Afetado</label><language>en</language><name>incident</name><plural>Processo RH Afetados</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 17:58:44</sys_created_on><sys_id>1c97b5a0833ccf90d19e5630ceaad356</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Processo RH Afetado</sys_name><sys_package display_value="">9ddd391083bc4f90d19e5630ceaad375</sys_package><sys_policy/><sys_scope display_value="">9ddd391083bc4f90d19e5630ceaad375</sys_scope><sys_update_name>sys_documentation_incident_u_processo_rh_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 17:58:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>434095204</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>d9560f74833483d0d19e5630ceaad357</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e08bdecf20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Processo RH Afetado</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>ec97b5a08b3ccf9094bbaeee25b6b165</update_guid>
+<update_guid_history>ec97b5a08b3ccf9094bbaeee25b6b165:434095204</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="">9ddd391083bc4f90d19e5630ceaad375</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_2ee207fc83f083d0d19e5630ceaad3bd</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Se a prioridade for **Crítica**, exibe uma mensagem de aviso personalizada EM AZUL (info) abaixo do campo `u_setor_afetado`.&amp;#13;
+Se a prioridade for **Alta**, exibe uma mensagem de aviso AMARELA (warning)&amp;#13;
+Se a prioridade for **Média ou Baixa**, limpa as mensagens&lt;/description&gt;&lt;field&gt;priority&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Mensagens para prioridade crítica&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || isTemplate) return;
+    if (oldValue == newValue) return;
+
+    // Limpa mensagem anterior
+    g_form.hideFieldMsg('u_setor_afetado');
+
+    if (newValue == '1') { // Crítica
+        g_form.showFieldMsg('u_setor_afetado', 'ATENÇÃO: Incidentes críticos exigem setor afetado.', 'info');
+    } else if (newValue == '2') { // Alta
+        g_form.showFieldMsg('u_setor_afetado', 'Importante: informe o setor afetado para priorização correta.', 'warning');
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-09 18:06:36&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;2ee207fc83f083d0d19e5630ceaad3bd&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Mensagens para prioridade crítica&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=""&gt;9ddd391083bc4f90d19e5630ceaad375&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_2ee207fc83f083d0d19e5630ceaad3bd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-09 18:08:19&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1544982923</payload_hash>
+<remote_update_set display_value="ESTUDO-S02-Mendelson-UIScripts">99560f74833483d0d19e5630ceaad355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:21:21</sys_created_on>
+<sys_id>dd560f74833483d0d19e5630ceaad358</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e0ded0dec0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:21:21</sys_updated_on>
+<table>incident</table>
+<target_name>Mensagens para prioridade crítica</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>ae53c7fce2f083d0fa93a9a45d01e204</update_guid>
+<update_guid_history>ae53c7fce2f083d0fa93a9a45d01e204:-1544982923,ddf287fc31f083d08dbfe2a4ade7660f:-56344722</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
