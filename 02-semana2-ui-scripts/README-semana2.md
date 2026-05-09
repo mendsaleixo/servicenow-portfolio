@@ -115,21 +115,6 @@ Use UI Policy para regras simples e Client Script para lógica complexa.
 
 ## Entregáveis
 
-### Códigos e configurações
-
-| Entregável                                    | Arquivo                                                                                                    |
-| :-------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| Client Script onLoad (código)                 | [entregaveis/client-script-onload.js](entregaveis/client-script-onload.js)                                 |
-| Client Script onChange validação (código)     | [entregaveis/client-script-onchange-validacao.js](entregaveis/client-script-onchange-validacao.js)         |
-| Client Script onChange preenchimento (código) | [entregaveis/client-script-onchange-preenchimento.js](entregaveis/client-script-onchange-preenchimento.js) |
-| Client Script onSubmit (código)               | [entregaveis/client-script-onsubmit.js](entregaveis/client-script-onsubmit.js)                             |
-| UI Policy (configuração)                      | [entregaveis/ui-policy-comparacao.md](entregaveis/ui-policy-comparacao.md)                                 |
-| Update Set exportado                          | [update-sets/ESTUDO-S02-Mendelson-UIScripts.xml](update-sets/ESTUDO-S02-Mendelson-UIScripts.xml)           |
-
----
-
-### Prints de funcionamento
-
 | Entregável                                           | Arquivo                                                                                                                                    |
 | :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------- |
 | Client Script onChange (código)                      | [entregaveis/prints/01-client-script-onchange-codigo.png](entregaveis/prints/01-client-script-onchange-codigo.png)                         |
