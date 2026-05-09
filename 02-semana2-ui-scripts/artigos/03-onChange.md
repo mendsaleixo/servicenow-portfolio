@@ -352,8 +352,6 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 
 ## Minhas anotações pessoais
 
-_[Você preenche após a prática]_
-
 - Hoje aprendi que o onChange é disparado quando o campo PERDE O FOCO (on blur), não a cada tecla digitada
 - `isLoading` é obrigatório para evitar execução durante carregamento
 - `oldValue` permite comparar o valor antigo com o novo
