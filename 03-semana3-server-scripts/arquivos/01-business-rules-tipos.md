@@ -302,22 +302,22 @@ Criar uma **Business Rule** do tipo `before insert` na tabela Incident que:
 
 ### Atividade 2 (desafio)
 
-Criar uma **Business Rule** do tipo `before update` na tabela Incident que:
+Criar uma **Business Rule** do tipo `before insert e update` na tabela Incident que:
 
-1. Verifica se o estado está sendo alterado para `Resolved` (estado = 3)
-2. Se estiver, verifica se o campo `close_notes` (ou `resolution_notes`) está vazio
-3. Se estiver vazio, exibe mensagem de erro e **impede o salvamento**
+1. Verifica o conteúdo do campo `short_description` (Descrição Curta).
+2. Avalia se a descrição contém palavras genéricas consideradas inválidas pelo Service Desk (ex: "teste", "urgente" ou "socorro").
+3. Se o texto contiver alguma dessas palavras, exibe uma mensagem de erro educativa e **impede o salvamento**
 
 ---
 
 ### Entregável do dia
 
-| Entregável                                                 | Arquivo                                                     |
-| ---------------------------------------------------------- | ----------------------------------------------------------- |
-| Print do código da Business Rule (Atividade 1)             | `entregaveis/prints/br-validar-descricao-codigo.png`        |
-| Print da mensagem de erro ao criar incidente sem descrição | `entregaveis/prints/br-validar-descricao-erro.png`          |
-| (Desafio) Print do código da Business Rule (Atividade 2)   | `entregaveis/prints/br-validar-resolution-notes-codigo.png` |
-| (Desafio) Print da mensagem de erro ao resolver sem notas  | `entregaveis/prints/br-validar-resolution-notes-erro.png`   |
+| Entregável                                                            | Arquivo                                               |
+| --------------------------------------------------------------------- | ----------------------------------------------------- |
+| Print do código da Business Rule (Atividade 1)                        | `entregaveis/prints/br-validar-descricao-codigo.png`  |
+| Print da mensagem de erro ao criar incidente sem descrição            | `entregaveis/prints/br-validar-descricao-erro.png`    |
+| (Desafio) Print do código da Business Rule (Atividade 2)              | `entregaveis/prints/br-descricao-invalida-codigo.png` |
+| (Desafio) Print da mensagem de erro ao identificar palavras proibidas | `entregaveis/prints/br-descricao-invalida-erro.png`   |
 
 ---
 
