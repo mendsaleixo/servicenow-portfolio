@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-05-18 23:20:38">
+<sys_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<base_update_set display_value=""/>
+<batch_install_plan display_value=""/>
+<completed_by display_value=""/>
+<completed_on>2026-05-09 18:24:27</completed_on>
+<description>Update Set da Semana 3 - Business Rules, GlideRecord e Script Includes</description>
+<install_date/>
+<installed_from/>
+<is_default>false</is_default>
+<merged_to display_value=""/>
+<name>ESTUDO-S03-Mendelson-ServerScripts</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_sys_id display_value=""/>
+<state>in progress</state>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-09 18:25:00</sys_created_on>
+<sys_id>aa07c3f4833483d0d19e5630ceaad3c0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-09 18:25:00</sys_updated_on>
+</sys_update_set>
+</unload>
