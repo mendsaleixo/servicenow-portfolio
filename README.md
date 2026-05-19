@@ -120,9 +120,9 @@ servicenow-portfolio/
 │   └── solicitacao-equipamentos/
 │
 ├── fundamentos/
-│   ├── semana1/
-│   ├── semana2/
-│   └── semana3/
+│   ├── desenvolvimento-client-side/
+│   ├── desenvolvimento-server-side/
+│   └── fundamentos-platform/
 │
 └── assets/
 ```
