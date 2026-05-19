@@ -1,6 +1,16 @@
 # Desenvolvimento Client-Side — Client Scripts
 
+**Status:** ✅ Concluído | **Tipo:** Fundamentos | **Módulo:** Client Scripts
+
 Implementações práticas utilizando Client Scripts e UI Policies na plataforma ServiceNow para automação e comportamento dinâmico de formulários ITSM.
+
+---
+
+## Contexto do projeto
+
+Automação e validação de formulários no módulo Incident Management,
+reduzindo erros de preenchimento e melhorando a experiência do usuário
+no Service Desk.
 
 ---
 
@@ -17,7 +27,7 @@ Implementações práticas utilizando Client Scripts e UI Policies na plataforma
 
 ## Navegação
 
-### Documentação técnica
+### Artigos Produzidos
 
 - [Client Scripts: tipos e quando usar](artigos/01-client-script.md)
 - [JavaScript para ServiceNow](artigos/02-%20JavaScript%20-para-ServiceNow.md)
@@ -31,7 +41,7 @@ Implementações práticas utilizando Client Scripts e UI Policies na plataforma
 
 ### Update Set
 
-- [Exportação XML](update-sets/itsm-client-side-validations.xml.xml)
+- [Exportação XML](update-sets/ESTUDO-S02-Mendelson-UIScripts.xml)
 
 ---
 
@@ -59,14 +69,14 @@ Implementações práticas utilizando Client Scripts e UI Policies na plataforma
 
 ## Conceitos aplicados
 
-| Conceito  | Aplicação prática         |
-| --------- | ------------------------- |
-| onLoad    | Inicialização dinâmica    |
-| onChange  | Reatividade de formulário |
-| onSubmit  | Validação pré-envio       |
-| g_form    | Manipulação de campos     |
-| g_user    | Contexto do usuário       |
-| UI Policy | Regras declarativas       |
+| Conceito  | Aplicação prática             |
+| --------- | ----------------------------- |
+| onLoad    | Inicialização dinâmica        |
+| onChange  | Reatividade de formulário     |
+| onSubmit  | Validação pré-envio           |
+| g_form    | Leitura e escrita de campos   |
+| g_user    | Dados e permissões do usuário |
+| UI Policy | Regras declarativas           |
 
 ---
 
@@ -83,6 +93,6 @@ Implementações práticas utilizando Client Scripts e UI Policies na plataforma
 
 ```text
 artigos/        -> documentação técnica
-entregáveis/     -> screenshots e testes
+entregaveis/    -> screenshots e testes
 update-sets/    -> exportações XML
 ```
