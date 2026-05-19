@@ -1,100 +1,139 @@
-<<<<<<< HEAD
+# ServiceNow Portfolio — Mendelson Aleixo
 
-# servicenow-portfolio
+Portfólio prático focado no desenvolvimento de soluções e automações na plataforma ServiceNow, com projetos voltados a cenários reais de ITSM, catálogo de serviços, workflows corporativos e experiência do usuário.
 
-# Meu portfólio de estudos em ServiceNow - Documentação, projetos e aprendizados
-
-# ServiceNow Portfolio - Mendelson Aleixo
-
-**Objetivo:** Transição para Desenvolvedor ServiceNow
-
-**Status:** Em estudo ativo - Semana 1 concluída (Abril 2026)
+Este repositório documenta minha transição para o ecossistema ServiceNow após 17 anos de atuação na área da saúde e experiência recente com desenvolvimento frontend utilizando JavaScript e React.
 
 ---
 
-## Sobre este portfólio
+# Objetivo
 
-Este repositório documenta minha jornada de aprendizado na plataforma ServiceNow. Aqui você encontrará:
+Construir soluções ponta a ponta utilizando a plataforma ServiceNow, aplicando:
 
-- Registros semanais de estudos teóricos e práticos
-- Projetos desenvolvidos no meu PDI (Personal Developer Instance)
-- Scripts, configurações e customizações implementadas
-- Documentação do meu progresso em direção às certificações CSA e CAD
-
-**Minha abordagem:** Acredito que aprender ServiceNow exige prática diária e documentação consistente. Cada conceito estudado é imediatamente aplicado no PDI, e cada projeto é registrado aqui como evidência de aprendizado.
-
----
-
-## Minhas Qualificações
-
-| Área            | Tecnologias                                                                                                                       |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **ServiceNow**  | Incident Management, Client Scripts, Business Rules, UI Policies, Update Sets, GlideRecord (em estudo), Flow Designer (em estudo) |
-| **Frontend**    | React.js, Next.js, JavaScript, Angular, HTML5, CSS3                                                                               |
-| **Backend**     | APIs RESTful, Prisma ORM, PostgreSQL, MySQL                                                                                       |
-| **Ferramentas** | Git, GitHub, Jest, Vitest, Metodologias Ágeis                                                                                     |
-
-**Formação em ServiceNow:**
-
-- Scripting in ServiceNow Fundamentals (ServiceNow)
-- Welcome to ServiceNow (Micro-certificação)
-- Bootcamp Virada ServiceNow (4MATT)
-- Certified System Administrator (CSA) - Em preparação
-- Certified Application Developer (CAD) - Em planejamento
+- automação de processos;
+- catálogo de serviços;
+- workflows de aprovação;
+- integrações;
+- scripting client-side e server-side;
+- boas práticas de organização técnica;
+- foco em experiência do usuário e regras de negócio.
 
 ---
 
-## Estrutura do Portfólio
+# Projetos Principais
 
-servicenow-portfolio/\
-├── README.md # Este arquivo\
-├── 01-semana1-fundamentos/ # Concluído\
-├── 02-semana2-ui-scripts/ # Em andamento\
-├── 03-semana3-server-scripts/ # Planejado\
-├── 04-semana4-dados-seguranca/ # Planejado\
-├── 05-semana5-automacao/ # Planejado\
-├── 06-semana6-integracao/ # Planejado\
-└── projetos-completos/ # Projetos finais
+## Portal de Reparo de Computadores _(em desenvolvimento)_
 
----
+Fluxo completo para solicitação de reparo de equipamentos corporativos via Service Portal.
 
-## Progresso Geral
+### Funcionalidades
 
-| Semana | Tema                              | Status          | Entregáveis                                            |
-| ------ | --------------------------------- | --------------- | ------------------------------------------------------ |
-| 01     | Fundamentos + Incidentes          | ✅ Concluído    | [Ver README](01-semana1-fundamentos/README-semana1.md) |
-| 02     | UI Scripts (Client Scripts)       | 🔄 Em andamento | -                                                      |
-| 03     | Server Scripts (BR + GlideRecord) | 📅 Planejado    | -                                                      |
-| 04     | Dados + Segurança                 | 📅 Planejado    | -                                                      |
-| 05     | Automação + Catálogo              | 📅 Planejado    | -                                                      |
-| 06     | Integração + Portfólio Final      | 📅 Planejado    | -                                                      |
+- abertura de solicitação via catálogo;
+- aprovação automática do gestor;
+- integração de CEP para preenchimento automático;
+- criação automatizada de tarefas;
+- controle de lifecycle do ativo;
+- notificações;
+- confirmação de recebimento pelo usuário;
+- encerramento automatizado do fluxo.
 
----
+### Tecnologias
 
-## Habilidades Adquiridas (Semana 1)
-
-Após a primeira semana de estudos, sou capaz de:
-
-- ✅ Criar e gerenciar incidentes no ServiceNow
-- ✅ Entender o ciclo de vida do incidente (New → In Progress → Resolved → Closed)
-- ✅ Navegar por listas, aplicar filtros e salvar visualizações
-- ✅ Personalizar formulários (adicionar campos, reorganizar layout)
-- ✅ Diferenciar Incidente, Requisição e Problema (ITIL)
-- ✅ Criar e gerenciar Update Sets
-- ✅ Configurar UI Policies básicas para comportamento dinâmico
+- Flow Designer
+- Catalog Items
+- Record Producers
+- GlideAjax
+- Script Includes
+- UI Policies
+- Service Portal
+- REST Integration
+- CMDB / Asset Management
 
 ---
 
-## Contato
+## Solicitação de Equipamentos _(planejado)_
 
-- **LinkedIn:** [linkedin.com/in/mendelson-aleixo](https://linkedin.com/in/mendelson-aleixo)
-- **GitHub:** [github.com/mendsaleixo](https://github.com/mendsaleixo)
-- **Email:** mendelson.aleixo@gmail.com
+Catálogo corporativo para solicitação de notebooks, monitores e periféricos com fluxo de aprovação e controle de estoque.
 
 ---
 
-## Observação
+## Onboarding de Funcionário _(planejado)_
 
-Este portfólio está em constante evolução. Conforme avanço nos estudos, novos projetos e entregáveis serão adicionados. Feedbacks e sugestões são bem-vindos.
+Automação de onboarding com aprovações, provisionamento de acessos e criação automática de tarefas entre equipes.
 
 ---
+
+# Fundamentos Técnicos
+
+A base técnica utilizada nos projetos está organizada na pasta `/fundamentos`, incluindo estudos e práticas de:
+
+- ITSM e ITIL;
+- Client Scripts;
+- Business Rules;
+- GlideRecord;
+- Script Includes;
+- UI Policies;
+- Update Sets;
+- automações e workflows.
+
+---
+
+# Tecnologias e Conceitos
+
+## ServiceNow
+
+- Flow Designer
+- Catalog Items
+- Record Producers
+- Client Scripts
+- Business Rules
+- UI Policies
+- Script Includes
+- GlideRecord
+- GlideAjax
+- Update Sets
+- Service Portal
+- ITSM
+- CMDB
+- RBAC
+
+## Desenvolvimento
+
+- JavaScript
+- React
+- APIs REST
+- Git/GitHub
+
+---
+
+# Objetivo Profissional
+
+Atuar como Desenvolvedor/Consultor ServiceNow Júnior, construindo soluções automatizadas e escaláveis voltadas a ITSM, workflows corporativos e transformação digital.
+
+---
+
+# Estrutura do Repositório
+
+```text
+servicenow-portfolio/
+│
+├── projetos/
+│   ├── catalogo-reparo-computador/
+│   ├── onboarding-funcionario/
+│   └── solicitacao-equipamentos/
+│
+├── fundamentos/
+│   ├── semana1/
+│   ├── semana2/
+│   └── semana3/
+│
+└── assets/
+```
+
+---
+
+# Contato
+
+- LinkedIn: linkedin.com/in/mendelson-aleixo
+- GitHub: github.com/mendsaleixo
+- E-mail: mendelson.aleixo@gmail.com
