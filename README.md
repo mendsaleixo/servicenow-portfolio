@@ -131,6 +131,5 @@ servicenow-portfolio/
 
 # Contato
 
-- LinkedIn: linkedin.com/in/mendelson-aleixo
-- GitHub: github.com/mendsaleixo
+- LinkedIn: [linkedin.com/in/mendelson-aleixo](https://www.linkedin.com/in/mendelson-aleixo/)
 - E-mail: mendelson.aleixo@gmail.com
