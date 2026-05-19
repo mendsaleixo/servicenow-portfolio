@@ -2,8 +2,6 @@
 
 Portfólio prático focado no desenvolvimento de soluções e automações na plataforma ServiceNow, com projetos voltados a cenários reais de ITSM, catálogo de serviços, workflows corporativos e experiência do usuário.
 
-Este repositório documenta minha transição para o ecossistema ServiceNow após 17 anos de atuação na área da saúde e experiência recente com desenvolvimento frontend utilizando JavaScript e React.
-
 ---
 
 # Objetivo
@@ -100,7 +98,6 @@ A base técnica utilizada nos projetos está organizada na pasta `/fundamentos`,
 ## Desenvolvimento
 
 - JavaScript
-- React
 - APIs REST
 - Git/GitHub
 
