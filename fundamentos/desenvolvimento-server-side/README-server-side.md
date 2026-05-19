@@ -1,135 +1,120 @@
-# Semana 3 — Server Scripts (Essenciais)
+# Desenvolvimento Server-Side — Business Rules e GlideRecord
 
-**Autor:** Mendelson Aleixo  
-**Instância:** PDI ServiceNow (versão Australia)  
-**Update Set:** ESTUDO-S03-Mendelson-ServerScripts.xml (exportado)  
-**Status:** ✅ Concluído  
-**Período:** Maio/2026
+Implementações práticas utilizando Business Rules e GlideRecord na plataforma ServiceNow para validações no servidor e consulta de dados ITSM.
 
 ---
 
-## Objetivo da semana
-
-Compreender o funcionamento básico dos scripts do lado do servidor no ServiceNow, focando no que é essencial para um desenvolvedor Júnior: entender o ecossistema, ler código legado e fazer pequenas customizações.
-
-**Foco:** Entender, não dominar.
+**Status:** ✅ Concluído | **Tipo:** Fundamentos | **Módulo:** Server Scripts
 
 ---
 
-## Conhecimento estudado
+## Contexto do projeto
 
-| Tópico         | O que saber                                     | Profundidade                             |
-| -------------- | ----------------------------------------------- | ---------------------------------------- |
-| Business Rule  | Script que roda no servidor ao salvar/consultar | Criar o básico (before insert)           |
-| GlideRecord    | API para consultar dados no banco               | Consultas simples (get, query, addQuery) |
-| Script Include | Código reutilizável no servidor                 | Conceito (saber o que é)                 |
-| GlideAjax      | Ponte entre Client Script e servidor            | Conceito (entender o fluxo)              |
+Validações de dados no servidor e consultas ao banco de dados utilizando GlideRecord,
+preparando o terreno para entender código legado e fazer pequenas customizações
+no backend da plataforma.
 
----
-
-## Artigos produzidos
-
-Cada conceito estudado foi documentado em um artigo próprio na pasta `artigos/`:
-
-| #   | Artigo                                                                                               |
-| --- | ---------------------------------------------------------------------------------------------------- |
-| 01  | [Business Rule básica (before insert, setAbortAction)](artigos/01-business-rules-basico.md)          |
-| 02  | [GlideRecord: consultas simples (get, query, addQuery)](artigos/02-gliderecord-consultas-simples.md) |
-| 03  | [Script Include + GlideAjax (conceitual)](artigos/03-script-include-conceitual.md)                   |
+**Foco:** Entender o ecossistema, não dominar scripts complexos.
 
 ---
 
-## O que foi feito
+## Tecnologias e recursos utilizados
 
-### Business Rule
-
-- Criada uma Business Rule `before insert` na tabela Incident
-- Valida se a descrição curta tem pelo menos 10 caracteres
-- Impede o salvamento com `setAbortAction(true)`
-
-### GlideRecord
-
-- Executado script no Background Scripts para consultar incidentes críticos
-- Utilizado `addQuery`, `query()`, `next()` e `getRowCount()`
-- Listagem de incidentes no log do sistema
-
-### Script Include (conceitual)
-
-- Estudo do conceito: o que é, para que serve
-- Entendimento do GlideAjax como ponte entre cliente e servidor
-- Sem criação prática (apenas conceito)
+- Business Rules (before insert)
+- GlideRecord (consultas simples)
+- Script Includes (conceito)
+- GlideAjax (conceito)
+- Background Scripts
+- Update Sets
 
 ---
 
-## Aprendizados técnicos
+## Navegação
 
-- **Business Rule:** `before insert` executa antes de salvar. `setAbortAction(true)` impede o salvamento.
-- **GlideRecord:** `query()` é obrigatório antes de `next()`. `get()` busca registro direto.
-- **getValue vs getDisplayValue:** `getValue()` retorna valor técnico; `getDisplayValue()` retorna o label.
-- **Script Include:** É uma biblioteca de funções reutilizáveis no servidor.
-- **GlideAjax:** Ponte assíncrona entre Client Script e Script Include.
+### Artigos Produzidos
 
----
+- [Business Rule básica (before insert, setAbortAction)](artigos/01-business-rules-basico.md)
+- [GlideRecord: consultas simples (get, query, addQuery)](artigos/02-gliderecord-consultas-simples.md)
+- [Script Include + GlideAjax (conceitual)](artigos/03-script-include-conceitual.md)
 
-## Dificuldades encontradas
+### Evidências
 
-- **`isLoading` não existe no onLoad** — aprendi que isso é específico do onChange.
-- **Campo `short_description` já é obrigatório nativamente** — ajustei a Business Rule para `description`.
-- **Fluxo do GlideAjax é confuso no início** — entendi o conceito, mas não implementei na prática.
+- [Screenshots das implementações](entregaveis/prints/)
 
----
+### Update Set
 
-## O que NÃO foi feito (intencionalmente)
-
-| Tópico                                         | Por que não foi feito                 |
-| ---------------------------------------------- | ------------------------------------- |
-| Business Rules complexas (after update, loops) | Não é comum Júnior criar isso         |
-| GlideRecord avançado (joins, agregações)       | Flow e Catálogo resolvem              |
-| Script Includes complexos                      | Raro em vaga júnior                   |
-| GlideAjax prático                              | Será visto na Semana 6, se necessário |
+- [Exportação XML](update-sets/ESTUDO-S03-Mendelson-ServerScripts.xml)
 
 ---
 
-## Entregáveis
+## Implementações realizadas
 
-### Business Rules e Scripts
+### Business Rules
 
-| Entregável             | Arquivo                                              |
-| ---------------------- | ---------------------------------------------------- |
-| Business Rule (código) | `entregaveis/br-validar-descricao.js`                |
-| GlideRecord (script)   | `entregaveis/gliderecord-consulta.js`                |
-| Update Set exportado   | `update-sets/ESTUDO-S03-Mendelson-ServerScripts.xml` |
+| Tipo          | Implementação                                      |
+| ------------- | -------------------------------------------------- |
+| before insert | Validação de descrição (mínimo 10 caracteres)      |
+| before insert | Impedimento de salvamento com setAbortAction(true) |
 
-### Prints de funcionamento
+### GlideRecord (Background Scripts)
 
-| Entregável                       | Arquivo                                        |
-| -------------------------------- | ---------------------------------------------- |
-| Business Rule configurada        | `entregaveis/prints/br-config.png`             |
-| Erro da Business Rule ao salvar  | `entregaveis/prints/br-erro.png`               |
-| Código GlideRecord no Background | `entregaveis/prints/gliderecord-codigo.png`    |
-| Resultado da consulta no log     | `entregaveis/prints/gliderecord-resultado.png` |
+| Operação                | Descrição                                |
+| ----------------------- | ---------------------------------------- |
+| Consulta com filtro     | Busca incidentes críticos (priority = 1) |
+| addQuery + query + next | Percorre resultados e exibe no log       |
+| getRowCount()           | Conta total de incidentes encontrados    |
 
----
+### Script Includes (conceitual)
 
-## Reflexão sobre a semana
-
-### O que aprendi
-
-1. **Business Rule** é útil para validações no servidor, mas muitas já são nativas
-2. **GlideRecord** é a ferramenta para consultar dados — essencial saber o básico
-3. **Script Include** existe, mas como Júnior meu foco não é criar um agora
-4. **GlideAjax** é a ponte para buscar dados do servidor sem recarregar a página
-
-### Para a Semana 4
-
-O foco muda para **Catálogo, UI Policy e Record Producer** — o que realmente as empresas esperam de um desenvolvedor Júnior.
+| Conceito       | Entendimento                                      |
+| -------------- | ------------------------------------------------- |
+| O que é        | Biblioteca de funções reutilizáveis no servidor   |
+| Para que serve | Centralizar lógica complexa                       |
+| GlideAjax      | Ponte para chamar Script Include do Client Script |
 
 ---
 
-## Links úteis
+## Conceitos aplicados
 
-- [Documentação - Business Rules](https://docs.servicenow.com/bundle/tokyo-servicenow-platform/page/configure/business-rules/concept/c_BusinessRules.html)
-- [Documentação - GlideRecord](https://docs.servicenow.com/bundle/tokyo-servicenow-platform/page/configure/glide-record/concept/c_GlideRecord.html)
-- [Documentação - Script Includes](https://docs.servicenow.com/bundle/tokyo-servicenow-platform/page/configure/script-includes/concept/c_ScriptIncludes.html)
+| Conceito        | Aplicação prática                               |
+| --------------- | ----------------------------------------------- |
+| Business Rule   | Validação no servidor antes de salvar           |
+| setAbortAction  | Impedimento de salvamento quando regra falha    |
+| GlideRecord     | Consulta de dados no banco                      |
+| addQuery        | Filtro de resultados                            |
+| getValue        | Valor técnico do campo                          |
+| getDisplayValue | Label exibido do campo                          |
+| Script Include  | Reutilização de código no servidor (conceitual) |
+| GlideAjax       | Comunicação assíncrona cliente-servidor         |
 
 ---
+
+## Observações técnicas
+
+- **Business Rule:** `before insert` executa antes de salvar; `setAbortAction(true)` impede o salvamento
+- **GlideRecord:** `query()` é obrigatório antes de `next()`; `get()` busca registro direto sem query
+- **getValue vs getDisplayValue:** `getValue()` retorna valor técnico (ex: "1"); `getDisplayValue()` retorna label (ex: "Critical")
+- **Script Include:** É uma biblioteca de funções; como Júnior, o foco é saber que existe
+- **GlideAjax:** Ponte assíncrona que permite Client Script buscar dados no servidor
+
+---
+
+## O que não foi feito (intencionalmente)
+
+| Tópico                                                              | Motivo                                                    |
+| ------------------------------------------------------------------- | --------------------------------------------------------- |
+| Business Rules complexas (after update, loops, previous vs current) | Não é comum Júnior criar do zero                          |
+| GlideRecord avançado (joins, agregações complexas)                  | Flow Designer resolve casos mais simples                  |
+| Script Includes complexos (criação do zero)                         | Raro em vagas júnior                                      |
+| GlideAjax prático (implementação)                                   | Conceito é suficiente; prática fica para projetos futuros |
+
+---
+
+## Estrutura do diretório
+
+```text
+artigos/        -> documentação técnica
+entregaveis/    -> screenshots e testes
+update-sets/    -> exportações XML
+
+```
