@@ -115,7 +115,12 @@ Atuar como Desenvolvedor/Consultor ServiceNow Júnior, construindo soluções au
 servicenow-portfolio/
 │
 ├── projetos/
-│   ├── catalogo-reparo-computador/
+│   ├── portal-reparo-computador/
+│   │   ├── README.md
+│   │   ├── update-sets/
+│   │   ├── screenshots/
+│   │   ├── scripts/
+│   │   └── docs/
 │   ├── onboarding-funcionario/
 │   └── solicitacao-equipamentos/
 │
@@ -128,6 +133,27 @@ servicenow-portfolio/
 ```
 
 ---
+
+# Organização e Metodologia
+
+Os projetos são organizados utilizando:
+
+- GitHub Projects;
+- milestones por sprint;
+- issues por funcionalidade;
+- Definition of Done (DoD);
+- documentação incremental;
+- versionamento via Update Sets.
+
+#### Status do Projeto
+
+| Sprint | Funcionalidade              | Status          |
+| ------ | --------------------------- | --------------- |
+| PRC-01 | Catalog Item + Variables    | ✅ Concluído    |
+| PRC-02 | UI Policies                 | ⏳ Em andamento |
+| PRC-03 | Integração ViaCEP           | ⬜ Pendente     |
+| PRC-04 | Flow Designer + Aprovações  | ⬜ Pendente     |
+| PRC-05 | Notificações + Encerramento | ⬜ Pendente     |
 
 # Contato
 
