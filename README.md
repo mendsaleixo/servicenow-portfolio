@@ -137,13 +137,13 @@ Fluxo completo para solicitação de reparo de equipamentos corporativos via Ser
 
 #### Status do Projeto
 
-| Sprint | Funcionalidade              | Status          |
-| ------ | --------------------------- | --------------- |
-| PRC-01 | Catalog Item + Variables    | ✅ Concluído    |
-| PRC-02 | UI Policies                 | ⏳ Em andamento |
-| PRC-03 | Integração ViaCEP           | ⬜ Pendente     |
-| PRC-04 | Flow Designer + Aprovações  | ⬜ Pendente     |
-| PRC-05 | Notificações + Encerramento | ⬜ Pendente     |
+| Sprint | Funcionalidade              | Status         |
+| ------ | --------------------------- | -------------- |
+| PRC-01 | Catalog Item + Variables    | ✅ Concluído   |
+| PRC-02 | UI Policies                 | ✅ Concluído   |
+| PRC-03 | Integração ViaCEP           | ⏳ Em andament |
+| PRC-04 | Flow Designer + Aprovações  | ⬜ Pendente    |
+| PRC-05 | Notificações + Encerramento | ⬜ Pendente    |
 
 ### Solicitação de Equipamentos _(planejado)_
 
