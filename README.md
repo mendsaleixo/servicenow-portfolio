@@ -18,12 +18,6 @@ Construir soluções ponta a ponta utilizando a plataforma ServiceNow, aplicando
 
 ---
 
-## Objetivo Profissional
-
-Atuar como Desenvolvedor/Consultor ServiceNow Júnior, construindo soluções automatizadas e escaláveis voltadas a ITSM, workflows corporativos e transformação digital.
-
----
-
 ## Estrutura do Repositório
 
 ```text
@@ -83,18 +77,20 @@ A base técnica utilizada nos projetos está organizada na pasta `/fundamentos`,
 
 - Flow Designer
 - Catalog Items
-- Record Producers
+- IntegrationHub
 - Client Scripts
 - Business Rules
 - UI Policies
+- UI Builder
 - Script Includes
 - GlideRecord
 - GlideAjax
 - Update Sets
 - Service Portal
+- REST Integration
 - ITSM
-- CMDB
-- RBAC
+- CMDB / Asset Management
+- Import Sets / Transform Maps
 
 ### Desenvolvimento
 
@@ -125,6 +121,7 @@ Fluxo completo para solicitação de reparo de equipamentos corporativos via Ser
 
 - Flow Designer
 - Catalog Items
+- IntegrationHUb
 - Record Producers
 - GlideAjax
 - Script Includes
@@ -132,18 +129,22 @@ Fluxo completo para solicitação de reparo de equipamentos corporativos via Ser
 - Service Portal
 - REST Integration
 - CMDB / Asset Management
+- Import Sets / Transform Maps
 
 ---
 
 #### Status do Projeto
 
-| Sprint | Funcionalidade              | Status         |
-| ------ | --------------------------- | -------------- |
-| PRC-01 | Catalog Item + Variables    | ✅ Concluído   |
-| PRC-02 | UI Policies                 | ✅ Concluído   |
-| PRC-03 | Integração ViaCEP           | ⏳ Em andament |
-| PRC-04 | Flow Designer + Aprovações  | ⬜ Pendente    |
-| PRC-05 | Notificações + Encerramento | ⬜ Pendente    |
+| Sprint | Funcionalidade                                                           | Status       |
+| ------ | ------------------------------------------------------------------------ | ------------ |
+| PRC-01 | Catalog Item + Variables                                                 | ✅ Concluído |
+| PRC-02 | UI Policies + Validações                                                 | ✅ Concluído |
+| PRC-03 | ViaCEP com GlideAjax + Script Include                                    | ⬜ Pendente  |
+| PRC-04 | Flow Designer + Aprovação + Tarefas                                      | ⬜ Pendente  |
+| PRC-05 | Notificações + Encerramento                                              | ⬜ Pendente  |
+| PRC-06 | Import Set + Transform Map (Importação de dados de equipamentos via CSV) | ⬜ Pendente  |
+| PRC-07 | UI Builder Workspace (Painel moderno para acompanhamento dos reparos)    | ⬜ Pendente  |
+| PRC-08 | ViaCEP com IntegrationHub (Versão low-code da integração de CEP)         | ⬜ Pendente  |
 
 ### Solicitação de Equipamentos _(planejado)_
 
