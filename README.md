@@ -1,6 +1,6 @@
 # ServiceNow Portfolio — Mendelson Aleixo
 
-Portfólio prático focado no desenvolvimento de soluções e automações na plataforma ServiceNow, com projetos voltados a cenários reais de ITSM, catálogo de serviços, workflows corporativos e experiência do usuário.
+Portfólio prático focado no desenvolvimento de soluções e automações na plataforma ServiceNow, com projetos voltados a cenários reais de ITSM, catálogo de serviços, workflows corporativos, Flow Designer, IntegrationHub e experiência do usuário.
 
 ---
 
@@ -11,7 +11,9 @@ Construir soluções ponta a ponta utilizando a plataforma ServiceNow, aplicando
 - automação de processos;
 - catálogo de serviços;
 - workflows de aprovação;
-- integrações;
+- Flow Designer;
+- IntegrationHub;
+- integrações REST;
 - scripting client-side e server-side;
 - boas práticas de organização técnica;
 - foco em experiência do usuário e regras de negócio.
@@ -34,6 +36,8 @@ servicenow-portfolio/
 │   └── solicitacao-equipamentos/
 │
 ├── fundamentos/
+│   ├── flow-designer/
+│   ├── integrationhub/
 │   ├── desenvolvimento-client-side/
 │   ├── desenvolvimento-server-side/
 │   └── fundamentos-platform/
@@ -50,6 +54,7 @@ Os projetos são organizados utilizando:
 - GitHub Projects;
 - milestones por sprint;
 - issues por funcionalidade;
+- labels por tecnologia;
 - Definition of Done (DoD);
 - documentação incremental;
 - versionamento via Update Sets.
@@ -66,6 +71,10 @@ A base técnica utilizada nos projetos está organizada na pasta `/fundamentos`,
 - GlideRecord;
 - Script Includes;
 - UI Policies;
+- Flow Designer;
+- Workflow Studio;
+- IntegrationHub;
+- Notifications;
 - Update Sets;
 - automações e workflows.
 
@@ -76,8 +85,10 @@ A base técnica utilizada nos projetos está organizada na pasta `/fundamentos`,
 ### ServiceNow
 
 - Flow Designer
-- Catalog Items
+- Workflow Studio
 - IntegrationHub
+- Catalog Items
+- Record Producers
 - Client Scripts
 - Business Rules
 - UI Policies
@@ -88,6 +99,9 @@ A base técnica utilizada nos projetos está organizada na pasta `/fundamentos`,
 - Update Sets
 - Service Portal
 - REST Integration
+- Connection & Credential Alias
+- Webhooks
+- Notifications
 - ITSM
 - CMDB / Asset Management
 - Import Sets / Transform Maps
@@ -96,7 +110,21 @@ A base técnica utilizada nos projetos está organizada na pasta `/fundamentos`,
 
 - JavaScript
 - APIs REST
+- JSON
 - Git/GitHub
+
+---
+
+## Certificações
+
+### Concluídas
+
+- Flow Designer Fundamentals Micro-Certification
+- IntegrationHub Fundamentals Micro-Certification
+
+### Em andamento
+
+- Certified System Administrator (CSA)
 
 ---
 
@@ -115,19 +143,24 @@ Fluxo completo para solicitação de reparo de equipamentos corporativos via Ser
 - controle de lifecycle do ativo;
 - notificações;
 - confirmação de recebimento pelo usuário;
-- encerramento automatizado do fluxo.
+- encerramento automatizado do fluxo;
+- integração com Slack via IntegrationHub.
 
 #### Tecnologias
 
 - Flow Designer
+- Workflow Studio
+- IntegrationHub
 - Catalog Items
-- IntegrationHUb
 - Record Producers
 - GlideAjax
 - Script Includes
 - UI Policies
 - Service Portal
 - REST Integration
+- Connection & Credential Alias
+- Slack Webhooks
+- Notifications
 - CMDB / Asset Management
 - Import Sets / Transform Maps
 
@@ -135,16 +168,19 @@ Fluxo completo para solicitação de reparo de equipamentos corporativos via Ser
 
 #### Status do Projeto
 
-| Sprint | Funcionalidade                                                           | Status       |
-| ------ | ------------------------------------------------------------------------ | ------------ |
-| PRC-01 | Catalog Item + Variables                                                 | ✅ Concluído |
-| PRC-02 | UI Policies + Validações                                                 | ✅ Concluído |
-| PRC-03 | ViaCEP com GlideAjax + Script Include                                    | ⬜ Pendente  |
-| PRC-04 | Flow Designer + Aprovação + Tarefas                                      | ⬜ Pendente  |
-| PRC-05 | Notificações + Encerramento                                              | ⬜ Pendente  |
-| PRC-06 | Import Set + Transform Map (Importação de dados de equipamentos via CSV) | ⬜ Pendente  |
-| PRC-07 | UI Builder Workspace (Painel moderno para acompanhamento dos reparos)    | ⬜ Pendente  |
-| PRC-08 | ViaCEP com IntegrationHub (Versão low-code da integração de CEP)         | ⬜ Pendente  |
+| Sprint  | Funcionalidade                                                           | Status       |
+| ------- | ------------------------------------------------------------------------ | ------------ |
+| PRC-01  | Catalog Item + Variables                                                 | ✅ Concluído |
+| PRC-02  | UI Policies + Validações                                                 | ✅ Concluído |
+| PRC-03A | ViaCEP com GlideAjax + Script Include                                    | ⬜ Pendente  |
+| PRC-03B | ViaCEP com IntegrationHub                                                | ⬜ Pendente  |
+| PRC-04  | Flow Designer + Aprovação + Lifecycle                                    | ⬜ Pendente  |
+| PRC-05  | Notificações + Encerramento Automatizado                                 | ⬜ Pendente  |
+| PRC-06  | Integração com Slack via IntegrationHub                                  | ⬜ Pendente  |
+| PRC-07  | Import Set + Transform Map (Importação de dados de equipamentos via CSV) | ⬜ Pendente  |
+| PRC-08  | UI Builder Workspace (Painel moderno para acompanhamento dos reparos)    | ⬜ Pendente  |
+
+---
 
 ### Solicitação de Equipamentos _(planejado)_
 
@@ -155,6 +191,21 @@ Catálogo corporativo para solicitação de notebooks, monitores e periféricos 
 ### Onboarding de Funcionário _(planejado)_
 
 Automação de onboarding com aprovações, provisionamento de acessos e criação automática de tarefas entre equipes.
+
+---
+
+## Metas de Aprendizado
+
+Este portfólio acompanha minha evolução na plataforma ServiceNow, com foco em:
+
+- Certified System Administrator (CSA)
+- Application Development
+- Flow Designer
+- IntegrationHub
+- Service Portal
+- UI Builder
+- CMDB e Asset Management
+- Integrações REST e automações corporativas
 
 ---
 
