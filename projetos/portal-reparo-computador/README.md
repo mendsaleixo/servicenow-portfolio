@@ -122,13 +122,14 @@ portal-reparo-computador/
 
 ## 6. Entregáveis por funcionalidade
 
-| ID     | Funcionalidade                | Update Set                  | Status        |
-| ------ | ----------------------------- | --------------------------- | ------------- |
-| PRC-01 | Catalog Item + Variables      | `PRC-01-catalog-item.xml`   | [x] Concluído |
-| PRC-02 | UI Policies + Record Producer | `PRC-02-ui-policies.xml`    | [ ] Pendente  |
-| PRC-03 | Integração ViaCEP (GlideAjax) | `PRC-03-integracao-cep.xml` | [ ] Pendente  |
-| PRC-04 | Flow + Aprovação + Lifecycle  | `PRC-04-flow-aprovacao.xml` | [ ] Pendente  |
-| PRC-05 | Notificações + Encerramento   | `PRC-05-notificacoes.xml`   | [ ] Pendente  |
+| ID      | Funcionalidade                       | Update Set                  | Status        |
+| ------- | ------------------------------------ | --------------------------- | ------------- |
+| PRC-01  | Catalog Item + Variables             | `PRC-01-catalog-item.xml`   | [x] Concluído |
+| PRC-02  | UI Policies + Record Producer        | `PRC-02-ui-policies.xml`    | [X] Pendente  |
+| PRC-03A | Integração ViaCEP (GlideAjax)        | `PRC-03-integracao-cep.xml` | [X] Pendente  |
+| PRC-03B | Integração ViaCEP com IntegrationHub | `PRC-03-integracao-cep.xml` | [ ] Pendente  |
+| PRC-04  | Flow + Aprovação + Lifecycle         | `PRC-04-flow-aprovacao.xml` | [ ] Pendente  |
+| PRC-05  | Notificações + Encerramento          | `PRC-05-notificacoes.xml`   | [ ] Pendente  |
 
 ---
 
@@ -167,4 +168,4 @@ _[A serem preenchidas durante o desenvolvimento]_
 
 ---
 
-_Última atualização: [25/05/26]_
+_Última atualização: [09/06/26]_
