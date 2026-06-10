@@ -69,6 +69,66 @@ Fluxo concluído
 
 ---
 
+---
+
+## Arquitetura da Integração de CEP
+
+Durante o desenvolvimento do projeto foram implementadas duas abordagens distintas para integração com a API ViaCEP.
+
+### PRC-03A — Integração utilizada pelo Catálogo
+
+A integração principal do formulário utiliza desenvolvimento tradicional ServiceNow com Client Script, GlideAjax e Script Include.
+
+```text
+Usuário informa CEP
+        ↓
+Client Script (onChange)
+        ↓
+GlideAjax
+        ↓
+Script Include (client-callable)
+        ↓
+RESTMessageV2
+        ↓
+API ViaCEP
+        ↓
+Retorno JSON
+        ↓
+Preenchimento automático do endereço
+```
+
+Esta implementação é a responsável pelo preenchimento automático dos campos de endereço no catálogo.
+
+---
+
+### PRC-03B — Componente reutilizável utilizando IntegrationHub
+
+Após a conclusão da Micro-Certification IntegrationHub Fundamentals, foi desenvolvido um segundo mecanismo de consulta de CEP utilizando recursos low-code do IntegrationHub.
+
+O objetivo não foi substituir a integração já existente do catálogo, mas criar uma Action reutilizável que possa ser utilizada futuramente em:
+
+- Flow Designer;
+- Subflows;
+- Workflows corporativos;
+- Process Automation;
+- Integrações futuras.
+
+```text
+Flow / Action
+      ↓
+IntegrationHub Action
+      ↓
+REST Call
+      ↓
+API ViaCEP
+      ↓
+Parse Response
+      ↓
+Outputs reutilizáveis
+```
+
+Essa implementação serviu como aplicação prática dos conceitos estudados na certificação e como demonstração de arquitetura reutilizável baseada em IntegrationHub.
+
 ## 4. Regras de negócio
 
 Documentadas em [`docs/regras-negocio.md`](docs/regras-negocio.md)
@@ -122,14 +182,16 @@ portal-reparo-computador/
 
 ## 6. Entregáveis por funcionalidade
 
-| ID      | Funcionalidade                       | Update Set                  | Status        |
-| ------- | ------------------------------------ | --------------------------- | ------------- |
-| PRC-01  | Catalog Item + Variables             | `PRC-01-catalog-item.xml`   | [x] Concluído |
-| PRC-02  | UI Policies + Record Producer        | `PRC-02-ui-policies.xml`    | [X] Pendente  |
-| PRC-03A | Integração ViaCEP (GlideAjax)        | `PRC-03-integracao-cep.xml` | [X] Pendente  |
-| PRC-03B | Integração ViaCEP com IntegrationHub | `PRC-03-integracao-cep.xml` | [ ] Pendente  |
-| PRC-04  | Flow + Aprovação + Lifecycle         | `PRC-04-flow-aprovacao.xml` | [ ] Pendente  |
-| PRC-05  | Notificações + Encerramento          | `PRC-05-notificacoes.xml`   | [ ] Pendente  |
+| ID      | Funcionalidade                                       | Update Set                                  | Status       |
+| ------- | ---------------------------------------------------- | ------------------------------------------- | ------------ |
+| PRC-01  | Catalog Item + Variables                             | `PRC-01-catalog-item.xml`                   | ✅ Concluído |
+| PRC-02  | UI Policies + Validações                             | `PRC-02-ui-policies.xml`                    | ✅ Concluído |
+| PRC-03A | Integração ViaCEP via GlideAjax + Script Include     | `PRC-03A-integracao-cep-glideajax.xml`      | ✅ Concluído |
+| PRC-03B | Action reutilizável ViaCEP utilizando IntegrationHub | `PRC-03B-integracao-cep-integrationhub.xml` | ✅ Concluído |
+| PRC-04  | Flow Designer + Aprovação + Lifecycle                | `PRC-04-flow-aprovacao.xml`                 | ⬜ Pendente  |
+| PRC-05  | Notificações + Encerramento                          | `PRC-05-notificacoes.xml`                   | ⬜ Pendente  |
+| PRC-06  | Import Set + Transform Map                           | `PRC-06-import-equipamentos.xml`            | ⬜ Pendente  |
+| PRC-07  | Workspace para acompanhamento dos reparos            | `PRC-07-workspace.xml`                      | ⬜ Pendente  |
 
 ---
 
@@ -164,7 +226,29 @@ portal-reparo-computador/
 
 ## 9. Lições aprendidas
 
-_[A serem preenchidas durante o desenvolvimento]_
+### PRC-03A — Desenvolvimento tradicional
+
+- Comunicação Client → Server utilizando GlideAjax.
+- Criação de Script Includes client-callable.
+- Consumo de APIs REST utilizando RESTMessageV2.
+- Tratamento de respostas JSON.
+- Validação e tratamento de erros de integração.
+- Preenchimento dinâmico de formulários de catálogo.
+
+### PRC-03B — IntegrationHub Fundamentals
+
+Após concluir a Micro-Certification IntegrationHub Fundamentals, foi desenvolvida uma segunda implementação para consulta de CEP utilizando IntegrationHub.
+
+Embora o catálogo utilize a integração baseada em GlideAjax, a versão criada com IntegrationHub permitiu explorar conceitos importantes de arquitetura low-code:
+
+- Actions reutilizáveis.
+- Inputs e Outputs.
+- Integrações REST.
+- Tratamento de exceções.
+- Componentização de integrações.
+- Reutilização em Flows e Subflows.
+
+O resultado foi a criação de uma Action genérica para consulta de CEP que poderá ser utilizada em projetos futuros sem necessidade de reescrever código.
 
 ---
 
