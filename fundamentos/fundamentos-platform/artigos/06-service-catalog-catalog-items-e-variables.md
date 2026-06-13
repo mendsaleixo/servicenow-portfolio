@@ -65,7 +65,7 @@ Seu principal objetivo é padronizar a entrada da solicitação e preparar o pro
 | Approvals              | Fluxos de aprovação                |
 | Notifications          | Comunicação automática             |
 
-Essa estrutura mostra que o Catalog Item não é apenas um formulário. Ele é o ponto de entrada de um processo completo, que pode envolver coleta de dados, validações, decisão de negócio, execução operacional e encerramento. [web:18][web:30]
+Essa estrutura mostra que o Catalog Item não é apenas um formulário. Ele é o ponto de entrada de um processo completo, que pode envolver coleta de dados, validações, decisão de negócio, execução operacional e encerramento.
 
 ---
 
