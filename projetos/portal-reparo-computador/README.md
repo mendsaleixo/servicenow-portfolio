@@ -1,255 +1,390 @@
 # Portal de Reparo de Computadores — ServiceNow
 
-Fluxo completo para solicitação de reparo de equipamentos corporativos via Service Portal, com aprovação do gestor, integração de CEP, tarefas automáticas, notificações e lifecycle do ativo.
+Projeto de implementação completo utilizando recursos da plataforma **ServiceNow** para gerenciamento de solicitações de reparo de equipamentos corporativos.
+
+O projeto foi estruturado em módulos incrementais, permitindo a aplicação prática de conceitos de:
+
+- Service Catalog
+- Client Scripts
+- Integrações REST
+- IntegrationHub
+- Flow Designer
+- Notifications
+- Import Sets
+- Workspaces
 
 ---
 
-**Status:** 🟡 Em desenvolvimento | **Tipo:** Projeto de Implementação | **Módulos:** ITSM, Catalog, Flow, Asset Management, Integrations
+## Informações do Projeto
+
+| Item       | Valor                                                                                                                  |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Status     | 🟡 Em desenvolvimento                                                                                                  |
+| Tipo       | Projeto de Portfólio                                                                                                   |
+| Plataforma | ServiceNow                                                                                                             |
+| Objetivo   | Demonstrar conhecimentos progressivos adquiridos por meio de estudos, laboratórios e micro-certificações da plataforma |
 
 ---
 
-## 1. Problema de negócio
+# 1. Problema de Negócio
 
-Funcionários precisam reportar problemas em equipamentos corporativos (computadores, notebooks) e solicitar reparo. O processo atual é manual, sem rastreabilidade, e gera retrabalho para a equipe de TI.
+Funcionários precisam reportar problemas em computadores corporativos e solicitar reparo à equipe de TI.
 
-**Solução:** Portal de autoatendimento onde o usuário abre a solicitação, o gestor aprova, a TI recebe a tarefa, o ativo é rastreado durante todo o lifecycle, e o fluxo é encerrado com confirmação do usuário.
+Em muitos cenários, esse processo ocorre por:
+
+- E-mail
+- Mensagens
+- Planilhas
+
+Gerando:
+
+- Falta de rastreabilidade
+- Ausência de padronização
+- Retrabalho operacional
+- Dificuldade de acompanhamento
+
+## Solução
+
+Criar um portal de autoatendimento onde o usuário:
+
+1. Abre uma solicitação de reparo.
+2. Informa o equipamento e os detalhes do problema.
+3. Tem o endereço preenchido automaticamente através do CEP.
+4. Aguarda aprovação do gestor.
+5. Possui acompanhamento automatizado do processo.
+6. Recebe comunicações durante todo o ciclo de atendimento.
 
 ---
 
-## 2. Fluxo do processo
+# 2. Arquitetura Geral do Projeto
 
 ```text
-Usuário abre solicitação (Catálogo)
-                ↓
-Aprovação do gestor
-                ↓
-Criação automática de tarefa para TI
-                ↓
-Envio do equipamento para a TI
-                ↓
-Ativo → In Transit (em trânsito)
-                ↓
-Recebimento pela TI
-                ↓
-Ativo → In Maintenance (em manutenção)
-                ↓
-Execução do reparo
-                ↓
-Agendamento de devolução
-                ↓
-Ativo → In Transit (retorno)
-                ↓
-Usuário confirma recebimento
-                ↓
-Ativo → In Use (em uso)
-                ↓
-Notificação de encerramento
-                ↓
-Fluxo concluído
+PRC-01 → Service Catalog
+
+PRC-02 → UI Policies
+
+PRC-03A → GlideAjax + Script Include + REST
+
+PRC-03B → IntegrationHub
+
+PRC-04 → Flow Designer + Approvals
+
+PRC-05 → Notification Framework
+
+PRC-06 → Import Sets
+
+PRC-07 → Workspace
+```
+
+Cada sprint adiciona uma camada de complexidade e utiliza recursos específicos da plataforma.
+
+---
+
+# 3. Fluxo Atual do Processo
+
+```text
+Usuário abre solicitação
+            ↓
+Flow Designer dispara
+            ↓
+Aprovação do Gestor
+            ↓
+Aprovado?
+├── Sim
+│      ↓
+│ Criar Task TI
+│      ↓
+│ Equipe executa reparo
+│      ↓
+│ Wait For Condition
+│      ↓
+│ Atualizar Solicitação
+│      ↓
+│ Notificar Usuário
+│
+└── Não
+       ↓
+Encerrar Solicitação
+       ↓
+Notificar Usuário
 ```
 
 ---
 
-## 3. Componentes da plataforma utilizados
+# 4. Componentes Utilizados
 
-| Componente              | Uso no projeto                                                      |
-| ----------------------- | ------------------------------------------------------------------- |
-| Catalog Item            | Formulário de solicitação de reparo                                 |
-| Variables               | Captura de dados (equipamento, descrição, endereço, CEP)            |
-| UI Policies             | Mostrar/esconder campos baseado no tipo de problema                 |
-| Flow Designer           | Automação do fluxo de aprovação, tarefas e lifecycle                |
-| Approvals               | Aprovação do gestor                                                 |
-| Record Producer         | Criação de tarefa para a TI                                         |
-| Script Includes         | Busca de endereço via ViaCEP (client-callable)                      |
-| GlideAjax               | Comunicação assíncrona entre Client Script e servidor               |
-| Service Portal          | Interface do usuário                                                |
-| CMDB / Asset Management | Atualização do status do ativo (In Transit, In Maintenance, In Use) |
-| Notifications           | E-mails automáticos para cada etapa                                 |
-| REST Integration        | Consumo da API ViaCEP                                               |
+| Componente      | Utilização                           |
+| --------------- | ------------------------------------ |
+| Service Catalog | Solicitação de reparo                |
+| Variables       | Captura de dados                     |
+| Variable Sets   | Reutilização de campos               |
+| UI Policies     | Regras de exibição e obrigatoriedade |
+| Client Scripts  | Automação client-side                |
+| GlideAjax       | Comunicação assíncrona               |
+| Script Includes | Lógica server-side                   |
+| RESTMessageV2   | Consumo da API ViaCEP                |
+| IntegrationHub  | Action reutilizável de CEP           |
+| Flow Designer   | Automação do processo                |
+| Approvals       | Aprovação do gestor                  |
+| Catalog Tasks   | Atendimento da equipe de TI          |
+| Notifications   | Comunicação automática               |
+| Workflow Studio | Visualização da arquitetura          |
+| Import Sets     | Carga futura de ativos               |
+| Workspace       | Operação futura do processo          |
 
 ---
 
+# 5. Arquitetura da Integração de CEP
+
+Durante o projeto foram implementadas duas abordagens distintas para consulta de CEP.
+
 ---
 
-## Arquitetura da Integração de CEP
+## PRC-03A — Integração Tradicional
 
-Durante o desenvolvimento do projeto foram implementadas duas abordagens distintas para integração com a API ViaCEP.
+Implementação utilizada diretamente no catálogo.
 
-### PRC-03A — Integração utilizada pelo Catálogo
-
-A integração principal do formulário utiliza desenvolvimento tradicional ServiceNow com Client Script, GlideAjax e Script Include.
+### Fluxo
 
 ```text
 Usuário informa CEP
         ↓
-Client Script (onChange)
+Client Script
         ↓
 GlideAjax
         ↓
-Script Include (client-callable)
+Script Include
         ↓
 RESTMessageV2
         ↓
-API ViaCEP
+ViaCEP
         ↓
 Retorno JSON
         ↓
-Preenchimento automático do endereço
+Preenchimento automático
 ```
 
-Esta implementação é a responsável pelo preenchimento automático dos campos de endereço no catálogo.
+### Tecnologias Utilizadas
+
+- Client Script
+- GlideAjax
+- Script Include
+- RESTMessageV2
+- JSON
 
 ---
 
-### PRC-03B — Componente reutilizável utilizando IntegrationHub
+## PRC-03B — Integração com IntegrationHub
 
-Após a conclusão da Micro-Certification IntegrationHub Fundamentals, foi desenvolvido um segundo mecanismo de consulta de CEP utilizando recursos low-code do IntegrationHub.
+Após concluir a micro-certificação **IntegrationHub Fundamentals**, foi criada uma Action reutilizável para consulta de CEP.
 
-O objetivo não foi substituir a integração já existente do catálogo, mas criar uma Action reutilizável que possa ser utilizada futuramente em:
-
-- Flow Designer;
-- Subflows;
-- Workflows corporativos;
-- Process Automation;
-- Integrações futuras.
+### Fluxo
 
 ```text
-Flow / Action
-      ↓
-IntegrationHub Action
-      ↓
+Flow
+ ↓
+Action
+ ↓
 REST Call
-      ↓
-API ViaCEP
-      ↓
+ ↓
+ViaCEP
+ ↓
 Parse Response
-      ↓
-Outputs reutilizáveis
+ ↓
+Outputs
 ```
 
-Essa implementação serviu como aplicação prática dos conceitos estudados na certificação e como demonstração de arquitetura reutilizável baseada em IntegrationHub.
+### Objetivos
 
-## 4. Regras de negócio
-
-Documentadas em [`docs/regras-negocio.md`](docs/regras-negocio.md)
-
-| Regra | Descrição                                                           |
-| ----- | ------------------------------------------------------------------- |
-| RN001 | Usuário só pode selecionar ativos vinculados ao seu próprio usuário |
-| RN002 | CEP deve preencher automaticamente rua, bairro, cidade e UF         |
-| RN003 | Ativo deve mudar para "In Maintenance" quando recebido pela TI      |
-| RN004 | Ativo deve mudar para "In Transit" quando enviado ou devolvido      |
-| RN005 | Ativo deve voltar para "In Use" após confirmação do usuário         |
-| RN006 | Fluxo só encerra após confirmação de recebimento pelo usuário       |
-| RN007 | Descrição detalhada é obrigatória apenas para problemas complexos   |
+- Componentização
+- Reutilização
+- Baixo código
+- Integrações futuras
 
 ---
 
-## 5. Estrutura do projeto
+# 6. Arquitetura do Fluxo de Aprovação
+
+Implementada durante o **PRC-04**.
+
+## Componentes
+
+- Trigger baseado em Catalog Item
+- Ask For Approval
+- Flow Logic
+- Create Catalog Task
+- Wait For Condition
+- Update Record
+- Notifications
+
+## Fluxo
+
+```text
+Catalog Item
+      ↓
+Flow Trigger
+      ↓
+Ask For Approval
+      ↓
+Aprovado?
+├── Sim
+│      ↓
+│ Create Catalog Task
+│      ↓
+│ Wait For Condition
+│      ↓
+│ Update Record
+│      ↓
+│ Notification
+│
+└── Não
+       ↓
+Update Record
+       ↓
+Notification
+```
+
+---
+
+# 7. Regras de Negócio
+
+Documentadas em:
+
+```text
+docs/regras-negocio.md
+```
+
+| Regra | Descrição                                                |
+| ----- | -------------------------------------------------------- |
+| RN001 | Usuário só pode selecionar seus próprios ativos          |
+| RN002 | CEP preenche endereço automaticamente                    |
+| RN003 | Fluxo cria tarefa para TI após aprovação                 |
+| RN004 | Solicitação rejeitada deve ser encerrada                 |
+| RN005 | Task deve ser concluída antes do encerramento            |
+| RN006 | Fluxo aguarda condição definida                          |
+| RN007 | Descrição detalhada obrigatória para problemas complexos |
+
+---
+
+# 8. Estrutura do Projeto
 
 ```text
 portal-reparo-computador/
 │
-├── README.md # Este arquivo
-├── update-sets/ # Exportações XML por funcionalidade
-│ ├── PRC-01-catalog-item.xml
-│ ├── PRC-02-ui-policies.xml
-│ ├── PRC-03-integracao-cep.xml
-│ ├── PRC-04-flow-aprovacao.xml
-│ └── PRC-05-notificacoes.xml
+├── README.md
 │
-├── scripts/ # Códigos fonte
-│ ├── client-script-cep.js
-│ └── script-include-viacep.js
+├── docs/
+│   ├── arquitetura.md
+│   ├── fluxo-processo.md
+│   ├── regras-negocio.md
+│   └── testes.md
 │
-├── screenshots/ # Evidências visuais
-│ ├── 01-catalog-item.png
-│ ├── 02-ui-policy.png
-│ ├── 03-viacep-integracao.png
-│ ├── 04-flow-designer.png
-│ ├── 05-approval.png
-│ ├── 06-task-created.png
-│ └── 07-portal-confirmation.png
+├── scripts/
+│   ├── client-script-cep.js
+│   └── script-include-viacep.js
 │
-└── docs/ # Documentação funcional
-├── arquitetura.md
-├── regras-negocio.md
-├── testes.md
-└── fluxo-processo.md
+├── screenshots/
+│
+└── update-sets/
+    ├── PRC-01-catalog-item.xml
+    ├── PRC-02-ui-policies.xml
+    ├── PRC-03A-integracao-cep-glideajax.xml
+    ├── PRC-03B-integracao-cep-integrationhub.xml
+    ├── PRC-04-flow-aprovacao.xml
+    ├── PRC-05-notification-framework.xml
+    ├── PRC-06-import-set.xml
+    └── PRC-07-workspace.xml
 ```
 
 ---
 
-## 6. Entregáveis por funcionalidade
+# 9. Roadmap
 
-| ID      | Funcionalidade                                       | Update Set                                  | Status       |
-| ------- | ---------------------------------------------------- | ------------------------------------------- | ------------ |
-| PRC-01  | Catalog Item + Variables                             | `PRC-01-catalog-item.xml`                   | ✅ Concluído |
-| PRC-02  | UI Policies + Validações                             | `PRC-02-ui-policies.xml`                    | ✅ Concluído |
-| PRC-03A | Integração ViaCEP via GlideAjax + Script Include     | `PRC-03A-integracao-cep-glideajax.xml`      | ✅ Concluído |
-| PRC-03B | Action reutilizável ViaCEP utilizando IntegrationHub | `PRC-03B-integracao-cep-integrationhub.xml` | ✅ Concluído |
-| PRC-04  | Flow Designer + Aprovação + Lifecycle                | `PRC-04-flow-aprovacao.xml`                 | ⬜ Pendente  |
-| PRC-05  | Notificações + Encerramento                          | `PRC-05-notificacoes.xml`                   | ⬜ Pendente  |
-| PRC-06  | Import Set + Transform Map                           | `PRC-06-import-equipamentos.xml`            | ⬜ Pendente  |
-| PRC-07  | Workspace para acompanhamento dos reparos            | `PRC-07-workspace.xml`                      | ⬜ Pendente  |
-
----
-
-## 7. Como testar
-
-1. Acesse o PDI
-2. Navegue até: `Self-Service` → `Service Catalog` → `Reparo de Computador`
-3. Preencha o formulário:
-   - Selecione um equipamento vinculado ao seu usuário
-   - Descreva o problema
-   - Informe o CEP (campos de endereço devem preencher automaticamente)
-4. Envie a solicitação
-5. Acompanhe as notificações por e-mail
-6. Como gestor, acesse `My Approvals` e aprove/rejeite
-7. Como TI, verifique a tarefa criada em `My Tasks`
-8. Como usuário, confirme o recebimento após o reparo
+| Sprint  | Objetivo                  | Status       |
+| ------- | ------------------------- | ------------ |
+| PRC-01  | Service Catalog           | ✅ Concluído |
+| PRC-02  | UI Policies               | ✅ Concluído |
+| PRC-03A | GlideAjax + REST          | ✅ Concluído |
+| PRC-03B | IntegrationHub            | ✅ Concluído |
+| PRC-04  | Flow Designer + Approvals | ✅ Concluído |
+| PRC-05  | Notification Framework    | ⬜ Planejado |
+| PRC-06  | Import Sets               | ⬜ Planejado |
+| PRC-07  | Workspace                 | ⬜ Planejado |
 
 ---
 
-## 8. Melhorias futuras
+# 10. Lições Aprendidas
 
-| ID    | Melhoria                    | Descrição                                      | Prioridade |
-| ----- | --------------------------- | ---------------------------------------------- | ---------- |
-| MF-01 | Dashboard de acompanhamento | Visão de todas as solicitações por status      | Alta       |
-| MF-02 | SLA para reparo             | Tempo máximo para conclusão do reparo          | Média      |
-| MF-03 | Integração com Teams/Slack  | Notificações via chat corporativo              | Média      |
-| MF-04 | Aprovação multinível        | Gestor + TI + Compliance                       | Baixa      |
-| MF-05 | QR Code para check-in/out   | Controle de entrada/saída do equipamento na TI | Baixa      |
-| MF-06 | Catálogo mobile responsivo  | Versão otimizada para dispositivos móveis      | Baixa      |
+## PRC-03A
 
----
+### Conhecimentos Aplicados
 
-## 9. Lições aprendidas
+- GlideAjax
+- Script Includes
+- RESTMessageV2
+- JSON
+- Client Scripts
 
-### PRC-03A — Desenvolvimento tradicional
+## PRC-03B
 
-- Comunicação Client → Server utilizando GlideAjax.
-- Criação de Script Includes client-callable.
-- Consumo de APIs REST utilizando RESTMessageV2.
-- Tratamento de respostas JSON.
-- Validação e tratamento de erros de integração.
-- Preenchimento dinâmico de formulários de catálogo.
+### Conhecimentos Aplicados
 
-### PRC-03B — IntegrationHub Fundamentals
+- IntegrationHub
+- Actions
+- Inputs e Outputs
+- Integrações reutilizáveis
+- Arquitetura low-code
 
-Após concluir a Micro-Certification IntegrationHub Fundamentals, foi desenvolvida uma segunda implementação para consulta de CEP utilizando IntegrationHub.
+## PRC-04
 
-Embora o catálogo utilize a integração baseada em GlideAjax, a versão criada com IntegrationHub permitiu explorar conceitos importantes de arquitetura low-code:
+### Conhecimentos Aplicados
 
-- Actions reutilizáveis.
-- Inputs e Outputs.
-- Integrações REST.
-- Tratamento de exceções.
-- Componentização de integrações.
-- Reutilização em Flows e Subflows.
-
-O resultado foi a criação de uma Action genérica para consulta de CEP que poderá ser utilizada em projetos futuros sem necessidade de reescrever código.
+- Flow Designer
+- Approvals
+- Flow Logic
+- Wait For Condition
+- Catalog Tasks
+- Workflow Studio
+- Automação de processos
 
 ---
 
-_Última atualização: [09/06/26]_
+# 11. Próximos Passos
+
+## PRC-05 — Notification Framework
+
+### Funcionalidades
+
+- Email Notifications
+- Email Templates
+- Notification Management
+- Event-driven Notifications
+
+---
+
+## PRC-06 — Import Sets
+
+### Funcionalidades
+
+- Data Sources
+- Import Sets
+- Transform Maps
+- Coalesce
+- Data Import
+
+---
+
+## PRC-07 — Workspace
+
+### Funcionalidades
+
+- Agent Workspace
+- Configuração de listas
+- Visualização operacional
+- Acompanhamento dos reparos
+
+---
+
+## Última Atualização
+
+**Junho/2026**
