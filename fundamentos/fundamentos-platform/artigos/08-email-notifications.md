@@ -6,7 +6,7 @@ No ServiceNow, muitos processos não terminam apenas quando um registro é criad
 
 Essa comunicação é feita por meio do **Notification Framework**.
 
-## Dentro da plataforma, esse framework organiza como as notificações são criadas, como o conteúdo é reaproveitado e como os eventos do sistema podem disparar mensagens automáticas. A documentação oficial do ServiceNow descreve notifications como recursos para alertar usuários sobre eventos importantes da aplicação e explica que email templates permitem criar conteúdo reutilizável para assunto e corpo das mensagens.
+Dentro da plataforma, esse framework organiza como as notificações são criadas, como o conteúdo é reaproveitado e como os eventos do sistema podem disparar mensagens automáticas. A documentação oficial do ServiceNow descreve notifications como recursos para alertar usuários sobre eventos importantes da aplicação e explica que email templates permitem criar conteúdo reutilizável para assunto e corpo das mensagens.
 
 ## O que é o Notification Framework
 
