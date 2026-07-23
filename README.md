@@ -37,7 +37,9 @@ Fluxo completo de solicitação de reparo de equipamentos corporativos via Servi
 
 ## Fundamentos técnicos
 
-Estudos e práticas organizados em `/fundamentos`: ITSM/ITIL, Client Scripts, Business Rules, GlideRecord, Script Includes, UI Policies, Flow Designer, IntegrationHub, Update Sets.
+- **Plataforma:** navegação, listas/filtros, incidentes, UI Policies, Update Sets, Service Catalog, Flow Designer
+- **Client-side:** Client Scripts (onChange, onLoad, onSubmit), UI Policy vs Client Script
+- **Server-side:** Business Rules, GlideRecord, Script Includes, GlideAjax, integrações REST
 
 ## Certificações
 
@@ -54,6 +56,9 @@ servicenow-portfolio/
 │   ├── onboarding-funcionario/
 │   └── solicitacao-equipamentos/
 ├── fundamentos/
+│ ├── fundamentos-platform/
+│ ├── desenvolvimento-client-side/
+│ └── desenvolvimento-server-side/
 └── assets/
 ```
 
