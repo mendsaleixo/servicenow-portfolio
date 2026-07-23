@@ -1,5 +1,7 @@
 # Fundamentos da Plataforma — ITSM e Incident Management
 
+[← Voltar ao portfólio principal](../../README.md)
+
 Implementações práticas na plataforma ServiceNow para gerenciamento de incidentes, customização de formulários, controle de versão com Update Sets e aplicação de conceitos ITIL.
 
 ---
@@ -40,11 +42,11 @@ e versionamento de customizações via Update Sets.
 
 ### Evidências
 
-- [Screenshots das implementações](entregaveis/prints/)
+- [Screenshots das implementações](entregaveis/screenshots/)
 
 ### Update Set
 
-- [Exportação XML](update-sets/ESTUDO-S01-Mendelson-Fundamentos_ServiceNow.xml)
+- [Exportação XML](update-sets/Semana1-Fundamentos.xml)
 
 ---
 
@@ -68,52 +70,4 @@ e versionamento de customizações via Update Sets.
 ### Update Sets
 
 - Update Set criado e mantido ativo durante toda a semana
-- Captura de campos customizados, form layout, choices e UI Policies
-- Exportado como XML ao final da semana
-
----
-
-## Conceitos aplicados
-
-| Conceito                     | Aplicação prática                                          |
-| ---------------------------- | ---------------------------------------------------------- |
-| Incident Management          | Abertura, acompanhamento e fechamento de chamados          |
-| Ciclo de vida do incidente   | New → In Progress → Resolved → Closed                      |
-| ITIL (Incidente vs Problema) | Diferenciação conceitual entre sintoma e causa raiz        |
-| Update Set                   | Versionamento e transporte de customizações                |
-| UI Policy                    | Comportamento dinâmico de formulários                      |
-| Form Layout                  | Organização de campos no formulário                        |
-| Choice Lists                 | Configuração de dropdowns com valores técnicos vs exibição |
-
----
-
-## Observações técnicas
-
-- **Work Notes vs Additional Comments:** Work Notes são internas (equipe); Additional Comments são visíveis ao usuário final
-- **Element vs Label em Choice Lists:** Element exige nome técnico da coluna, não o label de exibição — erro comum que causa dropdown vazio
-- **Reverse if false em UI Policies:** elimina a necessidade de criar uma segunda policy para desfazer a regra
-- **On load em UI Policies:** necessário para que a policy seja avaliada ao abrir o formulário
-- **Update Sets capturam configuração, não dados:** campos e UI Policies são transportados; registros de incidentes não entram no Update Set
-- **View Default vs outras views:** a navegação pelo Application Navigator garante abertura na view correta com todos os campos disponíveis
-
----
-
-## Estrutura do diretório
-
-```text
-01-semana1-fundamentos/
-├── README-semana1.md
-├── flashcards-semana1.txt
-├── artigos/               # documentação técnica
-├── entregaveis/           # evidências e testes
-│   └── prints/            # screenshots
-└── update-sets/           # exportações XML
-
----
-
-## Links úteis
-
-- [ServiceNow Developer Portal](https://developer.servicenow.com)
-- [Comunidade ServiceNow](https://www.servicenow.com/community/)
-- [Documentação ITIL 4](https://www.axelos.com/itil-4)
-```
+- Captura de campos customizados, form layout, choices e UI
