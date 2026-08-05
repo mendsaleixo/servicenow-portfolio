@@ -2,21 +2,33 @@
 
 ## O que era esperado
 
-Criar o ambiente inicial e a base da aplicação escopada isolada para a AuMiau Pet Shop, instalar o plugin de tradução para Português Brasileiro (`pt-BR`), ajustar as preferências do usuário e definir a governança de acesso com as funções específicas (`aumiau_admin` e `aumiau_user`).
+Preparar o ambiente base da sua instância no ServiceNow para iniciar o Projeto Final, instalando o plugin oficial de tradução para Português Brasileiro (`pt-BR`) e configurando as preferências gerais de usabilidade do usuário (formato de data/hora, ativação de dicas de ajuda e alteração do idioma da interface).
 
 ---
 
 ## Como foi feito
 
-1. Acesso ao **ServiceNow Studio** pelo menu global para iniciar uma nova aplicação escopada.
-2. Configuração do escopo sob o nome técnico `x_aumiau`, inserindo descrição e identidade visual inicial.
-3. Criação das roles de controle de acesso da aplicação: `aumiau_admin` e `aumiau_user`.
-4. Instalação e validação do plugin de tradução `pt-BR`.
+1. **Instalação do Plugin de Idioma (Missão 01):**
+   - Navegação pelo _All Menu_ até `System Definition > Plugins`.
+   - Busca e seleção do plugin **I18N: Brazilian Portuguese Translations** no _Application Manager_.
+   - Execução do download e acompanhamento da conclusão com êxito para habilitar a tradução nativa da plataforma.
+2. **Configuração de Preferências Pessoais (Missão 02):**
+   - Acesso ao _User Menu_ (canto superior direito da tela) e clique em _Preferences_.
+   - Ajuste do formato de data e hora para `YYYY-MM-DD 09:00:01`.
+   - Ativação da visualização de dicas de ajuda (_help tips_) em formulários.
 
 ---
 
-## Comprovação Prática
+## Prática:
 
-> _A imagem abaixo comprova o sucesso da execução desta etapa:_
+### 1. Instalação do Plugin de Tradução (pt-BR)
 
-![Fundação e Escopo do App](lab01-fundacao.png)
+![Plugin de Tradução Instalado](/docs/screenshots/missao1.png)
+
+### 2. Configuração de Idioma para Português (Brasileiro)
+
+![Idioma Configurado](/docs/screenshots/missao2a.png)
+
+### 3. Ativação de Dicas de Ajuda (Help Tips)
+
+![Dicas de Ajuda Ativas](/docs/screenshots/missao2b.png)
