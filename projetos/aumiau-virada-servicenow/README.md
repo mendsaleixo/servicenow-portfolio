@@ -40,12 +40,12 @@ A solução foi desenvolvida utilizando os principais pilares de desenvolvimento
 
 ## Galeria de Evidências
 
-- **1. Service Portal (`/aumiau`):** [Ver print na pasta docs/portal.png](docs/screenshots/portal.png)
-  - _O que mostra:_ A homepage finalizada contendo o banner oficial da marca, o menu superior enxuto e o widget de busca customizado _"Como posso AUjudar?"_.
-- **2. Automação no Flow Designer:** [Ver print na pasta docs/flow-designer.png](docs/screenshots/flow-designer.png)
-  - _O que mostra:_ O fluxo configurado com gatilho de criação de pedidos, alteração automática de status para "Em atendimento" e o disparo condicional de e-mail para o grupo de suporte em casos de alta criticidade.
-- **3. Dashboard de Gestão (Platform Analytics):** [Ver print na pasta docs/dashboard.png](docs/screenshots/dashboard.png)
-  - _O que mostra:_ O painel gerencial consolidado com 5 visualizações analíticas, incluindo indicadores de _Single Score_ para pedidos e a fila de ouvidoria.
+- **1. Service Portal (`/aumiau`):** ![Ver print na pasta docs/portal.png](docs/screenshots/portal.png)
+  - Homepage finalizada contendo o banner oficial da marca, o menu superior enxuto e o widget de busca customizado _"Como posso AUjudar?"_.
+- **2. Automação no Flow Designer:** ![Ver print na pasta docs/flow-designer.png](docs/screenshots/flow-designer.png)
+  - Fluxo configurado com gatilho de criação de pedidos, alteração automática de status para "Em atendimento" e o disparo condicional de e-mail para o grupo de suporte em casos de alta criticidade.
+- **3. Dashboard de Gestão (Platform Analytics):** ![Ver print na pasta docs/dashboard.png](docs/screenshots/dashboard.png)
+  - Painel gerencial com 5 visualizações analíticas, incluindo indicadores de _Single Score_ para pedidos e a fila de ouvidoria.
 
 ---
 
