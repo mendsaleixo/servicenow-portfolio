@@ -23,12 +23,12 @@ Preparar o ambiente base da sua instância no ServiceNow para iniciar o Projeto 
 
 ### 1. Instalação do Plugin de Tradução (pt-BR)
 
-![Plugin de Tradução Instalado](/docs/screenshots/missao1.png)
+![Plugin de Tradução Instalado](/projetos/aumiau-virada-servicenow/docs/screenshots/missao1.png)
 
 ### 2. Configuração de Idioma para Português (Brasileiro)
 
-![Idioma Configurado](/docs/screenshots/missao2a.png)
+![Idioma Configurado](/projetos/aumiau-virada-servicenow/docs/screenshots/missao2a.png)
 
 ### 3. Ativação de Dicas de Ajuda (Help Tips)
 
-![Dicas de Ajuda Ativas](/docs/screenshots/missao2b.png)
+![Dicas de Ajuda Ativas](/projetos/aumiau-virada-servicenow/docs/screenshots/missao2b.png)
