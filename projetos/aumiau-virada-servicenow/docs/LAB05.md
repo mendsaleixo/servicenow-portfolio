@@ -24,5 +24,3 @@ Concluir o projeto com foco gerencial, alimentando o ambiente com registros de e
 > _A imagem abaixo comprova o sucesso da execução desta etapa:_
 
 ![Dashboard de Gestão](lab05-analytics.png)
-
-- **Validação do Recrutador:** Prova competência no fechamento analítico de projetos, entregando visibilidade de KPIs e métricas de desempenho para os gestores da empresa.
