@@ -3,7 +3,7 @@
 **Data:** 22/04/2026
 **Semana:** 1 — Fundamentos
 **Fonte:** SNAF Módulo 3 + Prática própria
-**Tópicos relacionados:** Incident Management, Form Configuration, List Views, Global Search, User Preferences, Plugins
+**Tópicos relacionados:** Incident Management, Form Configuration, List Views, Global Search, User Preferences, Plugins, Personalize vs Customize, System Properties
 
 ---
 
@@ -90,6 +90,44 @@ Plugins são pacotes de funcionalidade opcionais que podem ser ativados dentro d
 
 ---
 
+## Personalize x Customize
+
+A distinção central por trás de quase toda personalização na plataforma — e pergunta clássica de prova.
+
+|          | Personalize                                               | Customize                                  |
+| -------- | --------------------------------------------------------- | ------------------------------------------ |
+| Quem faz | Usuário final                                             | Administrador                              |
+| Escopo   | Afeta só quem fez a mudança                               | Afeta todos os usuários                    |
+| Impacto  | Baixo (visual, pessoal)                                   | Alto (estrutural, configuração real)       |
+| Exemplo  | Reordenar colunas de uma lista, aplicar um filtro pessoal | Alterar o Form Layout, criar um novo campo |
+
+> **Regra prática:** se a mudança é "salva só pra mim" → Personalize. Se é "salva pra todo mundo que usar aquele formulário/lista" → Customize.
+
+### O que pode ser personalizado (nível usuário)
+
+- **List Layout:** reordenar, adicionar ou remover colunas de uma lista, aplicar filtros — fica salvo por usuário.
+- **Form personalization:** em alguns cenários o usuário pode reorganizar campos do formulário (menos comum que a customização feita pelo admin).
+- **Homepage/Dashboard:** adicionar, remover e reorganizar widgets.
+
+### Controlando quem pode personalizar
+
+Duas System Properties trabalham juntas para controlar a personalização de formulário na instância:
+
+| Propriedade                      | Função                                                                                            |
+| -------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `glide.ui.personalize_form`      | Liga/desliga a personalização de formulário na instância inteira (`true`/`false`)                 |
+| `glide.ui.personalize_form.role` | Define quais roles podem usar essa funcionalidade (ex: `admin` restringe só a quem tem essa role) |
+
+> **Atenção:** ambas ficam em `sys_properties.list` — **não** em `sys_form_properties` (essa tabela não existe; é um distrator clássico de prova).
+
+### System Properties, de forma mais ampla
+
+- São configurações globais da instância — controlam o comportamento da plataforma como um todo, não são dado de negócio.
+- Ficam centralizadas em `sys_properties.list`.
+- **Branding** (logo, cores, tema — UI16) também é controlado por System Properties.
+
+---
+
 ## Listas
 
 Uma lista exibe vários registros de uma mesma tabela, cada registro em uma linha e cada campo em uma coluna.
@@ -103,7 +141,7 @@ Uma lista exibe vários registros de uma mesma tabela, cada registro em uma linh
 - **Mostrar/Esconder colunas:** clique no ícone de engrenagem (⚙️) no canto superior direito
 - **Exportar:** clique no ícone de download para exportar para Excel, CSV ou PDF
 
-Você pode criar **views** (visualizações) personalizadas da lista, salvando uma combinação específica de colunas, ordenação e filtros — útil para equipes com necessidades diferentes.
+Você pode criar **views** (visualizações) personalizadas da lista, salvando uma combinação específica de colunas, ordenação e filtros — útil para equipes com necessidades diferentes. Isso é **Personalize**: fica salvo só para você, não para os demais usuários.
 
 ---
 
@@ -215,7 +253,7 @@ Formulários também suportam comportamentos dinâmicos — campos obrigatórios
 5. Reorganize a ordem com as setas
 6. Clique em **Save**
 
-> **Atenção:** Alterações no layout afetam todos os usuários daquela tabela. Sempre verifique com o time antes de mudanças drásticas.
+> **Atenção:** isso é **Customize**, não Personalize — as alterações no layout afetam todos os usuários daquela tabela. Sempre verifique com o time antes de mudanças drásticas.
 
 **Personalizações comuns:**
 
@@ -301,6 +339,7 @@ while (gr.next()) {
 - **Busca Global** encontra dados dentro dos registros; **Histórico Recente** leva você de volta ao que acabou de ver
 - **Preferências** personalizam sua experiência pessoal sem afetar outros usuários
 - **Plugins** ligam funcionalidades opcionais da instância sem precisar desenvolver do zero
+- **Personalize** (usuário, só pra mim) x **Customize** (admin, pra todo mundo) — `glide.ui.personalize_form` e `glide.ui.personalize_form.role` controlam a personalização de formulário, e ficam em `sys_properties.list`
 - **Listas** mostram vários registros — use ordenação, agrupamento (Group by) e colunas para organizar
 - **Filtros** refinam o que você vê — o Condition Builder monta condições, os breadcrumbs mostram e ajustam o que está aplicado, e filtros recorrentes merecem ser salvos
 - **Formulários** mostram um registro em detalhe — Form Builder, Form Layout (Classic), Form Designer e UI Builder são os editores disponíveis para personalizar o layout
