@@ -3,7 +3,7 @@
 **Data:** 22/04/2026
 **Semana:** 1 — Fundamentos
 **Fonte:** SNAF Módulo 3 + Prática própria
-**Tópicos relacionados:** Incident Management, Form Configuration, List Views
+**Tópicos relacionados:** Incident Management, Form Configuration, List Views, Global Search, User Preferences, Plugins
 
 ---
 
@@ -41,6 +41,53 @@ Ao lado do Filtro de Navegação existe um ícone de estrela. Salve os módulos 
 
 **Como adicionar:** navegue até a lista ou formulário → clique na estrela no canto superior direito → dê um nome → salve.
 
+### Busca Global
+
+Diferente do Filtro de Navegação (que busca **módulos, tabelas e páginas**), a Busca Global pesquisa **dentro dos dados** — em registros de várias tabelas ao mesmo tempo. Fica no ícone de lupa (🔍) no cabeçalho superior.
+
+**Como funciona:** digite um termo (ex: um número de telefone, nome de usuário ou parte de uma descrição) e o sistema retorna registros correspondentes, agrupados por tabela (Incidentes, Usuários, Problemas, etc).
+
+> **Diferença que cai em prova:** Filtro de Navegação = "para onde eu vou" (módulos e tabelas). Busca Global = "o que eu encontro" (dados dentro dos registros).
+
+### Histórico Recente
+
+O sistema guarda automaticamente os últimos registros e módulos que você visitou, disponíveis no ícone de relógio (🕒) ao lado do Filtro de Navegação.
+
+**Para que serve:** voltar rapidamente a um registro que você acabou de sair, sem precisar buscar de novo ou lembrar o número.
+
+---
+
+## Preferências do Usuário
+
+Preferências são ajustes pessoais que cada usuário faz na própria experiência — sem alterar nada para os demais. É a diferença entre organizar sua própria mesa de trabalho e reformar o escritório inteiro (isso seria uma mudança de sistema, feita via configurações administrativas).
+
+**Como acessar:** clique no ícone do seu perfil (canto superior direito) → **Preferences**.
+
+**O que pode ser personalizado:**
+
+| Preferência      | O que ajusta                                                     |
+| ---------------- | ---------------------------------------------------------------- |
+| Idioma           | Idioma da interface (requer plugin de tradução instalado)        |
+| Fuso horário     | Datas e horários exibidos conforme seu local                     |
+| Notificações     | Como e quando você recebe alertas (e-mail, dentro da plataforma) |
+| Layout de listas | Registros por página, colunas padrão                             |
+| Temas            | Aparência visual (claro/escuro, cores)                           |
+| Atalhos          | Shortcuts pessoais salvos                                        |
+
+> **Atenção:** Preferences afetam só o usuário logado. Não confunda com Branding ou System Properties, que são configurações administrativas e mudam a experiência de **toda a instância**.
+
+---
+
+## Plugins — Funcionalidades Opcionais da Instância
+
+Plugins são pacotes de funcionalidade opcionais que podem ser ativados dentro de uma instância — aplicativos prontos, workspaces, integrações ou dados de demonstração. Pense neles como "módulos extras" que você liga quando precisa, em vez de desenvolver do zero.
+
+**Exemplos comuns:** plugin de tradução (ex: I18N Brazilian Portuguese), Service Portal, IntegrationHub, dados de demonstração de ITSM.
+
+**Como ativar:** **All Menu → System Definition → Plugins**, busque o plugin desejado e clique em **Install/Activate**.
+
+> Ativar plugins é uma ação administrativa — normalmente exige a role `admin`. Avalie o impacto antes de ativar em uma instância de produção.
+
 ---
 
 ## Listas
@@ -50,6 +97,7 @@ Uma lista exibe vários registros de uma mesma tabela, cada registro em uma linh
 **Ações comuns:**
 
 - **Ordenar:** clique no cabeçalho de uma coluna para ordenar por aquele campo
+- **Agrupar (Group by):** agrupe registros por um campo para somar ou segmentar resultados (ex: incidentes agrupados por Assignment group)
 - **Redimensionar colunas:** arraste a borda do cabeçalho
 - **Reorganizar colunas:** arraste o cabeçalho para uma nova posição
 - **Mostrar/Esconder colunas:** clique no ícone de engrenagem (⚙️) no canto superior direito
@@ -65,7 +113,7 @@ Filtros são condições que você aplica sobre uma lista para mostrar apenas os
 
 **Como aplicar:**
 
-1. Na lista, clique no ícone de funil (🔽) para abrir a barra de filtros
+1. Na lista, clique no ícone de funil (🔽) para abrir o **Condition Builder** (barra de filtros)
 2. Adicione uma condição — escolha campo, operador e valor
 3. Clique em **Run** para aplicar
 
@@ -78,6 +126,23 @@ Filtros são condições que você aplica sobre uma lista para mostrar apenas os
 | maior que / menor que | Números, datas e prioridades     |
 | entre                 | Intervalo entre dois valores     |
 | é vazio / não é vazio | Campos preenchidos ou não        |
+
+### Breadcrumbs
+
+A trilha de condições exibida no topo da lista, logo abaixo do cabeçalho, mostra os filtros aplicados no momento — cada pedaço da frase representa uma condição.
+
+**Para que serve:** clique em qualquer parte da trilha para refinar ou remover aquela condição especificamente, sem precisar reabrir o Condition Builder inteiro.
+
+### Exercício rápido (5 min)
+
+Pratique montando seu próprio filtro em uma lista de incidentes:
+
+1. Abra a lista de incidentes pelo Filtro de Navegação: `Incident > All`
+2. Clique no ícone de funil (🔽) para abrir o Condition Builder
+3. Monte a condição `Priority is 1 - Critical` e clique em **Run**
+4. Confira a lista recortada e depois troque a condição para `Active is true`
+
+> **Boas práticas:** combine condições com `AND`/`OR` para recortes precisos; use os breadcrumbs para refinar ou remover filtros com um clique; salve filtros recorrentes como favoritos; e prefira o operador `is` a `contains` quando possível — é mais rápido e exato.
 
 ### Filtros salvos
 
@@ -99,6 +164,8 @@ Depois de criar um filtro complexo que você usa com frequência, salve-o para r
 ## Formulários
 
 Um formulário mostra todos os campos de um registro específico, permitindo visualizar, editar e criar novos registros.
+
+Formulários também suportam comportamentos dinâmicos — campos obrigatórios, regras de visibilidade e validações — além de ações rápidas, botões e automações integradas que garantem que os dados sejam coletados corretamente e o processo avance (detalhes na seção [Personalização de formulários](#personalização-de-formulários-para-desenvolvedores), mais abaixo).
 
 **Como acessar:**
 
@@ -122,11 +189,24 @@ Um formulário mostra todos os campos de um registro específico, permitindo vis
 | Delete          | Remove o registro (cuidado!)                           |
 | Insert and Stay | Cria e permanece no formulário para criar outro        |
 
+> **Atenção:** o cabeçalho do formulário também traz o **form context menu** (ícone ☰, "hambúrguer") — reúne ações como Save, Insert e a configuração de layout. É o caminho mais rápido para administrar o registro sem sair do formulário.
+
 ---
 
 ## Personalização de formulários (para desenvolvedores)
 
-**Como personalizar o layout:**
+**Editores disponíveis:**
+
+| Editor                 | Caminho                     | Quando usar                                                                                 |
+| ---------------------- | --------------------------- | ------------------------------------------------------------------------------------------- |
+| Form Builder           | Configure ▸ Form Builder    | Editor visual moderno (arrastar e soltar); campos, seções, abas, formatters e related lists |
+| Form Layout (Classic)  | Configure ▸ Form Layout     | Editor clássico (slushbucket) para adicionar/remover/ordenar campos com rapidez             |
+| Form Designer          | Predecessor do Form Builder | Editor visual drag-and-drop anterior ao Form Builder, mesma lógica de seções e campos       |
+| UI Builder (Workspace) | Next Experience / Workspace | Monta formulários por componentes low-code nas experiências Workspace (Agent/CSM)           |
+
+> A disponibilidade de cada editor varia conforme a versão da plataforma e os plugins ativos na instância.
+
+**Como personalizar o layout (via Form Layout Classic):**
 
 1. Abra qualquer registro da tabela
 2. Clique com **botão direito** no cabeçalho do formulário
@@ -218,8 +298,11 @@ while (gr.next()) {
 ## Resumo para guardar
 
 - O **Filtro de Navegação** é seu ponto de partida para tudo — treine usá-lo
-- **Listas** mostram vários registros — use ordenação e colunas para organizar
-- **Filtros** refinam o que você vê — salve os que você usa sempre
-- **Formulários** mostram um registro em detalhe — personalize o layout para sua necessidade
+- **Busca Global** encontra dados dentro dos registros; **Histórico Recente** leva você de volta ao que acabou de ver
+- **Preferências** personalizam sua experiência pessoal sem afetar outros usuários
+- **Plugins** ligam funcionalidades opcionais da instância sem precisar desenvolver do zero
+- **Listas** mostram vários registros — use ordenação, agrupamento (Group by) e colunas para organizar
+- **Filtros** refinam o que você vê — o Condition Builder monta condições, os breadcrumbs mostram e ajustam o que está aplicado, e filtros recorrentes merecem ser salvos
+- **Formulários** mostram um registro em detalhe — Form Builder, Form Layout (Classic), Form Designer e UI Builder são os editores disponíveis para personalizar o layout
 - **Related Lists** conectam registros de diferentes tabelas — explore-as sempre
 - **Atalhos de teclado** aceleram seu trabalho — aprenda um por vez
