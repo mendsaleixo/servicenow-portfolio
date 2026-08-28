@@ -1,6 +1,6 @@
 # Bloco 1 — The ServiceNow Platform & UI
 
-[← Voltar à visão geral](../README.md)
+[← Voltar à visão geral](../README.md) · [Questões de treino →](questoes-praticas.md)
 
 Checklist de estudo para o bloco de fundamentos da plataforma e interface do usuário, com links para artigos e entregáveis já produzidos neste portfólio.
 

@@ -1,6 +1,6 @@
 # Bloco 2 — The Database & Table Architecture
 
-[← Voltar à visão geral](../README.md)
+[← Voltar à visão geral](../README.md) · [Questões de treino →](questoes-praticas.md)
 
 Checklist de estudo para o bloco de modelagem de dados e arquitetura de tabelas, com links para artigos e entregáveis já produzidos neste portfólio.
 

@@ -1,6 +1,6 @@
 # Bloco 3 — Data, Access & Configuration
 
-[← Voltar à visão geral](../README.md)
+[← Voltar à visão geral](../README.md) · [Questões de treino →](questoes-praticas.md)
 
 **Peso ~42% da prova — maior bloco.** Checklist de estudo para ACLs, Import Sets/Transform Maps e Update Sets, com links para artigos e entregáveis já produzidos neste portfólio.
 

@@ -1,6 +1,6 @@
 # Bloco 4 — Service Catalog, Workflows & Reports
 
-[← Voltar à visão geral](../README.md)
+[← Voltar à visão geral](../README.md) · [Questões de treino →](questoes-praticas.md)
 
 Checklist de estudo para catálogo de serviços, automação de fluxos e relatórios, com links para artigos e entregáveis já produzidos neste portfólio.
 
