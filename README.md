@@ -43,7 +43,7 @@ Fluxo completo de solicitação de reparo de equipamentos corporativos via Servi
 
 - ✅ Flow Designer Fundamentals — Micro-Certification
 - ✅ IntegrationHub Fundamentals — Micro-Certification
-- 🔄 Certified System Administrator (CSA) — em andamento
+- 🔄 Certified System Administrator (CSA) — em andamento ([material de estudo →](estudos-csa/))
 
 ---
 
@@ -58,5 +58,6 @@ servicenow-portfolio/
 │   ├── fundamentos-platform/
 │   ├── desenvolvimento-client-side/
 │   └── desenvolvimento-server-side/
+├── estudos-csa/                   ← Material de estudo para a certificação CSA, por bloco de prova
 └── assets/
 ```
