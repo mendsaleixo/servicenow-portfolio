@@ -6,7 +6,7 @@ Portfólio prático de desenvolvimento, modelagem e automação na plataforma **
 
 ---
 
-## Projeto em Destaque: AuMiau Pet Shop (Transformação Digital)
+## Projeto Mais Recente: AuMiau Pet Shop
 
 Case prático completo de implementação de uma aplicação escopada corporativa na Now Platform, modernizando a operação de uma rede varejista de 8 lojas e e-commerce.
 
