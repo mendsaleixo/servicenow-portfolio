@@ -8,7 +8,7 @@ Portfólio prático de desenvolvimento, modelagem e automação na plataforma **
 
 ## Projeto Mais Recente: AuMiau Pet Shop
 
-Case prático completo de implementação de uma aplicação escopada corporativa na Now Platform, modernizando a operação de uma rede varejista de 8 lojas e e-commerce.
+Case prático completo de implementação de uma aplicação escopada na Now Platform, simulando a modernização da operação de uma rede varejista de 8 lojas e e-commerce — projeto de conclusão de bootcamp, construído do zero.
 
 - **Escopo e Governança:** Aplicação isolada (`x_aumiau`) com controle de acesso por papéis (`aumiau_admin` / `aumiau_user`).
 - **Modelagem de Dados:** Tabelas customizadas de Categorias, produtos importados via Excel, e tabelas de Ouvidoria e Pedidos estendidas da tabela nativa `Task`.
