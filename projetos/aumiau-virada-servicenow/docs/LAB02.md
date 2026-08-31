@@ -41,10 +41,12 @@ Construir o modelo relacional de dados e a arquitetura de navegação da aplica�
   - Configuração das propriedades com rótulo `Pedido`, nome técnico `x_aumiau_pedido`, prefixo `PED`, número inicial em `1000` e `5` dígitos.
   - Configuração de ACLs com acesso total (`All`) para administrador e usuário.
   - Criação e ajuste dos campos customizados específicos: produto (referência), data de entrega, nome do cliente (solicitante) e desconto.
+    ![Tabela Pedido (estendida)](/projetos/aumiau-virada-servicenow/docs/screenshots/lab02_05.png)
 
 6. **Missão 06 — Application Menu e Navegação:**
    - Criação de um Application Menu unificado nomeado _AuMiau Pet Shop_ no módulo de definições do sistema.
    - Geração de módulos de lista (_List of Records_) e novo registro (_New Record_) para cada uma das quatro tabelas da aplicação.
    - Organização visual da interface utilizando elementos separadores (_Separator_) para estruturar o menu final em quatro blocos lógicos (_Categorias, Produtos, Pedidos e Ouvidoria_).
+     ![Tabela Ouvidoria (application menu)](/projetos/aumiau-virada-servicenow/docs/screenshots/lab02_06.png)
 
 ---
