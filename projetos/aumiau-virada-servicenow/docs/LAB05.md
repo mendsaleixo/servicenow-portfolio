@@ -2,25 +2,34 @@
 
 ## O que era esperado
 
-Concluir o projeto com foco gerencial, alimentando o ambiente com registros de exemplo nas tabelas transacionais e construindo um painel analítico consolidado no **Platform Analytics** para a tomada de decisão da liderança.
+Concluir o Projeto Final com foco gerencial: popular as tabelas `Pedido` e `Ouvidoria` com dados de exemplo e montar o dashboard **AuMiau — Gestão** no **Platform Analytics**, com 5 visualizações que dão à liderança a visão de vendas, atendimento e ouvidoria em um só lugar.
 
 ---
 
 ## Como foi feito
 
-1. Povoamento de registros de exemplo (pedidos e manifestações de ouvidoria), garantindo massa de dados diversificada com cenários de atribuição vazia e preenchida.
-2. Criação do dashboard gerencial com o nome _"AuMiau — Gestão"_ na ferramenta de Platform Analytics.
-3. Construção de 5 visualizações analíticas essenciais:
-   - **Single Score:** Total de pedidos
-   - **Single Score:** Pedidos completos (_Closed Complete_)
-   - **Horizontal Bar:** Produtos agrupados por categoria
-   - **Single Score:** Pedidos pendentes de atribuição (_Assigned to is Empty_)
-   - **List:** Fila com as últimas manifestações da ouvidoria
+1. **Missão 01 — Registros (dar o que medir):**
+   - Criação de pelo menos 10 registros na tabela `Pedido` (`x_aumiau_pedido`), com o campo `Assigned to` preenchido em 6 deles e vazio nos outros 4, para alimentar a visualização de pedidos sem atribuição.
+   - Criação de pelo menos 10 registros na tabela `Ouvidoria`, variando prioridade e estado para uma lista mais realista.
+   - Produtos já importados no LAB 02 não precisaram de novos registros — o foco ficou em `Pedido` e `Ouvidoria`.
+     ![Registros — dar o que medir](/projetos/aumiau-virada-servicenow/docs/screenshots/lab05_01.png)
+
+2. **Missão 02 — Dashboard (o painel de gestão):**
+   - Criação do dashboard `AuMiau — Gestão` no _Platform Analytics_ (`All > Platform Analytics > Analytics Overview`), via _in-line editor_.
+   - Dashboard criado vazio, pronto para receber as 5 visualizações das próximas missões.
+     ![Dashboard — o painel de gestão](/projetos/aumiau-virada-servicenow/docs/screenshots/lab05_02.png)
+
+3. **Missão 03 — Visualizações, parte 1 (volume e catálogo):**
+   - **Single Score** "Todos os pedidos": tabela `Pedido`, sem condição — total geral de pedidos.
+   - **Single Score** "Pedidos completos": tabela `Pedido`, condição `State is Closed Complete`.
+   - **Horizontal Bar** "Produtos por categoria": tabela `Produto`, `Group by` Categoria, com `Show display label` ativado.
+   - As três visualizações criadas via _Add new element > Data visualization_ e adicionadas ao dashboard `AuMiau — Gestão`.
+     ![Visualizações — volume e catálogo](/projetos/aumiau-virada-servicenow/docs/screenshots/lab05_03.png)
+
+4. **Missão 04 — Visualizações, parte 2 (vendas e atendimento):**
+   - **Single Score** "Pedidos sem atribuição": tabela `Pedido`, condição `Assigned to is Empty`.
+   - **List** "Ouvidoria — últimas manifestações": tabela `Ouvidoria`, colunas `Number`, `Priority`, `State`, `Assigned to`, `Short description`, `Task type`.
+   - Organização final do painel: indicadores (_Single Score_) no topo, a distribuição de produtos por categoria no meio e a lista da ouvidoria embaixo.
+     ![Visualizações — vendas e atendimento](/projetos/aumiau-virada-servicenow/docs/screenshots/lab05_04.png)
 
 ---
-
-## Comprovação Prática
-
-> _A imagem abaixo comprova o sucesso da execução desta etapa:_
-
-![Dashboard de Gestão](lab05-analytics.png)
