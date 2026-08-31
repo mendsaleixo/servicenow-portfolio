@@ -62,18 +62,27 @@ Flow Designer dispara → Aprovação do Gestor
 | Import Sets                 | Carga futura de ativos _(planejado)_    |
 | Workspace                   | Painel operacional _(planejado)_        |
 
-> Detalhamento técnico de cada integração (CEP tradicional vs IntegrationHub, regras de negócio, arquitetura completa) em [`/docs`](docs/).
+> Código-fonte em [`scripts/`](scripts/): `script-include-viacep.js` foi recuperado a partir de screenshots reais do código; `client-script-cep.js` é uma implementação de referência (o registro original não foi capturado no Update Set) — detalhes em [`docs/arquitetura.md`](docs/arquitetura.md#integração-de-cep--duas-abordagens-prc-03a-x-prc-03b).
 
 ---
 
-## 5. Estrutura do projeto
+## 5. Documentação técnica
+
+- [Arquitetura](docs/arquitetura.md) — visão geral, modelo de dados, as duas abordagens de integração de CEP (GlideAjax x IntegrationHub), Flow Designer e Notification Framework
+- [Fluxo do processo](docs/fluxo-processo.md) — passo a passo real do Flow de aprovação, com diagrama
+- [Regras de negócio](docs/regras-negocio.md) — RN001 a RN010
+- [Testes](docs/testes.md) — cobertura de testes por regra de negócio, com evidências
+
+---
+
+## 6. Estrutura do projeto
 
 ```text
 portal-reparo-computador/
 ├── README.md
-├── docs/              # arquitetura, regras de negócio, testes
+├── docs/              # arquitetura, fluxo de processo, regras de negócio, testes
 ├── scripts/           # client-script-cep.js, script-include-viacep.js
-├── screenshots/       # evidências de cada sprint
+├── screenshots/       # evidências de cada sprint (NN-prc-XX-descricao.png)
 └── update-sets/       # exportações XML por sprint
 ```
 
