@@ -47,6 +47,6 @@ Construir o modelo relacional de dados e a arquitetura de navegação da aplica�
    - Criação de um Application Menu unificado nomeado _AuMiau Pet Shop_ no módulo de definições do sistema.
    - Geração de módulos de lista (_List of Records_) e novo registro (_New Record_) para cada uma das quatro tabelas da aplicação.
    - Organização visual da interface utilizando elementos separadores (_Separator_) para estruturar o menu final em quatro blocos lógicos (_Categorias, Produtos, Pedidos e Ouvidoria_).
-     ![Tabela Ouvidoria (application menu)](/projetos/aumiau-virada-servicenow/docs/screenshots/lab02_06.png)
+     ![Application Menu](/projetos/aumiau-virada-servicenow/docs/screenshots/lab02_06.png)
 
 ---
