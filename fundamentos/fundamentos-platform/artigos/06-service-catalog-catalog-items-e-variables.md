@@ -27,7 +27,7 @@ Na prática, ele funciona como uma vitrine corporativa de serviços internos. Em
 
 ## O que é um Catalog Item
 
-Um **Catalog Item** é um formulário de solicitação disponibilizado no Service Catalog. Ele representa uma necessidade específica do usuário e funciona como o container principal que reúne os elementos usados para coletar dados e automatizar o atendimento.
+Um **Catalog Item** é a forma como um serviço é disponibilizado na vitrine do ServiceNow para que qualquer pessoa acesse através de um formulário de solicitação no Service Catalog. Ele representa uma necessidade específica do usuário e funciona como o container principal que reúne os elementos usados para coletar dados e automatizar o atendimento.
 
 Exemplos de Catalog Items:
 
@@ -48,7 +48,7 @@ Um **Catalog Item** pode agrupar diferentes componentes que trabalham juntos par
 - **Notifications**: são comunicações automáticas enviadas durante o ciclo da solicitação, como confirmação de envio, aviso de aprovação, rejeição ou conclusão do atendimento.
 - **Tarefas automáticas**: são registros criados para as equipes executoras, como a TI, realizarem o trabalho necessário. Em cenários de catálogo, isso normalmente ocorre por meio de **Catalog Tasks** associadas ao Requested Item.
 
-Seu principal objetivo é padronizar a entrada da solicitação e preparar o processo para execução e automação.
+Seu principal objetivo é padronizar a entrada da solicitação de pedidos recorrentes e preparar o processo para execução e automação.
 
 ---
 
@@ -305,7 +305,7 @@ Quando esse modelo mental é internalizado, torna-se muito mais fácil construir
 
 ## O que acontece após o envio da solicitação
 
-Quando o usuário envia um Catalog Item, o ServiceNow cria registros relacionados ao processo de request fulfillment. A estrutura mais importante para estudo é a seguinte: **REQ** para o pedido principal, **RITM** para o item solicitado e **SCTASK** para a tarefa operacional.
+Quando o usuário envia um Catalog Item, o ServiceNow cria registros relacionados ao processo de request fulfillment. A estrutura mais importante para estudo é a seguinte: **REQ** para o pedido principal, **RITM** para o item solicitado e **SCTASK** para a tarefa operacional. Uma TASK é gerada para cada etapa do atendimento.
 
 A hierarquia pode ser pensada assim:
 
