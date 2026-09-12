@@ -40,7 +40,7 @@ A solução foi desenvolvida utilizando os principais pilares de desenvolvimento
 
 ## Galeria de Evidências
 
-- **1. Service Portal (`/aumiau`):** ![Ver print na pasta docs/portal.png](docs/screenshots/portal.png)
+- **1. Service Portal (`/aumiau`):** ![Ver print na pasta docs/lab06_05.png](docs/screenshots/lab06_05.png)
   - Homepage finalizada contendo o banner oficial da marca, o menu superior enxuto e o widget de busca customizado _"Como posso AUjudar?"_.
 - **2. Automação no Flow Designer:** ![Ver print na pasta docs/flow-designer.png](docs/screenshots/flow-designer.png)
   - Fluxo configurado com gatilho de criação de pedidos, alteração automática de status para "Em atendimento" e o disparo condicional de e-mail para o grupo de suporte em casos de alta criticidade.
