@@ -30,6 +30,6 @@ Concluir o Projeto Final com foco gerencial: popular as tabelas `Pedido` e `Ouvi
    - **Single Score** "Pedidos sem atribuição": tabela `Pedido`, condição `Assigned to is Empty`.
    - **List** "Ouvidoria — últimas manifestações": tabela `Ouvidoria`, colunas `Number`, `Priority`, `State`, `Assigned to`, `Short description`, `Task type`.
    - Organização final do painel: indicadores (_Single Score_) no topo, a distribuição de produtos por categoria no meio e a lista da ouvidoria embaixo.
-     ![Visualizações — vendas e atendimento](/projetos/aumiau-virada-servicenow/docs/screenshots/lab05_04.png)
+     ![Visualizações — vendas e atendimento](/projetos/aumiau-virada-servicenow/docs/screenshots/lab05_03.png)
 
 ---
