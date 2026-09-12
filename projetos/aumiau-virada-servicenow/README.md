@@ -30,11 +30,12 @@ A solução foi desenvolvida utilizando os principais pilares de desenvolvimento
 
 ## Estrutura dos Laboratórios (Etapas de Desenvolvimento)
 
-- **LAB 01 — Fundação da Aplicação:** Configuração do ambiente inicial, escopo da aplicação (`x_aumiau`), plugin de tradução pt-BR e definição de perfis de acesso.
-- **LAB 02 — Desenvolvimento & Dados:** Construção do modelo de dados relacional, importação de produtos via Excel e estruturação do menu de navegação da aplicação em blocos.
-- **LAB 03 — Catálogo & Automação:** Implementação da experiência de solicitação via catálogo e automação de fluxo de atendimento para prioridades críticas no _Flow Designer_.
-- **LAB 04 — Portal & Ouvidoria:** Criação e personalizzazione do _Service Portal_ (`/aumiau`), aplicação de branding visual da marca e estruturação da página inicial.
-- **LAB 05 — Dashboards & Relatórios:** Inserção de dados de exemplo e criação de painel analítico gerencial consolidando indicadores de pedidos, produtos por categoria e ouvidoria.
+- **[LAB 01 — Fundação da Aplicação](docs/LAB01.md):** Configuração do ambiente inicial, escopo da aplicação (`x_aumiau`), plugin de tradução pt-BR e definição de perfis de acesso.
+- **[LAB 02 — Desenvolvimento & Dados](docs/LAB02.md):** Construção do modelo de dados relacional, importação de produtos via Excel e estruturação do menu de navegação da aplicação em blocos.
+- **[LAB 03 — Catálogo & Automação](docs/LAB03.md):** Implementação da experiência de solicitação via catálogo e automação de fluxo de atendimento para prioridades críticas no _Flow Designer_.
+- **[LAB 04 — Portal & Ouvidoria](docs/LAB04.md):** Criação e personalização do _Service Portal_ (`/aumiau`), aplicação de branding visual da marca e estruturação da página inicial.
+- **[LAB 05 — Dashboards & Relatórios](docs/LAB05.md):** Inserção de dados de exemplo e criação de painel analítico gerencial consolidando indicadores de pedidos, produtos por categoria e ouvidoria.
+- **[LAB 06 — Desafio Extra](docs/LAB06.md):** Seis melhorias independentes e opcionais além do escopo do Projeto Final — mensagem de confirmação no Record Producer, página de produtos no portal, consulta de CEP via Correios, Workspace de atendimento, ajustes na Homepage e etapa de aprovação no Flow do Pedido.
 
 ---
 
