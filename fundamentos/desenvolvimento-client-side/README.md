@@ -30,8 +30,8 @@ no Service Desk.
 ### Artigos Produzidos
 
 - [Client Scripts: tipos e quando usar](artigos/01-client-script.md)
-- [JavaScript para ServiceNow](artigos/02-%20JavaScript%20-para-ServiceNow.md)
-- [onChange na prática](artigos/03-onChange.md)
+- [JavaScript para ServiceNow](artigos/02-javascript-para-servicenow.md)
+- [onChange na prática](artigos/03-onchange.md)
 - [Validação com onSubmit](artigos/04-onsubmit-pratica-impedir-salvamento-validacoes.md)
 - [UI Policy vs Client Script](artigos/05-ui-policy-vs-client-script.md)
 
@@ -41,7 +41,7 @@ no Service Desk.
 
 ### Update Set
 
-- [Exportação XML](update-sets/ESTUDO-S02-Mendelson-UIScripts.xml)
+- [Exportação XML](update-sets/itsm-client-side-validations.xml)
 
 ---
 
