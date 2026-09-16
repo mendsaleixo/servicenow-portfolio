@@ -1,5 +1,6 @@
 # Ignorar configurações e skills locais de IA
 .claude/
+/CLAUDE.md
 
 # Ignorar a documentação oficial do ServiceNow localmente
 /ServiceNowDocs-australia/
@@ -7,3 +8,5 @@
 # Ignorar pastas de planejamento pessoal dos projetos
 planning/
 
+.claude/
+CLAUDE.md
