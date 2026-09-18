@@ -95,13 +95,7 @@ A diretoria escolheu o ServiceNow como plataforma central para substituir o caos
 - Gestão financeira/orçamentária da rede
 - Aplicativo mobile nativo — o portal via navegador cobre a necessidade inicial
 
-## 11. Conexão com Estudo, Aplicação e Cronograma
-
-- **Bloco CSA:** não aplicável diretamente — este documento é trabalho de análise de negócio, não configuração de plataforma (toca conceitos gerais do Bloco 1, mas sem módulo específico).
-- **Fonte teórica:** este próprio documento — não vem do curso técnico, é levantamento autoral (briefing de cliente fictício + requisitos).
-- **Aplicar na PDI:** nada ainda nesta etapa — é só descoberta e levantamento, antes de abrir o Studio.
-- **Documentar:** este arquivo já é o registro da etapa, versionado no GitHub.
-- **Post:** publicados em 21/09 (contexto de negócio) e 23/09 (personas/requisitos, formato dialógico) — ver Calendário de Posts.
+_Explicitar o que fica de fora é uma decisão de arquiteto, não uma limitação — mostra que o escopo foi pensado, não apenas construído até onde deu tempo._
 
 ---
 

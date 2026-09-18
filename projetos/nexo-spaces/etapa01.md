@@ -107,15 +107,7 @@ Sete práticas ITIL num projeto júnior de 2 meses (que ainda precisa dividir es
 
 - **Dentro da Etapa 4 (Outubro):** matriz de prioridade/SLA + Problem Management simplificado — ambos de baixo esforço técnico e encaixam no mesmo bloco de catálogo/automação.
 - **Dentro da Etapa 5 (Outubro/Novembro):** Base de Conhecimento com deflection no portal.
-- **Pós-certificação (dezembro):** cadastro manual de CMDB (estudo 03/12, post 04/12) + Change Request simplificada (estudo 04/12, post 07/12) — ótima pauta de post logo depois da prova, sem ter competido pelo tempo de estudo da CSA. Datas exatas no Calendário de Posts.
-
-## Conexão com Estudo, Aplicação e Cronograma
-
-- **Bloco CSA:** não aplicável diretamente — mesma natureza da Etapa 0 (trabalho de mapeamento de processo, não configuração). Toca conceitos gerais dos Blocos 3 e 4, mas sem módulo específico do curso técnico.
-- **Fonte teórica:** este próprio documento — mapeamento ITIL autoral, não vem do curso.
-- **Aplicar na PDI:** nada ainda nesta etapa — é mapeamento de processo e arquitetura, antes de configurar qualquer coisa.
-- **Documentar:** este arquivo já é o registro da etapa, versionado no GitHub.
-- **Post:** publicados em 25/09 (Incident Management + matriz), 28/09 (Problem vs. Incidente) e 30/09 (SLA/OLA/UC + diagrama CMDB) — ver Calendário de Posts.
+- **Pós-certificação (dezembro):** cadastro manual de CMDB + Change Request simplificada — ótima pauta de post logo depois da prova, sem ter competido pelo tempo de estudo da CSA. Datas exatas no Calendário de Posts.
 
 ---
 
