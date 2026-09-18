@@ -6,21 +6,33 @@ Portfólio prático de desenvolvimento, modelagem e automação na plataforma **
 
 ---
 
-## Projeto Mais Recente: AuMiau Pet Shop
+## Projeto Mais Recente: NexoSpaces
 
-Case prático completo de implementação de uma aplicação escopada na Now Platform, simulando a modernização da operação de uma rede varejista de 8 lojas e e-commerce — projeto de conclusão de bootcamp, construído do zero.
+Projeto autoral, construído e documentado em público — simula o desenho e a construção de uma solução de ITSM/ESM para uma rede fictícia de coworking premium. Diferente de um projeto guiado direto pelo build, começa pela camada que normalmente fica invisível: descoberta de negócio e mapeamento formal de processo em ITIL, antes de qualquer tabela ser criada no Studio.
 
-- **Escopo e Governança:** Aplicação isolada (`x_aumiau`) com controle de acesso por papéis (`aumiau_admin` / `aumiau_user`).
-- **Modelagem de Dados:** Tabelas customizadas de Categorias, produtos importados via Excel, e tabelas de Ouvidoria e Pedidos estendidas da tabela nativa `Task`.
-- **Catálogo & Automação:** Implementação de _Item de Catálogo_ com governança de aprovação e _Record Producer_ com mapeamento de campos (_Map to field_), integrados a um fluxo automatizado no _Flow Designer_ para alteração de status e alertas críticos por e-mail.
-- **Service Portal:** Vitrine digital customizada (`/aumiau`) com identidade visual própria (_Branding Editor_), menu enxuto e homepage com widget de busca inteligente (_"Como posso AUjudar?"_).
-- **Platform Analytics:** Painel gerencial consolidado (_AuMiau — Gestão_) com indicadores em _Single Score_, gráficos de distribuição e filas de atendimento.
+- **Descoberta & Arquitetura:** briefing de negócio, levantamento de requisitos (as-is/to-be) e mapeamento das 7 práticas ITIL do dia a dia da operação (Incident, Problem, Change, Request Fulfillment, Knowledge, SLA/OLA/UC, CMDB) — com diagrama de dependência entre ativos.
+- **Escopo e Governança:** aplicação isolada (`x_nexospaces`) com controle de acesso por papéis (`nexospaces_admin` / `nexospaces_user`).
+- **Modelagem de Dados:** tabelas de Espaços e Reservas, e tabelas de Incidentes de TI e Chamados de Facilities estendidas da tabela nativa `Task`.
+- **Catálogo & Automação:** Item de Catálogo com fluxo de aprovação via Flow Designer, matriz de Prioridade x SLA para classificação automática de incidentes, e Problem Management vinculado a incidentes recorrentes.
+- **Service Portal:** vitrine para membros (`/nexospaces`) com identidade visual própria, acompanhamento de status da solicitação e Base de Conhecimento com sugestão automática na busca.
+- **Platform Analytics:** dashboard gerencial com visualizações rastreáveis, uma a uma, às métricas de sucesso definidas na etapa de descoberta.
 
-📄 [Ver documentação e evidências completas do projeto →](projetos/aumiau-virada-servicenow/docs/)
+🔄 **Em construção, em público** — cada etapa é documentada e publicada conforme avança.
+
+📄 [Ver documentação completa do projeto →](/projetos/nexo-spaces/)
 
 ---
 
 ## Outros Projetos em Portfólio
+
+### AuMiau Pet Shop
+
+Case prático completo de implementação de uma aplicação escopada na Now Platform, simulando a modernização da operação de uma rede varejista de 8 lojas e e-commerce — projeto de conclusão de bootcamp, construído do zero.
+
+- **Tecnologias:** Aplicação escopada (`x_aumiau`), Service Catalog, Record Producer, Flow Designer, Service Portal com Branding Editor, Platform Analytics.
+- **Status:** Concluído.
+
+📄 [Ver documentação e evidências completas do projeto →](/projetos/aumiau-virada-servicenow/docs/)
 
 ### Portal de Reparo de Computadores
 
@@ -52,6 +64,7 @@ Fluxo completo de solicitação de reparo de equipamentos corporativos via Servi
 ```text
 servicenow-portfolio/
 ├── projetos/
+│   ├── nexospaces/                ← Projeto autoral em construção (Descoberta, Arquitetura, App, Dados, Portal, Analytics)
 │   ├── aumiau-virada-servicenow/  ← Case completo end-to-end (App, Dados, Portal, Analytics)
 │   └── portal-reparo-computador/  ← Fluxo de ITSM e Reparos
 ├── fundamentos/
