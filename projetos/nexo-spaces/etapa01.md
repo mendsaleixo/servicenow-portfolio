@@ -111,8 +111,6 @@ Sete práticas ITIL num projeto júnior de 2 meses (que ainda precisa dividir es
 
 ## Conexão com Estudo, Aplicação e Cronograma
 
-> Seção lida pela skill `/hoje` — é o que conecta este documento ao dia a dia real de estudo/construção/post.
-
 - **Bloco CSA:** não aplicável diretamente — mesma natureza da Etapa 0 (trabalho de mapeamento de processo, não configuração). Toca conceitos gerais dos Blocos 3 e 4, mas sem módulo específico do curso técnico.
 - **Fonte teórica:** este próprio documento — mapeamento ITIL autoral, não vem do curso.
 - **Aplicar na PDI:** nada ainda nesta etapa — é mapeamento de processo e arquitetura, antes de configurar qualquer coisa.
