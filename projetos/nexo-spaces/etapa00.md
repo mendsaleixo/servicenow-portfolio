@@ -95,11 +95,7 @@ A diretoria escolheu o ServiceNow como plataforma central para substituir o caos
 - Gestão financeira/orçamentária da rede
 - Aplicativo mobile nativo — o portal via navegador cobre a necessidade inicial
 
-_Explicitar o que fica de fora é uma decisão de arquiteto, não uma limitação — mostra que o escopo foi pensado, não apenas construído até onde deu tempo._
-
 ## 11. Conexão com Estudo, Aplicação e Cronograma
-
-> Seção lida pela skill `/hoje` — é o que conecta este documento ao dia a dia real de estudo/construção/post.
 
 - **Bloco CSA:** não aplicável diretamente — este documento é trabalho de análise de negócio, não configuração de plataforma (toca conceitos gerais do Bloco 1, mas sem módulo específico).
 - **Fonte teórica:** este próprio documento — não vem do curso técnico, é levantamento autoral (briefing de cliente fictício + requisitos).
