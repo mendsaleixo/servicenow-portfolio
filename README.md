@@ -64,7 +64,7 @@ Fluxo completo de solicitação de reparo de equipamentos corporativos via Servi
 ```text
 servicenow-portfolio/
 ├── projetos/
-│   ├── nexospaces/                ← Projeto autoral em construção (Descoberta, Arquitetura, App, Dados, Portal, Analytics)
+│   ├── nexo-spaces/               ← Projeto autoral em construção (Descoberta, Arquitetura, App, Dados, Portal, Analytics)
 │   ├── aumiau-virada-servicenow/  ← Case completo end-to-end (App, Dados, Portal, Analytics)
 │   └── portal-reparo-computador/  ← Fluxo de ITSM e Reparos
 ├── fundamentos/
