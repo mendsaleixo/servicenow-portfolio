@@ -6,17 +6,17 @@
 
 ### 1. Gestão de Incidentes (Incident Management)
 
-**Cenário:** segunda-feira, 08h30 — a catraca biométrica da Unidade Centro para de ler digitais e uma fila se forma na recepção; simultaneamente, o Wi-Fi do 3º andar cai.
+**Cenário:** segunda-feira, 08h30, a catraca biométrica da Unidade Centro para de ler digitais e uma fila se forma na recepção; simultaneamente, o Wi-Fi do 3º andar cai.
 **Visão ITIL:** interrupção não planejada de um serviço de TI/Facilities.
-**Solução ServiceNow:** o Community Manager abre um Incidente. Entra a **Matriz de Prioridade (Impacto x Urgência)** — a catraca afetando dezenas de pessoas é P1 (Crítico); um ar-condicionado pingando numa sala vazia é P4 (Baixo).
+**Solução ServiceNow:** o Community Manager abre um Incidente. Entra a **Matriz de Prioridade (Impacto x Urgência)**, a catraca afetando dezenas de pessoas é P1 (Crítico); um ar-condicionado pingando numa sala vazia é P4 (Baixo).
 → _Requisitos derivados:_ RF08 (matriz de prioridade), RF03 (já existente, ganha critério formal de classificação)
 
 ### 2. Cumprimento de Requisição (Request Fulfillment / Service Catalog)
 
 **Cenário:** uma startup contratou 3 desenvolvedores e precisa de 3 cadeiras ergonômicas e 3 monitores extras.
-**Visão ITIL:** nada quebrou — é um pedido padrão de item/serviço.
-**Solução ServiceNow:** a startup abre um Catalog Item no portal. Um Flow Designer dispara aprovação do financeiro (custo extra) e cria duas Catalog Tasks (SCTASK) — uma para TI preparar os monitores, outra para Facilities separar as cadeiras.
-→ _Já coberto por RF02 e RF05 (Etapa 0) — sem requisito novo, só reforça o desenho já feito._
+**Visão ITIL:** nada quebrou, é um pedido padrão de item/serviço.
+**Solução ServiceNow:** a startup abre um Catalog Item no portal. Um Flow Designer dispara aprovação do financeiro (custo extra) e cria duas Catalog Tasks (SCTASK), uma para TI preparar os monitores, outra para Facilities separar as cadeiras.
+→ _Já coberto por RF02 e RF05 (Etapa 0), sem requisito novo, só reforça o desenho já feito._
 
 ### 3. Gestão de Problemas (Problem Management)
 
@@ -27,30 +27,30 @@
 
 ### 4. Gestão de Mudanças (Change Enablement)
 
-**Cenário:** para resolver o bug do roteador de vez, a TI precisa atualizar o firmware nas 5 unidades — sem poder simplesmente desligar a rede em horário comercial.
+**Cenário:** para resolver o bug do roteador de vez, a TI precisa atualizar o firmware nas 5 unidades, sem poder simplesmente desligar a rede em horário comercial.
 **Visão ITIL:** mudanças em produção exigem controle e aprovação.
 **Solução ServiceNow:** a TI abre uma Change Request. Um fluxo de aprovação (CAB) é acionado, a mudança é agendada pra sábado de madrugada, com plano de rollback documentado.
 → _Requisito derivado:_ RF10
 
 ### 5. Base de Conhecimento (Knowledge Management)
 
-**Cenário:** o suporte de TI gasta 40% do tempo respondendo à mesma pergunta no WhatsApp — "como configuro a impressora no Mac?".
+**Cenário:** o suporte de TI gasta 40% do tempo respondendo à mesma pergunta no WhatsApp, "como configuro a impressora no Mac?".
 **Visão ITIL:** conhecimento tácito precisa virar autoatendimento (Tier 0).
-**Solução ServiceNow:** uma Knowledge Base é criada. Ao buscar "impressora" no portal, o sistema sugere o artigo antes de permitir abrir chamado (**Incident Deflection**) — o chamado às vezes nem chega a ser criado.
+**Solução ServiceNow:** uma Knowledge Base é criada. Ao buscar "impressora" no portal, o sistema sugere o artigo antes de permitir abrir chamado (**Incident Deflection**), o chamado às vezes nem chega a ser criado.
 → _Requisito derivado:_ RF11
 
 ### 6. Gestão de Nível de Serviço (SLA, OLA e UC)
 
 **Cenário:** um executivo de uma empresa parceira reserva a sala principal e o projetor queima 5 minutos antes da apresentação.
 **Visão ITIL:** existem promessas de tempo em camadas diferentes, internas e externas.
-**Solução ServiceNow:** o **SLA** prometido ao cliente é 2h para o conserto. Por trás, uma **OLA** interna dá 15 min pra recepção repassar o chamado à TI. E existe um **UC** — o contrato da NexoSpaces com a Epson exige substituição em 24h.
+**Solução ServiceNow:** o **SLA** prometido ao cliente é 2h para o conserto. Por trás, uma **OLA** interna dá 15 min pra recepção repassar o chamado à TI. E existe um **UC**, o contrato da NexoSpaces com a Epson exige substituição em 24h.
 → _Requisitos derivados:_ RF08 (matriz/SLA), RF13 (UC com fornecedores)
 
 ### 7. CMDB e Gestão de Ativos (Configuration Management)
 
 **Cenário:** um raio cai na Unidade Norte e queima o Switch Principal.
 **Visão ITIL:** é preciso saber o que quebrou, onde está, quanto custou e quem é afetado.
-**Solução ServiceNow:** o técnico vincula o Incidente a um Configuration Item (CI) no CMDB. Pelo mapa de dependências, a TI já sabe que o Switch (CI A) derruba Impressoras em Nuvem (CI B) e Catracas (CI C) — e já tem garantia e número de série antes de sair do lugar.
+**Solução ServiceNow:** o técnico vincula o Incidente a um Configuration Item (CI) no CMDB. Pelo mapa de dependências, a TI já sabe que o Switch (CI A) derruba Impressoras em Nuvem (CI B) e Catracas (CI C), e já tem garantia e número de série antes de sair do lugar.
 → _Requisito derivado:_ RF12
 
 ```mermaid
@@ -60,7 +60,7 @@ graph TD
     SW --> WIFI[Wi-Fi Corporativo 3º andar]
 ```
 
-_Mapa de dependência simples entre Configuration Items — é este tipo de relação que o CMDB torna visível._
+_Mapa de dependência simples entre Configuration Items, é este tipo de relação que o CMDB torna visível._
 
 ---
 
@@ -94,7 +94,7 @@ Sete práticas ITIL num projeto júnior de 2 meses (que ainda precisa dividir es
 
 | Prática                        | Nível recomendado                                                      | Por quê                                                                                              |
 | ------------------------------ | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Incident Management            | **Build completo**                                                     | Núcleo do projeto e da CSA — sem isso não há Etapa 4                                                 |
+| Incident Management            | **Build completo**                                                     | Núcleo do projeto e da CSA, sem isso não há Etapa 4                                                  |
 | Request Fulfillment / Catálogo | **Build completo**                                                     | Já estava no escopo original (RF02, RF05)                                                            |
 | SLA (matriz P1–P4)             | **Build** (SLA Definitions simples)                                    | Nível CSA, alto retorno de credibilidade pelo esforço                                                |
 | Knowledge Management           | **Build simplificado** (2–3 artigos + busca)                           | Baixo esforço, extensão natural da Etapa 5                                                           |
@@ -105,9 +105,9 @@ Sete práticas ITIL num projeto júnior de 2 meses (que ainda precisa dividir es
 
 ## Onde isso entra no cronograma
 
-- **Dentro da Etapa 4 (Outubro):** matriz de prioridade/SLA + Problem Management simplificado — ambos de baixo esforço técnico e encaixam no mesmo bloco de catálogo/automação.
+- **Dentro da Etapa 4 (Outubro):** matriz de prioridade/SLA + Problem Management simplificado, ambos de baixo esforço técnico e encaixam no mesmo bloco de catálogo/automação.
 - **Dentro da Etapa 5 (Outubro/Novembro):** Base de Conhecimento com deflection no portal.
-- **Pós-certificação (dezembro):** cadastro manual de CMDB + Change Request simplificada — ótima pauta de post logo depois da prova, sem ter competido pelo tempo de estudo da CSA. Datas exatas no Calendário de Posts.
+- **Pós-certificação (dezembro):** cadastro manual de CMDB + Change Request simplificada, ótima pauta de post logo depois da prova, sem ter competido pelo tempo de estudo da CSA. Datas exatas no Calendário de Posts.
 
 ---
 

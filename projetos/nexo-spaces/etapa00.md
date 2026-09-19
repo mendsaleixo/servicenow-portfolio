@@ -4,7 +4,7 @@
 
 ## 1. Sumário Executivo
 
-A NexoSpaces é uma rede de coworking que escalou rápido — o crescimento veio da abertura de novas unidades, sem investimento equivalente em operação centralizada — e deixou os processos internos pra trás: hoje, tudo — de um cabo HDMI emprestado a uma queda de internet — chega pelo mesmo canal informal (WhatsApp/e-mail), sem triagem, prazo ou rastreabilidade. A diretoria decidiu profissionalizar a operação adotando o ServiceNow como plataforma central de ITSM/ESM. Este projeto cobre o desenho e a construção dessa solução, do levantamento de requisitos ao dashboard gerencial final.
+A NexoSpaces é uma rede de coworking que escalou rápido, o crescimento veio da abertura de novas unidades, sem investimento equivalente em operação centralizada, e deixou os processos internos pra trás: hoje, tudo, de um cabo HDMI emprestado a uma queda de internet, chega pelo mesmo canal informal (WhatsApp/e-mail), sem triagem, prazo ou rastreabilidade. A diretoria decidiu profissionalizar a operação adotando o ServiceNow como plataforma central de ITSM/ESM. Este projeto cobre o desenho e a construção dessa solução, do levantamento de requisitos ao dashboard gerencial final.
 
 ## 2. Sobre a NexoSpaces
 
@@ -13,7 +13,7 @@ A NexoSpaces é uma rede de coworking que escalou rápido — o crescimento veio
 | Fundação                | 2021                                                                                              |
 | Modelo de negócio       | Rede premium de espaços de trabalho compartilhado (coworking)                                     |
 | Unidades                | 5, em grandes centros comerciais                                                                  |
-| Base de membros         | 2.000+ atendidos diariamente — freelancers, startups, filiais regionais de grandes corporações    |
+| Base de membros         | 2.000+ atendidos diariamente, freelancers, startups, filiais regionais de grandes corporações     |
 | Quadro de colaboradores | ~80 diretos, divididos em Operações (Community Managers), TI, Facilities (Manutenção) e Comercial |
 
 ## 3. Ecossistema de Espaços e Serviços
@@ -25,14 +25,14 @@ A NexoSpaces é uma rede de coworking que escalou rápido — o crescimento veio
 
 ## 4. Cenário As-Is — Onde Dói
 
-**Canais de entrada hoje:** mensagens no WhatsApp dos Community Managers ou e-mails genéricos — sem padrão, sem triagem, sem dono.
+**Canais de entrada hoje:** mensagens no WhatsApp dos Community Managers ou e-mails genéricos, sem padrão, sem triagem, sem dono.
 
-| Área       | Dor concreta                                                                                                   |
-| ---------- | -------------------------------------------------------------------------------------------------------------- |
-| TI         | Não distingue um pedido de cabo HDMI de uma queda geral de internet — tudo chega com a mesma urgência aparente |
-| Facilities | Organiza manutenção em planilhas soltas, perdendo horas e rastreabilidade                                      |
-| Diretoria  | Sem métricas de custo, volume de chamados ou cumprimento de prazo — decide às cegas                            |
-| Membros    | Não sabem o status do próprio pedido; prazos (SLA) simplesmente não existem                                    |
+| Área       | Dor concreta                                                                                                  |
+| ---------- | ------------------------------------------------------------------------------------------------------------- |
+| TI         | Não distingue um pedido de cabo HDMI de uma queda geral de internet, tudo chega com a mesma urgência aparente |
+| Facilities | Organiza manutenção em planilhas soltas, perdendo horas e rastreabilidade                                     |
+| Diretoria  | Sem métricas de custo, volume de chamados ou cumprimento de prazo, decide às cegas                            |
+| Membros    | Não sabem o status do próprio pedido; prazos (SLA) simplesmente não existem                                   |
 
 **Consequência consolidada:** itens se perdem, prazos não são cumpridos porque não são nem definidos, e a satisfação do cliente vem caindo.
 
@@ -48,7 +48,7 @@ A NexoSpaces é uma rede de coworking que escalou rápido — o crescimento veio
 
 ## 6. Cenário To-Be — O Objetivo do Projeto
 
-A diretoria escolheu o ServiceNow como plataforma central para substituir o caos do WhatsApp por um fluxo de ITSM (Gestão de Serviços de TI e Facilities). Neste projeto, você assume o papel de arquiteto e desenvolvedor responsável por construir essa aplicação do zero: um portal para os membros, fluxos de aprovação automáticos, um catálogo de serviços padronizado (reserva de salas ou pedido de itens) e um sistema de gestão de incidentes de equipamento — fechando com um dashboard de ocupação e chamados para a diretoria.
+A diretoria escolheu o ServiceNow como plataforma central para substituir o caos do WhatsApp por um fluxo de ITSM (Gestão de Serviços de TI e Facilities). Neste projeto, você assume o papel de arquiteto e desenvolvedor responsável por construir essa aplicação do zero: um portal para os membros, fluxos de aprovação automáticos, um catálogo de serviços padronizado (reserva de salas ou pedido de itens) e um sistema de gestão de incidentes de equipamento, fechando com um dashboard de ocupação e chamados para a diretoria.
 
 ## 7. Levantamento de Requisitos
 
@@ -93,9 +93,9 @@ A diretoria escolheu o ServiceNow como plataforma central para substituir o caos
 
 - Integração com sistema de billing/faturamento
 - Gestão financeira/orçamentária da rede
-- Aplicativo mobile nativo — o portal via navegador cobre a necessidade inicial
+- Aplicativo mobile nativo, o portal via navegador cobre a necessidade inicial
 
-_Explicitar o que fica de fora é uma decisão de arquiteto, não uma limitação — mostra que o escopo foi pensado, não apenas construído até onde deu tempo._
+_Explicitar o que fica de fora é uma decisão de arquiteto, não uma limitação, mostra que o escopo foi pensado, não apenas construído até onde deu tempo._
 
 ---
 
