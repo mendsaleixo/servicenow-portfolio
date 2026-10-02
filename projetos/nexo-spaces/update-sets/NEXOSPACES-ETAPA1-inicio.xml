@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-10-02 18:36:20">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="NexoSpaces">dc8f74a183a34b14568895d0deaad321</application>
+<application_name>NexoSpaces</application_name>
+<application_scope>x_1915295_nexosp_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Automatically created by the system</description>
+<inserted/>
+<name>NEXOSPACES-ETAPA1-inicio</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>ac345665836f4b14568895d0deaad317</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-02 18:36:18</sys_created_on>
+<sys_id>3fd10b3383a34f54568895d0deaad368</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-02 18:36:18</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_63f1a53377451110cd1b756f1b5a9991</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Captures the last execution timestamp of the scheduled job 'Surface New Unconnected Content of Categories'</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>taxonomy.category.new_content_job_last_run</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-08 07:43:25</sys_created_on><sys_id>63f1a53377451110cd1b756f1b5a9991</sys_id><sys_mod_count>17</sys_mod_count><sys_name>taxonomy.category.new_content_job_last_run</sys_name><sys_package display_value="Content Taxonomy" source="com.snc.taxonomy">5a86a9c0a5a903108bb220b7a4d21227</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_63f1a53377451110cd1b756f1b5a9991</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-27 07:00:43</sys_updated_on><type>date_format</type><value>2026-09-27</value><write_roles>maint</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=63f1a53377451110cd1b756f1b5a9991"/><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="taxonomy.category.new_content_job_last_run" tablename="sys_properties">63f1a53377451110cd1b756f1b5a9991</documentkey><fieldname>description</fieldname><language>pb</language><sys_created_by/><sys_created_on/><sys_id>8faa797c83870310568895d0deaad348</sys_id><sys_mod_count/><sys_updated_by/><sys_updated_on/><tablename>sys_properties</tablename><value>Captura o último carimbo de data/hora de execução do trabalho agendado "Apresentar novo conteúdo de categorias desconectadas"</value></sys_translated_text></record_update>]]></payload>
+<payload_hash>-1323667313</payload_hash>
+<remote_update_set display_value="NEXOSPACES-ETAPA1-inicio">3fd10b3383a34f54568895d0deaad368</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-02 18:36:18</sys_created_on>
+<sys_id>3bd10b3383a34f54568895d0deaad36a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0e1aa94b50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-02 18:36:18</sys_updated_on>
+<table/>
+<target_name>taxonomy.category.new_content_job_last_run</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>76b2ba8e55e38f144a518ec396f62c2b</update_guid>
+<update_guid_history>76b2ba8e55e38f144a518ec396f62c2b:-1323667313,a5af6afbced7cbd060ccfb8407ab0578:1580740744,e18c22e5461f0b90bb193a9a2075a107:313471084,1749ea573e038750ac270be960198c19:-953798576,fd162e815403c3106eb6884b2b17e4d4:206027848,c203ea72a83e0b100160fdd3363d2826:447618350,88ef52e43b32c3102eae71f2c35882d4:911400394,7fd861d020320310a997b2264f49892f:467788971,abd861d01b320310f0e32c6f2be71511:-437767834</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>pwd_process_4ff0c881bf220100710071a7bf0739fa</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pwd_process"><pwd_process action="INSERT_OR_UPDATE"><active>false</active><allow_verification_choice>false</allow_verification_choice><apply_to_all_users>true</apply_to_all_users><auto_gen_password>true</auto_gen_password><change>false</change><cred_store display_value="Local ServiceNow Instance">6e51033fbf020100710071a7bf0739e0</cred_store><description>Service-desk process for the local ServiceNow as a stand-alone credential-store</description><display_captcha>false</display_captcha><display_password>true</display_password><email_password_reset_url>false</email_password_reset_url><enable_security_score_notification>false</enable_security_score_notification><enabled_on_chatbot>false</enabled_on_chatbot><enrollment_reminder>false</enrollment_reminder><expiration_run_period/><expiration_run_start/><expiration_run_time/><expiration_run_time_zone/><expiration_schedule_frequency/><expiration_warn_days/><identification_type/><label>Service-Desk Password Reset for Local ServiceNow</label><min_verifications>1</min_verifications><name>Service-Desk Password Reset for Local ServiceNow</name><password_needs_reset>true</password_needs_reset><post_processor/><process_owner/><public_access>false</public_access><public_url/><pwd_validity_days/><redirect_url/><reset>true</reset><run_dayofmonth/><run_dayofweek/><run_start/><run_time/><run_type/><security_score/><send_email>true</send_email><send_expiration_reminder>false</send_expiration_reminder><sender_alias/><sys_class_name>pwd_process</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2013-07-11 18:00:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4ff0c881bf220100710071a7bf0739fa</sys_id><sys_mod_count>16</sys_mod_count><sys_name>Service-Desk Password Reset for Local ServiceNow</sys_name><sys_package display_value="Password Reset" source="com.glideapp.password_reset">b2746dcca5e503108bb220b7a4d2126b</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>pwd_process_4ff0c881bf220100710071a7bf0739fa</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 07:01:04</sys_updated_on><unlock_account>true</unlock_account><url_suffix/><user_experience_entry/><user_experience_failure/><user_experience_footer/><user_experience_header/><user_experience_success/></pwd_process><sys_translated_text action="delete_multiple" query="documentkey=4ff0c881bf220100710071a7bf0739fa"/></record_update>]]></payload>
+<payload_hash>559401970</payload_hash>
+<remote_update_set display_value="NEXOSPACES-ETAPA1-inicio">3fd10b3383a34f54568895d0deaad368</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-02 18:36:18</sys_created_on>
+<sys_id>77d10b3383a34f54568895d0deaad369</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0e6d134200000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-02 18:36:18</sys_updated_on>
+<table/>
+<target_name>Service-Desk Password Reset for Local ServiceNow</target_name>
+<type>Password Reset Process</type>
+<update_domain>global</update_domain>
+<update_guid>fc6cbf1e23af0354b98b2226e19d23e5</update_guid>
+<update_guid_history>fc6cbf1e23af0354b98b2226e19d23e5:559401970,c8d96d508c32031014ea0a71e8564c4e:559401970</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_43a0afa0ffa3a210f079ffffffffff09</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Captures the last execution timestamp of the scheduled job 'Generate topic path translations'</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>taxonomy.topic_path_translations_job_last_run</name><read_roles>sn_hr_sp.esc_admin</read_roles><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-21 02:09:16</sys_created_on><sys_id>43a0afa0ffa3a210f079ffffffffff09</sys_id><sys_mod_count>32</sys_mod_count><sys_name>taxonomy.topic_path_translations_job_last_run</sys_name><sys_package display_value="Content Taxonomy" source="com.snc.taxonomy">5a86a9c0a5a903108bb220b7a4d21227</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_43a0afa0ffa3a210f079ffffffffff09</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-29 17:30:03</sys_updated_on><type>time_format</type><value>2026-09-29 17:30:03</value><write_roles>sn_hr_sp.esc_admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=43a0afa0ffa3a210f079ffffffffff09"/><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="taxonomy.topic_path_translations_job_last_run" tablename="sys_properties">43a0afa0ffa3a210f079ffffffffff09</documentkey><fieldname>description</fieldname><language>pb</language><sys_created_by/><sys_created_on/><sys_id>f2aaf57c83870310568895d0deaad39e</sys_id><sys_mod_count/><sys_updated_by/><sys_updated_on/><tablename>sys_properties</tablename><value>Captura o carimbo de data/hora da última execução do trabalho agendado "Gerar traduções de caminho de tópico"</value></sys_translated_text></record_update>]]></payload>
+<payload_hash>-151993538</payload_hash>
+<remote_update_set display_value="NEXOSPACES-ETAPA1-inicio">3fd10b3383a34f54568895d0deaad368</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-02 18:36:18</sys_created_on>
+<sys_id>f3d10b3383a34f54568895d0deaad36a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0ee377fa40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-02 18:36:18</sys_updated_on>
+<table/>
+<target_name>taxonomy.topic_path_translations_job_last_run</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>21f51bb6db2f0754e3f133ef293c3735</update_guid>
+<update_guid_history>21f51bb6db2f0754e3f133ef293c3735:-151993538,4b5cc6aac163835424915b94ac747f0a:-664071649,edc20d9affa7cf14f50ea5b07886a213:-1176149760,44397f3d3beb0f146c2bc6997887360b:1180954592,5a9f62add5238b14f4536a7aa39620fc:2094661314,6406edd98667c71424f02efb6ecf5eef:1582583203,7a6c548db2ab07149bcfee8a481ea48e:1070505092,61d217600c238314b9291f2707f86bca:1966599017,5b398614d367cfd06008f9526fd120ca:-1379435963,4daf34c4dfab0fd0a34bfed95a2a6eba:-1891514074,3706ff6bf6df4bd057c2d1c02eadb326:1153454205,c67c2a1fd717c7d0c8b4c4f64793a015:641376094,61e26503ce9b07d0000a7cbfd0eab7ae:129297983,6a4918f2a5df43d036d56d88ec06c149:-382780128,c0bf4f1a5817cf9023cc533fcf443ab9:-877245442,2e16024ece5b0f903d0ed96736babbb2:1462246113,958c3871abdf4b90e739a23df25b080f:-1919014461,1be23b95bb17c790139a179af5452be0:438089891,9d59ee85225b07904f88f45e5b26bc53:1351796613,7fbf55b8b29f439058480613e95cb4ca:-586066331,122654a0b5d3cf50bc22c486fc05cfb0:-1836065348,469c0bc4401b0f5036e5ac20d1e9620b:521039004,cef2c63f724f4b50b6d5e11ab9235cc5:-1416823940,e469f06383c3c75051ef1158db1a8536:-503117218,e6cf23479d0b07507a730d6de3bdb370:-1015195329,c1362ef6f84f4350c39fac0340b27697:-101488607,af9c55eea043cf1049056f46035abfe4:-2039351551,79035492c3c70f10fbae7ba798e71009:1743537634,e3698b75fc0f4b10b69adac6d1a94520:1231459523,71dff525258f871085a5c8d363bab86e:589129348,5046fc55a6c307107c64cacfb09d788a:77051237,eeac2770700b431081a1f468d3db9a24:-1190560577,52ace370020b4310e501d50c1637957f:688777092</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
