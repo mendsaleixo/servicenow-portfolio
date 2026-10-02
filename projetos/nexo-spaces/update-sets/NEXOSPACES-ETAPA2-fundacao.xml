@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-10-02 18:37:04">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="NexoSpaces">dc8f74a183a34b14568895d0deaad321</application>
+<application_name>NexoSpaces</application_name>
+<application_scope>x_1915295_nexosp_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Este é o primeiro Update Set oficial do projeto NexoSpaces, destinado à captura da fundação técnica do sistema (aplicação escopada, tabelas base, roles e controle de acesso inicial). As Etapas 0 (Contexto de Negócio) e 1 (Mapeamento ITIL e Arquitetura) foram fases analíticas e de design de processos, documentadas fora da plataforma, e por isso não geraram artefatos de sistema. A partir desta etapa (Etapa 2), todas as configurações estruturais começam a ser versionadas aqui.</description>
+<inserted/>
+<name>NEXOSPACES-ETAPA2-fundacao</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>c864da65836f4b14568895d0deaad383</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-02 18:37:03</sys_created_on>
+<sys_id>3a024f3383a34f54568895d0deaad3d7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-02 18:37:03</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+</unload>
