@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-10-02 18:37:34">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="NexoSpaces">dc8f74a183a34b14568895d0deaad321</application>
+<application_name>NexoSpaces</application_name>
+<application_scope>x_1915295_nexosp_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Cria o client script que verifica disponibilidade de data na tabela reserva.</description>
+<inserted/>
+<name>NEXOSPACES-ETAPA3-client-script-reserva</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>86c79cdf8367c754568895d0deaad3a1</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-02 18:37:31</sys_created_on>
+<sys_id>9922437383a34f54568895d0deaad32e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-02 18:37:31</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1915295_nexosp_0_x_nexospaces_espaco_sys_updated_by_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="sys_updated_by" label="Updated by" language="en" table="x_1915295_nexosp_0_x_nexospaces_espaco"><sys_documentation action="INSERT_OR_UPDATE"><element>sys_updated_by</element><help/><hint/><label>Updated by</label><language>en</language><name>x_1915295_nexosp_0_x_nexospaces_espaco</name><plural>Updated by</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 12:00:25</sys_created_on><sys_id>a1e0852e83e74354568895d0deaad37c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Updated by</sys_name><sys_package/><sys_policy/><sys_scope/><sys_update_name>sys_documentation_x_1915295_nexosp_0_x_nexospaces_espaco_sys_updated_by_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-30 18:25:49</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>683642314</payload_hash>
+<remote_update_set display_value="NEXOSPACES-ETAPA3-client-script-reserva">9922437383a34f54568895d0deaad32e</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-02 18:37:31</sys_created_on>
+<sys_id>2522437383a34f54568895d0deaad32f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0f390d1fd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-02 18:37:31</sys_updated_on>
+<table>x_1915295_nexosp_0_x_nexospaces_espaco</table>
+<target_name>Espaço.Updated by</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>664ca8d32a6bc7542160ed80e35cecf2</update_guid>
+<update_guid_history>664ca8d32a6bc7542160ed80e35cecf2:683642314,a24ca8d3536bc7549bd8a90331aed4ee:-1300816027</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_43a0afa0ffa3a210f079ffffffffff09</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Captures the last execution timestamp of the scheduled job 'Generate topic path translations'</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>taxonomy.topic_path_translations_job_last_run</name><read_roles>sn_hr_sp.esc_admin</read_roles><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-21 02:09:16</sys_created_on><sys_id>43a0afa0ffa3a210f079ffffffffff09</sys_id><sys_mod_count>34</sys_mod_count><sys_name>taxonomy.topic_path_translations_job_last_run</sys_name><sys_package display_value="Content Taxonomy" source="com.snc.taxonomy">5a86a9c0a5a903108bb220b7a4d21227</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_43a0afa0ffa3a210f079ffffffffff09</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-01 17:30:03</sys_updated_on><type>time_format</type><value>2026-10-01 17:30:03</value><write_roles>sn_hr_sp.esc_admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=43a0afa0ffa3a210f079ffffffffff09"/><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="taxonomy.topic_path_translations_job_last_run" tablename="sys_properties">43a0afa0ffa3a210f079ffffffffff09</documentkey><fieldname>description</fieldname><language>pb</language><sys_created_by/><sys_created_on/><sys_id>f2aaf57c83870310568895d0deaad39e</sys_id><sys_mod_count/><sys_updated_by/><sys_updated_on/><tablename>sys_properties</tablename><value>Captura o carimbo de data/hora da última execução do trabalho agendado "Gerar traduções de caminho de tópico"</value></sys_translated_text></record_update>]]></payload>
+<payload_hash>-1954061350</payload_hash>
+<remote_update_set display_value="NEXOSPACES-ETAPA3-client-script-reserva">9922437383a34f54568895d0deaad32e</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-02 18:37:31</sys_created_on>
+<sys_id>6922437383a34f54568895d0deaad32f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0f88432540000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-02 18:37:31</sys_updated_on>
+<table/>
+<target_name>taxonomy.topic_path_translations_job_last_run</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>2c292da313678b54adcbced4e41d9992</update_guid>
+<update_guid_history>2c292da313678b54adcbced4e41d9992:-1954061350,be8f5c17eee7c754cf17082e1b760115:-1771176984,21f51bb6db2f0754e3f133ef293c3735:-151993538,4b5cc6aac163835424915b94ac747f0a:-664071649,edc20d9affa7cf14f50ea5b07886a213:-1176149760,44397f3d3beb0f146c2bc6997887360b:1180954592,5a9f62add5238b14f4536a7aa39620fc:2094661314,6406edd98667c71424f02efb6ecf5eef:1582583203,7a6c548db2ab07149bcfee8a481ea48e:1070505092,61d217600c238314b9291f2707f86bca:1966599017,5b398614d367cfd06008f9526fd120ca:-1379435963,4daf34c4dfab0fd0a34bfed95a2a6eba:-1891514074,3706ff6bf6df4bd057c2d1c02eadb326:1153454205,c67c2a1fd717c7d0c8b4c4f64793a015:641376094,61e26503ce9b07d0000a7cbfd0eab7ae:129297983,6a4918f2a5df43d036d56d88ec06c149:-382780128,c0bf4f1a5817cf9023cc533fcf443ab9:-877245442,2e16024ece5b0f903d0ed96736babbb2:1462246113,958c3871abdf4b90e739a23df25b080f:-1919014461,1be23b95bb17c790139a179af5452be0:438089891,9d59ee85225b07904f88f45e5b26bc53:1351796613,7fbf55b8b29f439058480613e95cb4ca:-586066331,122654a0b5d3cf50bc22c486fc05cfb0:-1836065348,469c0bc4401b0f5036e5ac20d1e9620b:521039004,cef2c63f724f4b50b6d5e11ab9235cc5:-1416823940,e469f06383c3c75051ef1158db1a8536:-503117218,e6cf23479d0b07507a730d6de3bdb370:-1015195329,c1362ef6f84f4350c39fac0340b27697:-101488607,af9c55eea043cf1049056f46035abfe4:-2039351551,79035492c3c70f10fbae7ba798e71009:1743537634,e3698b75fc0f4b10b69adac6d1a94520:1231459523,71dff525258f871085a5c8d363bab86e:589129348,5046fc55a6c307107c64cacfb09d788a:77051237,eeac2770700b431081a1f468d3db9a24:-1190560577,52ace370020b4310e501d50c1637957f:688777092</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1915295_nexosp_0_x_nexospaces_espaco_sys_updated_by</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="sys_updated_by" table="x_1915295_nexosp_0_x_nexospaces_espaco"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Updated by</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>sys_updated_by</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1915295_nexosp_0_x_nexospaces_espaco</name><next_element/><primary>false</primary><read_only>false</read_only><read_only_option/><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 12:00:25</sys_created_on><sys_id>29e0852e83e74354568895d0deaad37b</sys_id><sys_name/><sys_package/><sys_policy/><sys_scope/><sys_update_name/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-30 18:25:48</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type/><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>2125613776</payload_hash>
+<remote_update_set display_value="NEXOSPACES-ETAPA3-client-script-reserva">9922437383a34f54568895d0deaad32e</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-02 18:37:31</sys_created_on>
+<sys_id>ed22437383a34f54568895d0deaad32e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a0f390cfbe0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-02 18:37:31</sys_updated_on>
+<table>x_1915295_nexosp_0_x_nexospaces_espaco</table>
+<target_name>Espaço.Updated by</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>e24ca8d3ea6bc754172f335b210aa3d3</update_guid>
+<update_guid_history>e24ca8d3ea6bc754172f335b210aa3d3:2125613776,4d196c1fcf2bc75467d0a91481e55259:205547783,fc192c1f602bc754fb5aa8e8cbfa9ebc:1715024669</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
